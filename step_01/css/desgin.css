@@ -1,0 +1,14 @@
+*{padding:0;margin:0;list-style:none;}
+body{background-color:#000; background-image:; z-index:0;}
+li{color:#fff;font-size:150px;position:fixed;right:0;top:70%
+  ;animation-name:name;animation-duration:5s;animation-iteration-count:infinite;
+   animation-timing-function:ease;font-family:sans-serif;}
+
+ul{width:100%;height:100%;}
+
+
+
+@keyframes name{
+	0%{opacity:0;transform:translateX(-200px);}
+	100%{opacity:1;color:#ff0;a}
+}

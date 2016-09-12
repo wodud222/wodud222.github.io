@@ -1,0 +1,5 @@
+/* table_01.css */
+
+body{background-color: #fa0;width:100%;height:100%;border:1px;}
+table,tr,th,td{border-width:1px;border-style:solid;border-color:blue;background-color:yellow;font-family:"돋움";border-collapse:collapse;border-spacing:0;}\
+td{padding:30px}

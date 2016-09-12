@@ -1,0 +1,55 @@
+/* selected.css*/
+body,h1,h2,h3,h4,h5,h6,p,div,ul,ol,li{margin:0;padding:0;
+    font-size:100%;}
+img{border:0;}
+ul,ol,li{list-style:none;}
+a{color:#777;text-decoration:none;}
+/*a:visited{color:#fa0;}*/
+a:hover{color:#f07; font-size:100%}
+a:active{color:#333; text-decoration:underline}
+
+
+/* setting */
+
+.clearfix, .claerfix:before, .clearfix:after{content:"";display:block;clear:both;}
+
+/* design */
+/* 16px = 12pt = 100% = 1em =1rem */
+#wrap{width:960px; min-height:10rem; height:auto;background-color:#ccc;margin:0 auto;}
+#wrap>div{width:96%; padding:20px 2%}
+
+/*header---------------------------------------*/
+
+#header{height:140px;background: #000;border-bottom:1px solid #f07}
+#header:hover{background-color:#cacaca}
+#header:hover h1{background-color:#07f}
+h1{width:150px ; height:70px;float:left;background-color:#fff;margin-top:15px;}
+h1>a{width:100%;height:100%;height:100%;background-color:#fa0;display:block;font-size:50px;line-height:70px;text-align:center;}
+.gnb{width: 700px;height: 40px;float:right;background-color:#fff;margin-top:50px;}
+.gnb>h2{width:0;height:0;overflow:hidden;}
+.gnb>ul{width: 100%; height: 100%;}
+.gnb li{width:20%;height:100%;float:left;text-align:center;}
+.gnb li a{line-height:40px}
+/*text-align 블록화처리된경우에만 작용함 
+  center; 좌/우 정렬 (left | right | justify| 양쪽정렬 2줄이상)*/
+/*line height 블록이든 인라인이든 작동됨.
+  단 한줄인 경우에는 해당하는 박스의 높이만큼 설정해주면 적용됨*/
+/*hidden | scroll | auto | */
+
+/*content///------------------------------------*/
+
+
+#content{min-height:80px; height:auto;}
+#content>h2{font-size:2rem;color:#f10}
+#content>h2:after{content:"----------";color:#777}
+.article{width:85%;height:20rem; margin-bottom:3rem; background-color:rgba(0,200,150,0.5)}
+.section{width:85%;height:10rem;background:hsla(180,60%,50%,0.5)}
+
+
+
+
+
+/*footer--------------------------------*/
+
+
+#footer{height:100px;background: #576373}

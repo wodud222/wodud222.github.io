@@ -1,0 +1,4 @@
+table,th,tr,td{border-width:1px;border-style:solid; border-color: black;background-color:beige;border-collapse:collapse;text-align:center; }
+
+th{width:20%;}
+html,body{margin:0;width:100%;height:100%;}

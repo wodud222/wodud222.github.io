@@ -1,0 +1,44 @@
+body{margin:0;}
+div,ul,li,ol{margin:0; padding:0; }
+li,ul,ol{list-style:none;}
+.container{width:1200px;height:1800px; margin:0 auto;}
+.header{width:1150px; height:400px;background-color:#3a7;padding:0 25px;}
+  .unb{width:230px;height:50px;background-color:#fa0;float:right}
+  .gnb{width:100%;height:62px;background-color:#fa0;float:left;margin-top:3px}
+  .lnb{width:100%;height:92px;background-color:#fff;float:left;margin-top:192px;}
+     .lnb>ul{width:100%;height:100%;}
+     .lnb>ul>li{width:25%;height:100%;float:left}
+        
+.lnb_01{background-color:#aaf}
+.lnb_02{background-color:#aff}
+.lnb_03{background-color:#faf}
+.lnb_04{background-color:#ffa}
+
+.section{width:100%; height:auto;background-color:#a37}
+.section>h2{width:370px;height:110px;background-color:#fcc;margin:0 auto; margin-bottom: 10px;}
+
+.content{width:100%;height:300px;background-color:#ccc;}
+.content>li{width:25%;height:300px;}
+/*.content:after{content="" display:block;clear:both;}*/
+
+/*content 내부의 자식요소들의 높이 변형을 고려하여 claer:both(float 초기화)처리*/
+
+
+ .con_01{background-color:#f00;float:left;}
+ .con_02{background-color:#ff0;float:left;}
+ .con_03{background-color:#f0f;float:left;}
+ .con_04{background-color:#00f;float:left;}
+
+.article{width:100%;height:auto;background-color:#acc}
+.article:after{content:""; display:block;clear:both;}
+.article>li{width:25%;height:300px;float:left;}
+.article>.ar_01{background-color:#764;width:50%;height:600px;}
+/*우선순위 다툼 윗줄아랫줄*/
+  .ar_02{background-color:#4c8}
+  .ar_03{background-color:#caf}
+  .ar_04{background-color:#ffc}
+  .ar_05{background-color:#afc}
+
+
+
+.footer{width:1150px; height:215px;background-color:#38a;padding:0 25px;}

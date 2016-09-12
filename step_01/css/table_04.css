@@ -1,0 +1,7 @@
+div{width:600px;height:800px;background-color:#ccc;}
+button{background-color:aqua;width:120px;}
+option{width:120px;}
+#rev{color:blue}
+#Writer,#Password,#Title{background-color:#ccc;border:none;border-right:0px;border-top:0px;border-left:0px;border-bottom:1px solid #aaa}
+ul,li{list-style:none;}
+

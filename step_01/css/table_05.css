@@ -1,0 +1,14 @@
+.wrap{width:220px;height:250px;background-color:#fff;border:1px solid #ccc}
+.Twitter,.Facebook{width:100px;padding-left:15px;padding:15px;padding-top:5px;padding-bottom:5px;margin-left:7px;color:#fff;}
+.Twitter{background-color:#17f;}
+.Facebook{background-color:cornflowerblue;margin-right:0px;}
+#Email,#Password{width:195px;margin-left:10px;padding:2px;}
+#sign{float:right;margin-bottom:5px;margin-right:10px;background-color:#fff;border:1px solid #ccc;}
+body{margin:30px;background-color:#fff;}
+#finding,#Login_Button{float:right;margin-top:10px;margin-right:10px;border-bottom:0px;border-top:0px;border-left:0px;b3
+    border-right:0px;padding:3px;}
+.text_login{margin-left:7px;}
+.test_margin{margin-left:7px;}
+#finding{background-color:white;border:1px solid #ccc;}
+#Login_Button{background-color:cornflowerblue;}
+

@@ -1,0 +1,12 @@
+html,body{font-size:100%;}
+h1,h2,h3,h4,h5,h6,p,div,span,ul,li,ol,dl,dt,dd{font-size:100%;}
+h1{color:#0cf; font-size:16px;}
+h1{font-size:16px;}
+h1>a{font-size:32px;}
+h1>a>span{font-size:16px;}
+h1>a>span>em{font-size:8px;}
+.font_01{}
+.font_02{}
+.font_03{}
+.font_04{}
+.font_05{}

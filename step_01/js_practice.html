@@ -1,0 +1,47 @@
+<html xmlns="http://www.w3.org/1999.xhtml">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="apple-touch-icon" href="favicon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+
+	<title>jqeuery</title>
+    <style>
+    	#block{position:absolute;
+    		left:170px;
+    	    top:63%;}
+    	body{background-image:url(./img/mariobg.png);background-position:center center;background-repeat:no-repeat}
+    </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+      	$('#leftBtn').click(function(){
+      	if(10 >= $('#block').offset().left){
+               } else {
+               	$('#block').animate( {left:'-=80px'},500);
+               }
+      });
+
+      $('#rightBtn').click( function(){
+      	$('#block').animate({
+      		left:'+=80px'
+      	},500);
+      });
+           $('#topBtn').click( function(){
+      	$('#block').animate({
+      		top:'+=80px'
+      	},500);
+      });
+  });
+  </script>
+</head>
+<body>
+	<button id="leftBtn">왼쪽</button>
+	<p><button id="rightBtn">오른쪽</button></p>
+	<button id="topBtn">위</button>
+	<button id="bottomBtn">아래</button>	
+	<div id ="block">
+	<img id="test" src="./img/mario.png" width="100" style="position:relative;"/>
+</body>
+</html>
