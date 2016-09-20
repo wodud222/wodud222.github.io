@@ -17,7 +17,7 @@ h1{width: 200px;height:70px;background-color:#0f0;float:left;}
 .slide_btn{width:100px;height:100px;position:absolute;right:0;top:50%;margin-top:-50px;z-index:100;}
 
 .slide_btn>button{width:100%;height:50%;font-weight:bold;color:#000;font-size:2rem;}
-.silde_btn>button:hover{background-color:#ccc;color:#333;}
+.sllde_btn>button:hover{background-color:#ccc;color:#333;}
 .left_banner_button{background-color:#af5;}
 .right_banner_button{background-color:#fff;}
 
