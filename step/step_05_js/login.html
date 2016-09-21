@@ -18,8 +18,33 @@
 				<button  type="button">닫기</button>
 			</div>
 		<form action="">
+			<fieldset>
+				<legend class="hidden">로그인 영역</legend>
+				<label for="user" class="hidden">로그인 영역</label>
+				<label for="pwd" class="hidden">로그인하실 아이디명을 입력하세요.</label>
+				<label for="ok" class="hidden">로그인 버튼을 클릭하세요.</label>
+				<input
+				type="text"
+				id="user"
+				name="user"
+				value=""
+				placeholder="아이디를 입력하세요"
+				required="required" />
+				
+				<input 
+				type="password" 
+				name="pwd"
+				value=""
+				id="pwd"
+				placeholder="password"
+				required=required>
+				
+				<input type="submit" id="ok" name="ok" value="log in" />
+			</fieldset>
+			<fieldset>
+				<legend class="hidden">id password 관련내용</legend>
 
-		</form>
+			</form>
 	</div>
 </body>
 </html>
