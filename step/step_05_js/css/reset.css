@@ -24,7 +24,9 @@ a:focus, input:focus,button:focus,textarea,select{outline:2px solid #fa0; outlin
 
 /*html5 */
 header,nav,article,section,footer,aside{display:block;}
-
+/* input */
+[type="text"],[type="password"],[type="url"],[type="email"],[type="number"]
+{text-indent:5px;}
 
 /* common.css */
 

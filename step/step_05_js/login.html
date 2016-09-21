@@ -9,26 +9,27 @@
 	<link rel="stylesheet" href="./css/login.css" />
 	<title>login</title>
     <style></style>
-    <script></script>
-</head>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
 <body>
 	<h1 class="hidden">log in</h1>
 	<div id="loginBox">
 			<div class="close_box">
-				<button  type="button">닫기</button>
+				<button  type="button" id="closeBtn">닫기</button>
 			</div>
 		<form action="">
 			<fieldset>
 				<legend class="hidden">로그인 영역</legend>
 				<label for="user" class="hidden">로그인 영역</label>
 				<label for="pwd" class="hidden">로그인하실 아이디명을 입력하세요.</label>
-				<label for="ok" class="hidden">로그인 버튼을 클릭하세요.</label>
+<!-- 				<label for="ok" class="hidden">로그인 버튼을 클릭하세요.</label> -->
 				<input
 				type="text"
 				id="user"
 				name="user"
 				value=""
-				placeholder="아이디를 입력하세요"
+				placeholder="ID"
 				required="required" />
 				
 				<input 
@@ -36,15 +37,27 @@
 				name="pwd"
 				value=""
 				id="pwd"
-				placeholder="password"
-				required=required>
+				placeholder="Password"
+				required=required />
 				
-				<input type="submit" id="ok" name="ok" value="log in" />
+				<input type="submit" id="ok" name="ok" value="login" />
 			</fieldset>
 			<fieldset>
 				<legend class="hidden">id password 관련내용</legend>
 
 			</form>
 	</div>
+	<script>
+
+
+	(function($) {
+			var loginBtn=$('#loginBox');
+
+		$('#closeBtn').on('click',function(){
+			$('#loginBox').fadeOut();
+		});
+
+	})(this.jQuery);
+	</script>
 </body>
 </html>
