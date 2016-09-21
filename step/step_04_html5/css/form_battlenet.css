@@ -1,0 +1,13 @@
+div{margin:0 auto;width: 543px;height: auto;background-color:#1c3f5d}
+h1{color:#fff;text-align:center;line-height:100px;font-size:;}
+h2{color:#fff;font-size:2.5rem;font-family:"돋움";}
+.start{color:#bfbab4;font-family:"돋움";margin-top:20px;}
+input{margin-top:20px;width: 480px;height:32px;border-radius:2px;text-indent:8px;background-color:#0b1924;}
+select{margin-top:20px;width: 480px;height:32px;border-radius:5%;text-indent:8px;background-color: #14252F;color:#ccc;font-size:1rem;}
+fieldset{width:inherit;height:auto;padding-left:30px; padding-right:30px;margin-top:0px;}
+#sms{width:10px;height: 10px;text-indent:2px;}
+.battle{color:#3897c5;}
+.sign_up{line-height:3px;}
+#sign_up{background-color:#0787c4;}
+p{margin-top:10px;}
+p span{color:#3897c5;}
