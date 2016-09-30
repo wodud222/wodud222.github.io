@@ -1,1 +1,68 @@
-div{width:100%;height:120px;background-color: #ccc}
+/*-----------header---------------------------*/
+
+
+header{width:100%;height:100px;position:fixed;top:0;left:0;padding:10px 40px 20px;z-index:999;background-color:#000;}
+header>h1{width:140px;background-color:#0fb;height:60%;position:absolute;z-index:1100;text-align:center;}
+header>nav{width:90%;height:100%;position:relative;z-index:1000;left:10%;}
+/*ul*/
+header>nav>ul:nth-child(1){width:60%;height:100%;background-color:#078f;position:absolute;z-index:1100;padding-top:10px;}
+header>nav>ul:nth-child(2){width:40%;height:50%;float:right;}
+
+/*ul>li*/
+header>nav>ul:nth-child(1)>li{display:block;position:relative;float:left;padding-left:10px;padding-top:20px;}
+header>nav>ul:nth-child(1)>li>a{font-size:1.2rem;font-weight:600;padding:20px 30px;text-align:center;color:#fff;}
+
+header>nav>ul:nth-child(2)>li{display:block;position:relative;float:left;padding-left:20px;}
+/*button / input */
+
+header>nav>div{float:right;width:70%;height:70%;}
+header>nav>div>input,
+header>nav>div>button{float:right;}
+header>nav>div>input{width:50%;height:100%;border-radius:10px;}
+header>nav>div>button{height:100%;}
+
+
+/* pageWrap---------------------------------- */
+
+.pageWrap:{width:100%;height:auto;}
+
+/*------ addBanner--------------------------- */
+
+.addBanner{width:100%;height:800px;background-color:#ccc;}
+
+
+/*left / rightBox*/
+.addBanner>div{width:50%;height:100%;float:left;}
+.addBanner>.leftBox{height:100%;background-color:#fab;}
+.addBanner>.leftBox:after{content:"";width:100%;height:3%;background-color:#fff;display:block;margin-top:82%}
+
+.addBanner>.leftBox>.showUpWhite{float:right;width:20%;height:50%;margin-top:20%;background-color:#fff;}
+
+.addBanner>.rightBox{height:100%;background-color:#337DA8}
+
+.addBanner:after{content:"";width:100%;height:230px;display:block;}
+
+
+
+
+/* container */
+
+/*con_1*/
+
+.about{background-color:#0fc;width:100%;height:1000px;}
+
+.about>.main_box{width:100%;height:75%;background-color:#fff;}
+.about>.three_cution{width:100%;height:25%;}
+.about>.three_cution>li{width:33%;height:100%;background-color:#ccc;display:inline-block;}
+
+/*con_2*/
+
+.information{width:100%;height:900px;background-color:#fff;}
+
+/*con_3 */
+
+.contact{width:100%;height:600px;background-color:#777;position:relative;}
+.contact>div{float:left;}
+.contact>.con_leftBox{width:55%;height:100%;background-color:#eee;}
+.contact>.con_leftBox:after{content:"";display:block;width:100%;height:3%;float:right;background-color:#fff;}
+.contact>.con_rightBox{width:45%;height:100%;background-color:#aaa;}
