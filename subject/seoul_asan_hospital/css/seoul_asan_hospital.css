@@ -83,5 +83,33 @@ header>nav>div>button{height:100%;}
 /*col_rightBox*/
 .col_rightBox{width:50%;height:100%;background-color:#888;}
 .col_rightBox>div:nth-of-type(1){width:550px;height:555px;padding:0px 42px;background-color:#aff;}
-.col_rightBox>div>p:nth-of-type(1){font-size:36px;color:#222;padding-top:20px;}
+.col_rightBox>.introBox>p:nth-of-type(1){font-size:36px;color:#222;padding-top:20px;font-weight:200;}
+.col_rightBox>.introBox>p:nth-of-type(2){font-size:36px;color:#222;padding-top:20px;font-weight:700;color:#2d83b4;}
+.col_rightBox>.introBox>p:nth-of-type(3){font-size:18px;color:#222;padding-top:20px;color:#6F6F6F;}
+.col_rightBox>.introBox>p:nth-of-type(4){
+	font-size:13px;color:#666;line-height:2;margin: 0 0 10px;}
+	.col_rightBox>.introBox>h6{font-size:18px;color:#222;padding-top:20px;color:#222;padding:10px 0 20px;font-size:17px;font-weight:bold;padding-top:50px;}
 
+
+/*---------------------clientSay--------------------*/
+
+.clientSay{width:100%;height:270px;background-color:padding:98px 0;}
+
+.clientSay>div{float:left;}
+		.clientSay>.left_side{width:35%;height:100%;background-color:#F6F6F8;padding:45px 0px 45px 150px;}
+		.clientSay>.right_side{width:65%;height:100%;background-color:#F9F9FA;padding:60px 0 60px}
+
+/*left_side*/
+
+.left_side>div{float:left;}
+.left_side>div:nth-child(1){width:56px;height:56px;background-color:#fa0;}
+.left_side>div:nth-child(2){width:80%;height:auto;padding-left:20px;}
+.left_side>div:nth-child(2)>h6{font-weight:200;font-size:30px;}
+.left_side>div:nth-child(2)>h6{padding:10px 0 20px;}
+.left_side>div:nth-child(2)>p{text-align:justify-all;}
+
+/*right_side*/
+.right_side>.clientBox>div{float:left;}
+.right_side>.clientBox{padding:0 15%;background-color:#888;height:100%;width:100%;}
+.right_side>.clientBox>.client_img{width:100px;height:100px;background-color:#f0b;}
+.right_side>.clientBox>.client_text{width:100px;height:auto;}
