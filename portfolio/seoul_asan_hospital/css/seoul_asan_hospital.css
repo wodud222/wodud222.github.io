@@ -110,6 +110,6 @@ header>nav>div>button{height:100%;}
 
 /*right_side*/
 .right_side>.clientBox>div{float:left;}
-.right_side>.clientBox{padding:0 15%;background-color:#888;height:100%;width:100%;}
+.right_side>.clientBox{padding-left:15%;padding-right:10%;background-color:#888;height:100%;width:100%;}
 .right_side>.clientBox>.client_img{width:100px;height:100px;background-color:#f0b;}
-.right_side>.clientBox>.client_text{width:100px;height:auto;}
+.right_side>.clientBox>.client_text{width:350px;height:auto;padding-left:40px;}

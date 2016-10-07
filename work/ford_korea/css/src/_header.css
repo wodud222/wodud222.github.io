@@ -1,0 +1,5 @@
+#header{widows: 850px;height:70px;background-color:#888;padding:40px 55px 40px 55px;}
+
+h1{width: 200px;height:70px;background-color:#0f0;float:left;}
+#gnb{width:600px;height:40px;background-color:#0f0;float:right;margin-top:15px;}
+#gnb>li{width:18%;height:100%;background-color:#00f;float:left;margin-left:1.7%;}

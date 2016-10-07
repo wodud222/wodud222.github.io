@@ -1,0 +1,110 @@
+@charset "euc-kr";
+/* CSS Document */
+
+/* 헤더 */
+#header { width:100%; border-bottom:1px solid #d5d5d5; height:100px; background-color:#fff; position:fixed; z-index:9999}
+.menu { position:relative; width:1000px; height:100px; margin:0 auto; max-width:1200px}
+#header h1 { float:left; margin:35px 60px 0 0}
+h3 { float:left;}
+.navi { float:left; margin-top:36px}
+.navi ul { float:left}
+.navi li { float:left; padding:7px 0 0 18px; background:url(../images/menu_line.jpg) no-repeat 7px 10px}
+.navi li.none { padding:0; background:none}
+.ml40 { margin-left:40px}
+.topbtn { position:absolute; right:-55px; top:45px}
+
+/* 포폴_링크 */
+#btn_portfolio { position:absolute; right:-1px; top:0; width:165px; border-left:1px solid #ececec; background:url(../images/layout/icon_mobile.jpg) no-repeat 35px 18px}
+ul#btn_portfolio li span { background-color:#fff; float: left; position: absolute; left:0; top:46px; display:none;}
+.pr1 { padding-right:1px}
+.mobile {border-bottom:1px solid #ececec;}
+
+a:link { text-decoration:none; color:#999}
+a:visited {text-decoration:none; color:#999}
+a:hover {text-decoration:none; color:#97d85b9}
+a:active {text-decoration:none; color:#999}
+
+
+/* 프로파일 */
+#profile { padding-bottom:100px}
+#profile #my_profile { width:1000px; margin:0 auto; padding-top:220px; background:url(../images/layout/tit_my_profile.jpg) no-repeat 0 140px}
+#profile #my_introduce { width:1000px; margin:0 auto; padding-top:200px; background:url(../images/layout/tit_my_introduce.jpg) no-repeat 0 120px}
+
+/* 포트폴리오 */
+#portfolio { background-color:#eee; border-top:1px solid #d5d5d5; border-bottom:1px solid #d5d5d5; padding:0 0 100px 0}
+#portfolio #portfolio_01 { overflow:auto ;background:url(../images/layout/tit_portfolio_main01.jpg) no-repeat 0 120px; width:1000px; margin:0 auto; padding-top:200px; z-index:1}
+#portfolio #portfolio_02 {  overflow:auto; background:url(../images/layout/tit_portfolio_main02.jpg) no-repeat 0 120px; width:1000px; margin:0 auto; padding-top:200px; z-index:1}
+#portfolio #portfolio_03 {  overflow:auto; background:url(../images/layout/tit_portfolio_main03.jpg) no-repeat 0 120px; width:1000px; margin:0 auto; padding-top:200px; z-index:1}
+#portfolio #portfolio_etc {  overflow:auto; background:url(../images/layout/tit_portfolio_etc.jpg) no-repeat 0 120px; width:1000px; margin:0 auto; padding-top:200px; z-index:1}
+
+
+
+.portfolio_img { position:relative; float:left; width:580px; padding-top:22px; background:url(../images/layout/portfolio_img_top.jpg) no-repeat; border:1px solid #ccc}
+.portfolio_etc { position:relative; float:left; width:1000px}
+.pline { width:999px; height:2px; position:absolute; top:-140px; left:0; background:url(../images/layout/portfolio_bg_line.jpg) repeat-x}
+.portfolio_contents { width:360px; float:right}
+h2 { padding-bottom:20px !important}
+.made { background:url(../images/layout/portfolio_tit_date.jpg) no-repeat left 21px; padding:20px 0 20px 50px}
+.concept { background:url(../images/layout/portfolio_tit_concept.jpg) no-repeat left top; padding:50px 0 20px; line-height:20px !important}
+.epilogue { background:url(../images/layout/portfolio_tit_epilogue.jpg) no-repeat left top; padding-top:50px; line-height:20px !important}
+.ptext { font:12px "돋움"; color:#858585}
+
+
+
+/* 스토리 */
+#story { clear:both; padding:220px 0 120px 0; background:url(../images/layout/tit_story_telling.jpg) no-repeat 0 140px; margin:0 auto; width:1000px}
+
+
+
+/* 푸터 */
+#footer {background-color:#eeeeee; background:url(../images/layout/bg_bottom.jpg) repeat-x center top; height:55px }
+.footer_contents { width:1000px; margin:0 auto; text-align:center}
+.copyright { padding-top:22px; font:10px Tahoma; color:#999}
+.copyright span { color:#555; font:bold 10px tahoma}
+.btn_top { float:right}
+
+/* 최상위 스크롤 */
+.scrollup {
+	display:block;
+	left:50%;
+	margin-left:501px;
+    width:54px;
+    height:55px;
+    opacity:1;
+    position:fixed;
+    bottom:0px;
+    display:none;
+    text-indent:-9999px;
+	background:url(../images/layout/btn_top_f.jpg) no-repeat 0 0;
+}
+.scrollup:hover{
+	background-position:0 -60px;
+}
+/* 최상위 스크롤 */
+.scrollp {
+	display:block;
+	left:50%;
+	margin-left:501px;
+    width:54px;
+    height:55px;
+    opacity:1;
+    position:fixed;
+    bottom:60px;
+    display:none;
+    text-indent:-9999px;
+	background:url(../images/layout/btn_top_f.jpg) no-repeat 0 0;
+}
+.scrollp:hover{
+	background-position:0 -60px;
+}
+
+
+
+
+
+/* base */
+html{ overflow-y:scroll}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, input, textarea, p, blockquote, th, td, textfield, select{	margin:0; padding:0;	}
+body {color:#666;font-size:12px; font-family: "돋움";}
+ol, ul, li, dd, dl, dt  {list-style:none;}
+img {border:0;vertical-align:top;}
