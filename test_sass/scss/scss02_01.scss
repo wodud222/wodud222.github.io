@@ -1,0 +1,54 @@
+// scss 고유주석 css로 변환이 되지 않는다.
+
+/* css로 변환이 된다.!! */
+
+$main: #faa;
+$font: #334;
+$line_color: #440;
+$color_list: #145, #579, #000, #016, #fc1;
+$abc_list: #87c, #ff7, #fc7, #8f6, #f06;
+
+
+$mob:600px;
+$tab:1024px;
+@media screen and (max-width:$mob){
+
+body{background-color:$main;color:$font;border-top:2px solid#line_color;}
+}
+@media screen and (min-width:$mob + 1) and (max-width:$tab - 1){
+	body{background-color:#0f5;}
+}
+@media screen and (min-width:$tab){
+	body{background-color:#07f}
+}
+
+
+
+
+
+
+@mixin test($arr:$color_list){
+
+	@each $a in $arr {
+	$i:index($arr,$a);
+		&:nth-child(#{$i}){
+			background-color:$a;
+	}
+}
+}
+
+
+#wrap{color:lighten($font,20%);
+	
+	ul{width:100px;height:auto;background-color:#fff;
+		li{list-style:none;color:lighten($main, 50%);
+			@include test($abc_list);
+			// &:nth-child(1){color:ligthen($font,20%)}
+			// &:nth-child(2){color:darken($font,10%)}
+			// &:nth-child(3){color:rgba($font,0.5)}
+			// &:nth-child(4){color:#acc;}
+			// &:nth-child(5){color:rgba(#5cc,0.7)}
+		}//li
+	}//ul
+}//#wrap
+
