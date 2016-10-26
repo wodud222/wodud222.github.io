@@ -1,1 +1,0 @@
-			$('div').css({color:'#333',borderRadius:'1rem'});
