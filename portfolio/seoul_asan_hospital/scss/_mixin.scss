@@ -1,0 +1,51 @@
+//_mixin.scss
+@import "_color";
+
+
+@mixin b-set($font:2px,$borderColor:$bc)
+		{
+			border:{top:$font solid $borderColor;				bottom:$font solid $borderColor;}
+		}
+@mixin rounded($i){
+	-webkit-border-radius:$i;
+	-moz-border-radius:$i;
+	-o-border-radius:$i;
+	border-radius:$i;
+}
+
+@mixin shadow($x,$y,$blur,$color){
+	-webkit-box-shadow:$x $y $blur $color;
+		-moz-box-shadow:$x $y $blur $color;
+		-o-box-shadow:$x $y $blur $color;
+			box-shadow:$x $y $blur $color;
+}
+
+@mixin trans($property:all,$duration:0.5s,$time:ease,$delay:0s){
+	-webkit-transition:$property $duration $time $delay;-moz-transition:$property $duration $time $delay;
+		-o-transition:$property $duration $time $delay;transition:$property $duration $time $delay;
+}
+
+@mixin box-sizing{
+	-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		-o-box-sizing:border-box;
+			box-sizing:border-box;
+}
+
+@mixin wcalc($i){
+	-webkit-width:calc($i);
+	-moz-width:calc($i);
+	-o-width:calc($i);
+	   width:calc($i);
+}
+@mixin hcalc($i){
+	-webkit-height:calc($i);
+	-moz-height:calc($i);
+	-o-height:calc($i);
+	  height:calc($i);
+}
+// ---------------------------------
+
+@mixin after($z-index:100,$position:absolute){content:"";display:block;z-index:$z-index;position:$position;}
+
+@mixin size($i,$j,$k,$l){min-width:$i;width:$j;min-height:$k;height:$l;}
