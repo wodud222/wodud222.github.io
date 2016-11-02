@@ -2,9 +2,9 @@
 @import "_color";
 
 
-@mixin b-set($font:2px,$borderColor:$bc)
+@mixin b-set($size:2px,$borderColor:$bc)
 		{
-			border:{top:$font solid $borderColor;				bottom:$font solid $borderColor;}
+			border:{top:$size solid $borderColor;				bottom:$size solid $borderColor;}
 		}
 @mixin rounded($i){
 	-webkit-border-radius:$i;
@@ -44,8 +44,60 @@
 	-o-height:calc($i);
 	  height:calc($i);
 }
+
+@mixin opacity($i:1){
+	-webkit-opacity:$i;
+	-moz-opacity:$i;
+	-o-opacity:$i;
+       opacity:$i;
+}	
+
 // ---------------------------------
+
+//after 처리-------------------------------------------
 
 @mixin after($z-index:100,$position:absolute){content:"";display:block;z-index:$z-index;position:$position;}
 
+//최소 높이 넓이 조절----------------------------------
+
 @mixin size($i,$j,$k,$l){min-width:$i;width:$j;min-height:$k;height:$l;}
+
+
+//hidden 처리------------------------------------------
+
+@mixin hidden{display:block;width:0;height:0;overflow:hidden}
+
+//자주쓰는 background 모음-----------------------------
+
+@mixin back($i,$j){background-size:$j;background-repeat:no-repeat;background-position:center;background-image:url($i);}
+
+
+// 최대 넓이 1200으로 고정------------------------------
+
+@mixin max{max-width:1200px};
+
+// 최소넓이 960으로 고정 -------------------------------
+@mixin min{min-width:960px};
+
+// 폰트사이즈 ------------------------------------------
+
+@mixin font310($i:0.5rem,$j:#fff)
+{font-size:$i;
+ font-family:"YDIYGO310", arial, nanumGothic, "돋움", dotum, sans-serif;}
+@mixin font320($i:0.5rem)
+{font-size:$i;
+ font-family:"YDIYGO320", arial, nanumGothic, "돋움", dotum, sans-serif;}
+ @mixin font330($i:0.5rem)
+{font-size:$i;
+ font-family:"YDIYGO330", arial, nanumGothic, "돋움", dotum, sans-serif;}
+ @mixin font340($i:0.5rem)
+{font-size:$i;
+ font-family:"YDIYGO340", arial, nanumGothic, "돋움", dotum, sans-serif;}
+ @mixin font350($i:0.5rem)
+{font-size:$i;
+ font-family:"YDIYGO350", arial, nanumGothic, "돋움", dotum, sans-serif;}
+  @mixin font360($i:0.5rem)
+{font-size:$i;
+ font-family:"YDIYGO360", arial, nanumGothic, "돋움", dotum, sans-serif;}
+
+ //1rem = 16px ;

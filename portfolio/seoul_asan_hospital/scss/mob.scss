@@ -1,19 +1,67 @@
 //mainpage_mob.scss
 @import "_mixin";
 
-@media screen and (min-width:360px) and (max-width:639px){
+@media screen and (max-width:639px){
 	#headBox{
 		width:100%;
 		min-height:60px;
 		background:{color:#fff;}
+		position:relative;
+		h1{min-width:120px;
+		   width:33.3333333vw;
+		   height:40px;
+		   margin-top:10px;
+		   left:50%;
+		   margin-left:-16.6666666vw;
+		   position:absolute;
+			
+			  a{display:block;
+			  	width:100%;
+			  	height:100%;
+			  	@include back("../../img/src/logo_360.jpg",100%);}
+			  }
+
+		}
+
+		#menu{width:34px;
+			  height:24px;
+			  background-color:transparent;
+			  float:left;
+			  margin-left:2.7777778vw;
+			  margin-top:10px;
+			  
+			  i{
+			  	font-size:40px;
+			  	color:$ic;
+			  }
+			}
+		#home{width:34px;
+			  height:24px;
+			  background-color:transparent;
+			  margin-right:2.7777778vw;
+			  margin-top:10px;
+			  float:right;
+			
+			  i{
+			  	font-size:40px;
+			  	color:$ic;
+			  }
+			}
 	}
+
 	#addBanner{
 		width:100%;
 		min-height:240px;
 		height:66.666667vw;
-		background:{color:$ic};
+		background:{
+			color:$ic;
+			repeat:no-repeat;
+			image:url("../../img/src/ban_360.jpg");
+			size:cover;
+			position:center}
 		position:relative;
 		@include b-set();
+		h2{@include font310(6.666667vw);color:#fff;}
 	}
 	#addBanner::after{
 		@include after();
@@ -22,7 +70,8 @@
 		min-height:200px;
 		height:55.5555556vw;
 		margin-top:3.88888889vw;
-		margin-left:1.888888vw
+		margin-left:1.888888vw;
+		left:0;
 	}
 	#content_01{
 		width:100%;
@@ -122,4 +171,5 @@
 			background-color:$ef;}
 	}
 
-}//media screen
+
+//media screen

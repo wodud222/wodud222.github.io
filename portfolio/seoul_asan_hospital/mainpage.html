@@ -8,9 +8,9 @@
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
 	
 	<!-- 초기에 사용하던 반응형 구조 -->
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./css/bin/reset.css">
 	<!-- fontawesome -->
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<!-- BASE -->
 	<link rel="stylesheet" href="css/src/mainpage.css">
 	<!-- (>360)< 639 -->
@@ -24,7 +24,7 @@
 	<title>index</title>
     <style>
     	/*최근 사용하는 반응형 구조*/
-    	@media screen and (min-width:)and(max-width:){}
+    	/*@media screen and (min-width:)and(max-width:){}*/
 
     </style>
     <script src="./js/jquery/jquery-1.12.4.min.js"></script>
@@ -40,13 +40,20 @@
 </head>
 <body>
 	<header id="headBox">
-		<h1><span class="hidden">서울아산병원</span></h1>
-		<button type="button"></button>
-		<button type="button"></button>
+		<h1><a href="#"><span class="hidden">서울아산병원</span></a></h1>
+		<button type="button" id="menu"><i class="fa fa-bars" aria-hidden="true"><span class="hidden">메뉴</span></i></button>
+		<button type="button" id="home"><a href=""><i class="fa fa-home" aria-hidden="true"><span class="hidden">홈</span></i></a></button>
 	</header>
 	<nav id="navi"></nav>
 	<section id="addBanner">
-		<div class="textBanner"></div>
+		<h2>
+		서울아산병원 10년연속
+		</h2>
+		<div class="whiteBox">
+		<div class="textBanner">
+			
+		</div>
+		</div>
 	</section>
 	<article id="content_01">
 		<div class="textBox_01"></div>
@@ -74,6 +81,7 @@
 		</ul>
 		<div class="imgBox"></div>
 	</article>
+	<div id="content_04">
 	<article id="articleBox"></article>
 	<article id="articleTab">
 		<ul>
@@ -82,11 +90,13 @@
 			<li></li>
 		</ul>
 	</article>
+	</div>
 	<footer id="footBox">
 		<div class="snb">
 			
 		</div>
 	</footer>
+
 </body>
 </html>
 
