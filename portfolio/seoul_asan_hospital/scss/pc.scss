@@ -143,7 +143,7 @@
 			@include font340(40px);
 			color:$g_font;
 			padding-left:388px;
-			padding-top:45px}
+			padding-top:25px}
 			
 			h3{
 			@include font310(20px);
@@ -160,7 +160,7 @@
 		
 		li{@include max;
 		   width:25%;
-		   height:308px;
+		   height:284px;
 		   background-color:$imc;
 		   float:left;
 		   			div{background-color:#fff}
