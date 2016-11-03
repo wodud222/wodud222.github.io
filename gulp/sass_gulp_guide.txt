@@ -1,0 +1,99 @@
+sass --watch -E utf-8 sass:css/src
+
+
+1200 : 960 = 400 : x
+
+960 x 400 = 1200x
+
+960 x 400 /1200
+
+320 =?
+
+
+
+960 x 444 / 1200 = 356
+
+960 x 452 / 1200 = 360
+
+960 x 444 / 1200 = 356
+
+
+1200 : 960 = 586 : x
+
+1200 : 960 = x : 206
+
+
+
+참고사이트 : webclub.tistory.com/467
+
+	   : npmjs.com - > sass등 각종 module 검색
+
+
+(nodejs.org)(git-scm.com) --------------------------
+
+명령어 -----------------------
+
+pwd : 현재위치 / cd : 이동 / touch : 파일만드는 // cd .. 상위폴더로 이동 // ls:리스트 확인 // dir//
+
+1.$ npm-v : 버전 체크
+
+2.$ gulp -v : 걸프 버전 체크
+
+3.$ npm install gulp-g 걸프 전역설치    <<< global
+
+4.cd /d 이하 해당경로 입력 
+
+5.$ npm install gulp --save-dev (개발자모드 화면으로 저장할테야)
+
+6.$ npm init -y (띄어쓰기 주의)
+
+7.packagejason 열기
+
+8. $ touch gulpfile.js .gitignore
+
+9.nodemodule을 삭제해도 $ npm install(※package.json이 설치되있는 파일에 입력해야함)
+
+10.gitignore을 edit프로그램에(sublime같은) 드래그 하여 입력
+
+11.#gitignore (<< 주석)
+
+   node_modules/ 입력하세요. 
+
+12.gulpfile에 다음과 같이 입력
+
+
+   var gulp = require('gulp'); << nodemodules에 있는 gulp파일 자동인지
+
+   // gulp.task : 임무를 부여
+   // gulp.src
+   // gulp.dest
+   // gulp.watch
+   // .pipe
+
+12. $ npm install gulp sass --save-dev 사스모듈 설치편
+
+13. mkdir src dist 파일생성
+
+14. mkdir src/sass 파일생성
+
+15. gulp.task('sass',function(){
+   return gulp.src('./src/sass/**/*.scss') << 파일생성된 곳에 좌표 잘 맞춰 입력해야함.
+   .pipe(sass().on('error',sass.logError))
+   //에러 명령어 보는란
+   .pipe(gulp.dest('./css')); << css파일이 만들어지는 경로 //실제 한줄코드
+});
+
+
+16.touch test.scss << 확인 시작.
+
+17.gulp sass
+
+18. chapter 2 jade 모듈설치
+
+$ npm install jade
+
+19. gulpfile에 다음과 같이 입력
+
+var jade =require('jade');
+
+20. sublime text3 - p.i - jade
