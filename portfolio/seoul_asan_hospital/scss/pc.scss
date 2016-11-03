@@ -6,23 +6,23 @@
 	#headBox{
 		@include max;
 		margin:0 auto;
-		width:100%;
+		width:960px;
 		height:74px;
 		position:relative;
-		background:{color:#eee}
+		background:{color:#fff;}
 	
 	&::after{		
 				@include after(-200);
 				width:100vw;
 				height:80px;
-				background-color:#888;
+				background-color:#fff;
 				left:50%;
 				margin-left:-50vw;}
 			#menu{display:none;}
 			#home{display:none;}
 				
 		h1{min-width:120px;
-		   width:230px;
+		   min-width:230px;
 		   height:80px;
 		   left:50%;
 		   position:absolute;
@@ -35,27 +35,78 @@
 		}
 	}
 	#navi{@include max;
-		width:100%;
+		width:960px;
 		height:100px;
-		background:{color:#ccc};
-		margin:0 auto;}
+		background:{color:$lgc};
+		margin:0 auto;
+		display:block;
+			ul{width:100%;height:100%;
+				li{ position:relative;
+					&:nth-child(1){margin-left:14px;}
+					@include font330(20px);
+					float:left;
+					font-weight:bold;
+					margin-top:38px;
+					margin-left:18px;
+					&:last-of-type::after{display:none}
+					&::after{@include after;
+							width:10px;
+							height:14px;
+							border-right:0.8px solid $after;
+							margin-left:10%;
+							bottom:20%;
+							right:0px;
+							margin-right:-10px;}
+					color:$ic;}
+			}
+	}
 
-	#navi::after{
+	#navi::after{	
 					@include after(-100);
+
 					width:100%;
 					height:100px;
-					background-color:#000;
-					left:0;}
+					background-color:$lgc;
+					left:0;
+					top:0;
+					margin-top:74px;}
 	#addBanner{
-		@include max;
 		@include back("../../img/src/ban_640.jpg",cover);
 		margin:0 auto;
 		height:400px;
-		width:100%;
+		width:960px;
 		position:relative;
-		.whiteBox{width:50%;
+		
+		h2{	
+			position:absolute;
+		   margin-top:90px;
+		
+		p{	&:nth-of-type(1),&:nth-of-type(2){display:block;position:absolute;left:-17%;margin-top:80px;color:$g_font;z-index:100;}
+			&:nth-of-type(2){margin-top:120px;}	
+			margin-left:520px;
+				@include font340(30px);
+				color:#fff;}
+			 }
+		h3{ position:absolute;
+			margin-top:180px;
+			p{
+			font-weight:200;
+			@include font310(20px);
+			color:#fff;
+			margin-left:520px;}
+			}
+		h4{ position:absolute;
+			bottom:0;
+			margin-bottom:80px;
+			@include font340(20px);
+			margin-left:520px;
+		}
+
+
+		.whiteBox{width:206px;
 				  height:100%;
 				  float:left;
+				  margin-left:276px;
 		
 			.textBanner{
 						@include opacity(0.7);
@@ -72,34 +123,64 @@
 	#addBanner::after{
 		@include after();
 	 	border:10px solid #fff;
-	 	width:586px;
+	 	width:506px;
 	 	height:306px;
 	 	top:0;
-	 	margin-left:464px;
+	 	margin-left:346px;
 	 	margin-top:48px;
 	 }
 	#content_01{
 		@include max;
 		margin:0 auto;
-		width:100%;
+		width:960px;
 		height:444px;
 		background:{color:#f07;}
-		div{
-			@include max;
-			width:100%;
-			height:136px;
+		.textBox_01{
+			width:960px;
+			height:160px;
 			background-color:#fff;
-		}
+			h2{
+			@include font340(40px);
+			color:$g_font;
+			padding-left:388px;
+			padding-top:45px}
+			
+			h3{
+			@include font310(20px);
+			color:$b_font;
+			text-align:center;
+			margin-top:12px}
+
+		
+	}
 		ul{	@include max;
 			width:100%;
-			height:308px;
+			height:284px;
 			background-color:#8f7;
 		
 		li{@include max;
 		   width:25%;
 		   height:308px;
 		   background-color:$imc;
-		   float:left;}
+		   float:left;
+		   			div{background-color:#fff}
+		   			div:nth-of-type(1){width:100%;
+		   				height:36%
+		   				}
+		   			div:nth-of-type(2){@include font330(3.666667vw);
+		   							   text-align:center;line-height:2.5;
+		   							   height:20%;}
+		   			div:nth-of-type(3){display:block;height:44%;}
+		   			.icon_01{
+		   				@include back("../../img/src/icon_01.jpg",50%)};
+		   			.icon_02{
+		   				@include back("../../img/src/icon_02.jpg",40%)};
+		   			.icon_03{
+		   				@include back("../../img/src/icon_03.jpg",40%)};	
+		   			.icon_04{
+		   				@include back("../../img/src/icon_04.jpg",40%)};		
+		}
+		
 		}
 
 	}

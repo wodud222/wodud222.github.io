@@ -19,6 +19,7 @@
 			  height:100%;
 			  @include back("../../img/src/logo_640.jpg",100%);}
 		}
+
 		#menu{width:34px;
 			  height:24px;
 			  background-color:transparent;
@@ -44,12 +45,37 @@
 			  }
 			}
 	}
+	#navi{display:none;}
 	#addBanner{
 		width:100%;
 		min-height:300px;
 		height:46.875vw;
 		position:relative;
 		@include back("../../img/src/ban_640.jpg",cover);
+		h2{position:absolute;margin-top:8.6666667vw;
+		
+		p{		&:nth-of-type(1),&:nth-of-type(2){display:block;position:absolute;left:-16%;margin-top:8.375vw;color:$g_font;z-index:100;}
+			&:nth-of-type(2){margin-top:12.625vw;}	
+				
+				@include font340(3.59375vw);
+				color:#fff;
+				margin-left:51.5625vw;}
+			 }
+		h3{ position:absolute;
+			margin-top:17.8125vw;
+			p{
+			font-weight:200;
+			@include font310(2.425vw);
+			color:#fff;
+			margin-left:51.5625vw;}
+			}
+		h4{ position:absolute;
+			bottom:0;
+			margin-bottom:11.375vw;
+			@include font340(3.125vw);
+			margin-left:51.5625vw;;
+		}
+
 		.whiteBox{width:50%;
 				  height:100%;
 				  float:left;
@@ -77,11 +103,23 @@
 	}
 	#content_01{
 		width:100%;
-		height:50vw;
+		height:62.5vw;
 		background:{color:#f07;}
-		div{
+		.textBox_01{
+			h2{
+			@include font340(6.25vw);
+			color:$g_font;
+			padding-left:35vw;
+			padding-top:4.6875vw;}
+			
+			h3{
+			@include font310(2.8vw);
+			color:$b_font;
+			text-align:center;
+			margin-top:12.5625px;}
+
 			width:100vw;
-			height:calc(100% - 34.375vw);
+			height:calc(100% - 40.375vw);
 			background-color:#fff;
 		}
 		ul{	width:100vw;
@@ -90,9 +128,25 @@
 			background-color:#8f7;
 		
 		li{width:25%;
-		   height:34.375vw;
+		   height:40.375vw;
 		   background-color:$imc;
-		   float:left;}
+		   float:left;
+		   			div{background-color:#fff;text-align:center;}
+		   			div:nth-of-type(1){width:100%;
+		   				height:40%
+		   				}
+		   			div:nth-of-type(2){@include font330(3.8125vw);height:20%;}
+		   			div:nth-of-type(3){display:block;@include font320(2.5vw);height:40%;color:$b_font;}
+
+		   			.icon_01{
+		   				@include back("../../img/src/icon_01.jpg",55%)};
+		   			.icon_02{
+		   				@include back("../../img/src/icon_02.jpg",45%)};
+		   			.icon_03{
+		   				@include back("../../img/src/icon_03.jpg",45%)};	
+		   			.icon_04{
+		   				@include back("../../img/src/icon_04.jpg",45%)};		
+		}
 		}
 
 	}
@@ -100,7 +154,7 @@
 		@include b-set(4px);
 		width:100%;
 		min-height:320px;
-		height:50vw;
+		height:62.5vw;
 		div{
 			width:100vw;
 			height:calc(100% - 35.95375vw);
@@ -125,7 +179,7 @@
 		@include b-set(4px);
 		width:100%;
 		min-height:320px;
-		height:50vw;
+		height:62.5vw;
 		background:{color:#fff}
 		ul{
 			width:50%;
