@@ -2,9 +2,7 @@
 @import "_mixin";
 
 @media screen and (max-width:639px){
-	#abd{@include font340(34px);
-		 @include after;
-		 @include opacity;}
+	#abd{@include font340(34px);}
 	#headBox{
 		width:100%;
 		min-height:60px;
@@ -132,16 +130,17 @@
 		   				}
 		   			div:nth-of-type(2){@include font330(6.666667vw);
 		   							   text-align:center;line-height:2.5;
-		   							   height:40%;}
+		   							   height:40%;
+		   							   color:$g_font;}
 		   			div:nth-of-type(3){display:none;}
 		   			.icon_01{
-		   				@include back("../../img/src/icon_01.jpg",50%)};
+		   				@include back("../../img/src/icon_01.jpg",50%);}
 		   			.icon_02{
-		   				@include back("../../img/src/icon_02.jpg",40%)};
+		   				@include back("../../img/src/icon_02.jpg",40%);}
 		   			.icon_03{
-		   				@include back("../../img/src/icon_03.jpg",40%)};	
+		   				@include back("../../img/src/icon_03.jpg",40%);}	
 		   			.icon_04{
-		   				@include back("../../img/src/icon_04.jpg",40%)};		   					   			
+		   				@include back("../../img/src/icon_04.jpg",40%);}		   					   			
 		   		}
 		}
 
@@ -150,24 +149,53 @@
 		@include b-set();
 		width:100%;
 		height:122.2222222vw;
-		div{
+		.textBox_02{
 			width:100vw;
 			height:calc(100% - 96.6666667vw);
-			background-color:$lgc;};
+			background-color:$lgc;
+			
+			h2{	@include font340(7.7777778vw);
+				color:$g_font;
+				padding-left:12.77777778vw;
+				padding-top:5.555555556vw;
+		};
+			h3{
+		@include font310(3.3333333vw);
+		color:$b_font;
+		text-align:center;
+		margin-top:10px;}
+		
+	}//.textBox_02
+
 		ul{
 			width:100vw;
 			height:96.6666667vw;
-			background-color:#8f7;
+			background-color:$nav;
 		
 		li{
 			width:50vw;
 			height:48.3333334vw;
-			background-color:#fff;
-			float:left;}
-		}
+			background-color:$nav;
+			float:left;
+			a{width:100%;height:100%;
+				
+				div{width:100%;height:60%;} //div
+					
+					.icon_05{@include back("../../img/src/icon_05.png",57%);}
+					.icon_06{@include back("../../img/src/icon_06.png",57%);}
+					.icon_07{@include back("../../img/src/icon_07.png",57%);}
+					.icon_08{@include back("../../img/src/icon_08.png",57%);}
 
-	}//#content_02
-	
+				h4{width:100%;
+					text-align:center;
+					@include font330(5.3333334vw);line-height:2.5;
+					color:$g-font;}//ex) 장례식장
+						
+					}//a
+				}//li
+			}//ul
+		}//#content_02
+
 
 	#content_03{
 		@include b-set();
@@ -179,7 +207,7 @@
 			width:100vw;
 			height:55.5555556vw;
 			margin-top:63.8888889vw;
-		li{width:100vw;height:33.33333334%;background-color:$e9}
+		li{width:100vw;height:33.33333334%;background-color:$e9;}
 		}
 	}//content_03
 	#articleBox{

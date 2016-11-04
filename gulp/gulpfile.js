@@ -2,10 +2,11 @@
 
 //gulp_setting
 
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var jade = require('jade')
-
+var browserSync =require('browser-sync').create();
+//var jade = require('jade')
 // gulp.task : 임무를 부여
 // gulp.src :  소스 위치
 // gulp.dest : 컴파일 위치
@@ -28,18 +29,24 @@ gulp.task('sass',function(){
 
 gulp.task('sass:watch',function(){
    gulp.watch('./src/sass/**/*.scss',['sass']); 
+   gulp.watch('./dist'); 
 });
 
-//gulp.task('jade',function(){
-//   return gulp.src('./src/jade/**/*.jade')
-//    .pipe(jade({client: true}))
-//   .pipe(gulp.dest('./dist'));
-//});
-//
-//gulp.task('jade:watch',function(){
-//   gulp.watch('./src/jade/**/*.jade'); 
+gulp.task('browser-sync',function(){
+	browserSync.init({
+		server:{
+			baseDir:"./"
+		}
+	});
+});
+
+//or...
+
+// gulpt.task('browser-sync',function(){
+//	browserSync.init({
+//		proxy: "yourlocal.dev"
+//	})
 //});
 
-
-gulp.task('default',['sass:watch','jade:watch']);
+gulp.task('default',['sass:watch','browser-sync']);
 

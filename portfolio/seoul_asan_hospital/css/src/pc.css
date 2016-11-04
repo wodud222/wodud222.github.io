@@ -17,9 +17,9 @@
       background-color: #fff;
       left: 50%;
       margin-left: -50vw; }
-    #headBox #menu {
+    #headBox > #menu {
       display: none; }
-    #headBox #home {
+    #headBox > #home {
       display: none; }
     #headBox h1 {
       min-width: 120px;
@@ -36,7 +36,6 @@
         background-repeat: no-repeat;
         background-position: center;
         background-image: url("../../img/src/logo_640.jpg"); }
-
   #navi {
     max-width: 1200px;
     width: 960px;
@@ -44,10 +43,10 @@
     background-color: #ecf7f6;
     margin: 0 auto;
     display: block; }
-    #navi ul {
+    #navi > ul {
       width: 100%;
       height: 100%; }
-      #navi ul li {
+      #navi > ul > li {
         position: relative;
         font-size: 20px;
         font-family: "YDIYGO330", arial, nanumGothic, "돋움", dotum, sans-serif;
@@ -56,11 +55,11 @@
         margin-top: 38px;
         margin-left: 18px;
         color: #518b8d; }
-        #navi ul li:nth-child(1) {
+        #navi > ul > li:nth-child(1) {
           margin-left: 14px; }
-        #navi ul li:last-of-type::after {
+        #navi > ul > li:last-of-type::after {
           display: none; }
-        #navi ul li::after {
+        #navi > ul > li::after {
           content: "";
           display: block;
           z-index: 100;
@@ -72,7 +71,6 @@
           bottom: 20%;
           right: 0px;
           margin-right: -10px; }
-
   #navi::after {
     content: "";
     display: block;
@@ -84,7 +82,6 @@
     left: 0;
     top: 0;
     margin-top: 74px; }
-
   #addBanner {
     background-size: cover;
     background-repeat: no-repeat;
@@ -127,12 +124,12 @@
       font-size: 20px;
       font-family: "YDIYGO340", arial, nanumGothic, "돋움", dotum, sans-serif;
       margin-left: 520px; }
-    #addBanner .whiteBox {
+    #addBanner > .whiteBox {
       width: 206px;
       height: 100%;
       float: left;
       margin-left: 276px; }
-      #addBanner .whiteBox .textBanner {
+      #addBanner > .whiteBox > .textBanner {
         -webkit-opacity: 0.7;
         -moz-opacity: 0.7;
         -o-opacity: 0.7;
@@ -142,7 +139,6 @@
         background-color: #fff;
         margin-top: 58px;
         float: right; }
-
   #addBanner::after {
     content: "";
     display: block;
@@ -154,7 +150,6 @@
     top: 0;
     margin-left: 346px;
     margin-top: 48px; }
-
   #content_01 {
     max-width: 1200px;
     margin: 0 auto;
@@ -194,35 +189,37 @@
           width: 100%;
           height: 36%; }
         #content_01 ul li div:nth-of-type(2) {
-          font-size: 3.66667vw;
+          font-size: 34px;
           font-family: "YDIYGO330", arial, nanumGothic, "돋움", dotum, sans-serif;
           text-align: center;
           line-height: 2.5;
           height: 20%; }
         #content_01 ul li div:nth-of-type(3) {
           display: block;
-          height: 44%; }
-        #content_01 ul li .icon_01 {
-          background-size: 50%;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-image: url("../../img/src/icon_01.jpg"); }
-        #content_01 ul li .icon_02 {
-          background-size: 40%;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-image: url("../../img/src/icon_02.jpg"); }
-        #content_01 ul li .icon_03 {
-          background-size: 40%;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-image: url("../../img/src/icon_03.jpg"); }
-        #content_01 ul li .icon_04 {
-          background-size: 40%;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-image: url("../../img/src/icon_04.jpg"); }
-
+          height: 44%;
+          padding-top: 20px; }
+          #content_01 ul li div:nth-of-type(3) p:nth-of-type(1) {
+            text-align: center; }
+          #content_01 ul li div:nth-of-type(3) .icon_01 {
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../../img/src/icon_01.jpg"); }
+          #content_01 ul li div:nth-of-type(3) .icon_02 {
+            background-size: 40%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../../img/src/icon_02.jpg"); }
+          #content_01 ul li div:nth-of-type(3) .icon_03 {
+            background-size: 40%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../../img/src/icon_03.jpg"); }
+          #content_01 ul li div:nth-of-type(3) .icon_04 {
+            background-size: 40%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../../img/src/icon_04.jpg"); }
   #content_02 {
     max-width: 1200px;
     border-top: 4px solid #b3d6d2;
@@ -230,20 +227,68 @@
     margin: 0 auto;
     width: 100%;
     height: 452px; }
+    #content_02 .textBox_02 {
+      width: 100vw;
+      height: 120px;
+      background-color: #ecf7f6; }
+      #content_02 .textBox_02 h2 {
+        font-size: 40px;
+        font-family: "YDIYGO340", arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #006769;
+        padding-left: 388px;
+        padding-top: 25px; }
+      #content_02 .textBox_02 h3 {
+        font-size: 2.8vw;
+        font-family: "YDIYGO310", arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #6d6e6f;
+        text-align: center;
+        margin-top: 10px; }
     #content_02 div {
       width: 100%;
-      height: 130px;
+      height: 332px;
       background-color: #ecf7f6; }
     #content_02 ul {
       width: 100%;
-      height: 322px;
+      height: 332px;
       background-color: #8f7; }
       #content_02 ul li {
         width: 25%;
-        height: 322px;
+        height: 332px;
         background-color: #fff;
         float: left; }
-
+      #content_02 ul a {
+        width: 100%;
+        height: 100%; }
+        #content_02 ul a div {
+          width: 100%;
+          height: 60%; }
+        #content_02 ul a .icon_05 {
+          background-size: 72%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url("../../img/src/icon_05.png"); }
+        #content_02 ul a .icon_06 {
+          background-size: 72%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url("../../img/src/icon_06.png"); }
+        #content_02 ul a .icon_07 {
+          background-size: 72%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url("../../img/src/icon_07.png"); }
+        #content_02 ul a .icon_08 {
+          background-size: 72%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url("../../img/src/icon_08.png"); }
+        #content_02 ul a h4 {
+          width: 100%;
+          text-align: center;
+          font-size: 3.2vw;
+          font-family: "YDIYGO330", arial, nanumGothic, "돋움", dotum, sans-serif;
+          line-height: 4;
+          color: #006769; }
   #content_03 {
     max-width: 1200px;
     border-top: 4px solid #b3d6d2;
@@ -269,14 +314,12 @@
       height: 100%;
       float: right;
       background-color: #ccc; }
-
   #content_04 {
     max-width: 1200px;
     width: 100%;
     height: 400px;
     margin: 0 auto;
     background-color: #f0b; }
-
   #articleBox {
     border-top: 2px solid #b3d6d2;
     border-bottom: 2px solid #b3d6d2;
@@ -284,7 +327,6 @@
     height: 400px;
     background-color: #518b8d;
     float: left; }
-
   #articleBox::after {
     content: "";
     display: block;
@@ -295,7 +337,6 @@
     height: 340px;
     margin-top: 22px;
     margin-left: 166px; }
-
   #articleTab {
     border-top: 2px solid #b3d6d2;
     border-bottom: 2px solid #b3d6d2;
@@ -309,7 +350,6 @@
       #articleTab ul li {
         width: 100%;
         height: 33.333334%; }
-
   #footBox {
     max-width: 1200px;
     margin: 0 auto;
@@ -321,5 +361,3 @@
       width: 100%;
       height: 100px;
       background-color: #aaa; } }
-
-/*# sourceMappingURL=pc.css.map */
