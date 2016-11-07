@@ -1,52 +1,64 @@
-//gulpfile.js
-
-//gulp_setting
-
+//gulp modules
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var browserSync =require('browser-sync').create();
-//var jade = require('jade')
-// gulp.task : 임무를 부여
-// gulp.src :  소스 위치
-// gulp.dest : 컴파일 위치
-// gulp.watch : 실시간 변환 확인 
-// .pipe : 관(파이프)
+var jade = require('gulp-jade');
+var browserSync = require('browser-sync').create();
+
+// var minify = require('gulp-minify');
+// var uglify = require('gulp-uglify');
+// var concat = require('gulp-concat');
+
+//gulp directory
+
+//-------------------------sample
+
+//var path = {
+//   css : {src:'./public/src/scss/**/*.scss',
+//         dest:'./public/dist/css'},
+//
+//   jade : {src:'./public/src/jade/**/*.js',
+//           dest:'./public/dist'},
+//
+//   js : {src:'./public/src/js/**/*.js',
+//         dest:'./public/dist/js'}
+//
+//};
 
 
-gulp.task('default',function(){
-   console.log('-------------------------');
-   console.log('gulp 작동상태 이상없음');   
-   console.log('-------------------------');   
-}); //--> 확인용
+//Static server + watching scss/html files
+
+gulp.task('serve',['sass','jade'],function(){
+      browserSync.init({
+         server:"./public/dist"
+      });
+
+      gulp.watch('./public/src/jade/**/*.jade',['jade']);
+      gulp.watch('./public/src/scss/**/*.scss',['sass']);
+      gulp.watch("./public/dist/*.html").on('change',browserSync.reload);
+         //change => 브라우저싱크 변경기능
+});
+
+
+//Compile sass into CSS & auto-inject into browsers
 
 gulp.task('sass',function(){
-   return gulp.src('./src/sass/**/*.scss')
-   .pipe(sass().on('error',sass.logError))
-   //에러 명령어 보는란
-   .pipe(gulp.dest('./dist/css')); //실제 한줄코드
+   return gulp.src("./public/src/scss/*.scss")
+         .pipe(jade({pretty:true}))
+         .pipe(gulp.dest('./public/dist'))
+         .pipe(browserSync.stream());
 });
 
-gulp.task('sass:watch',function(){
-   gulp.watch('./src/sass/**/*.scss',['sass']); 
-   gulp.watch('./dist'); 
+//jade
+gulp.task('jade',function(){
+    return gulp.src('./public/src/jade/**/*.jade')
+         .pipe(jade({pretty:true}))
+         .pipe(gulp.dest('./public/dist'))
+         .pipe(browserSync.stream());
+
 });
 
-gulp.task('browser-sync',function(){
-	browserSync.init({
-		server:{
-			baseDir:"./"
-		}
-	});
-});
 
-//or...
 
-// gulpt.task('browser-sync',function(){
-//	browserSync.init({
-//		proxy: "yourlocal.dev"
-//	})
-//});
-
-gulp.task('default',['sass:watch','browser-sync']);
+gulp.task('defalut',['serve']);
 

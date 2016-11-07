@@ -1,0 +1,306 @@
+@charset "UTF-8";
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  #headBox {
+    width: 100%;
+    height: 80px;
+    background-color: #fff; }
+    #headBox h1 {
+      min-width: 120px;
+      width: 33.3333333vw;
+      height: 80px;
+      left: 50%;
+      position: absolute;
+      margin-left: -16.6666666vw; }
+      #headBox h1 a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../../img/src/logo_640.jpg"); }
+    #headBox #menu {
+      width: 34px;
+      height: 24px;
+      background-color: transparent;
+      float: left;
+      margin-left: 2.7777778vw;
+      margin-top: 15px; }
+      #headBox #menu i {
+        font-size: 50px;
+        color: #518b8d; }
+    #headBox #home {
+      width: 34px;
+      height: 24px;
+      background-color: transparent;
+      margin-right: 2.7777778vw;
+      margin-top: 15px;
+      float: right; }
+      #headBox #home i {
+        font-size: 50px;
+        color: #518b8d; }
+  #navi {
+    display: none; }
+  #addBanner {
+    width: 100%;
+    min-height: 300px;
+    height: 46.875vw;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../img/src/ban_640.jpg"); }
+    #addBanner h2 {
+      position: absolute;
+      margin-top: 8.6666667vw; }
+      #addBanner h2 p {
+        font-size: 3.59375vw;
+        font-family: 'Noto Sans Korean Regular ', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #fff;
+        margin-left: 51.5625vw; }
+        #addBanner h2 p:nth-of-type(1), #addBanner h2 p:nth-of-type(2) {
+          display: block;
+          position: absolute;
+          left: -16%;
+          margin-top: 8.375vw;
+          color: #006769;
+          z-index: 100; }
+        #addBanner h2 p:nth-of-type(2) {
+          margin-top: 12.625vw; }
+    #addBanner h3 {
+      position: absolute;
+      margin-top: 17.8125vw; }
+      #addBanner h3 p {
+        font-weight: 200;
+        font-size: 2.425vw;
+        font-family: 'Noto Sans KR Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #fff;
+        margin-left: 51.5625vw; }
+    #addBanner h4 {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 11.375vw;
+      font-size: 3.125vw;
+      font-family: 'Noto Sans Korean Regular ', arial, nanumGothic, "돋움", dotum, sans-serif;
+      margin-left: 51.5625vw; }
+    #addBanner .whiteBox {
+      width: 50%;
+      height: 100%;
+      float: left; }
+      #addBanner .whiteBox .textBanner {
+        -webkit-opacity: 0.7;
+        -moz-opacity: 0.7;
+        -o-opacity: 0.7;
+        opacity: 0.7;
+        width: 16.0625vw;
+        height: 36.375vw;
+        background-color: #fff;
+        float: right;
+        margin-top: 3.125vw; }
+  #addBanner::after {
+    content: "";
+    display: block;
+    z-index: 100;
+    position: absolute;
+    border: 10px solid #fff;
+    width: 53.125vw;
+    min-height: 220px;
+    height: 34.375vw;
+    margin-top: 3.125vw;
+    margin-left: 34vw; }
+  #content_01 {
+    width: 100%;
+    height: 62.5vw;
+    background-color: #f07; }
+    #content_01 .textBox_01 {
+      width: 100vw;
+      height: calc(100% - 40.375vw);
+      background-color: #fff; }
+      #content_01 .textBox_01 h2 {
+        font-size: 5.25vw;
+        font-family: 'Noto Sans Korean Regular ', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #006769;
+        padding-left: 36vw;
+        padding-top: 4.6875vw; }
+      #content_01 .textBox_01 h3 {
+        font-size: 2.8vw;
+        font-family: 'Noto Sans KR Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #6d6e6f;
+        text-align: center;
+        margin-top: 12.5625px; }
+    #content_01 ul {
+      width: 100vw;
+      min-height: 220px;
+      height: 34.375vw;
+      background-color: #8f7; }
+      #content_01 ul li {
+        width: 25%;
+        height: 40.375vw;
+        background-color: #29aae1;
+        float: left; }
+        #content_01 ul li div {
+          background-color: #fff;
+          text-align: center; }
+        #content_01 ul li div:nth-of-type(1) {
+          width: 100%;
+          height: 40%; }
+        #content_01 ul li div:nth-of-type(2) {
+          font-size: 3.8125vw;
+          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+          height: 20%; }
+        #content_01 ul li div:nth-of-type(3) {
+          display: block;
+          font-size: 2.5vw;
+          font-family: 'Noto Sans KR DemiLight', arial, nanumGothic, "돋움", dotum, sans-serif;
+          height: 40%;
+          color: #6d6e6f; }
+        #content_01 ul li .icon_01 {
+          background-size: 55%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url("../../img/src/icon_01.jpg"); }
+        #content_01 ul li .icon_02 {
+          background-size: 45%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url("../../img/src/icon_02.jpg"); }
+        #content_01 ul li .icon_03 {
+          background-size: 45%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url("../../img/src/icon_03.jpg"); }
+        #content_01 ul li .icon_04 {
+          background-size: 45%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url("../../img/src/icon_04.jpg"); }
+  #content_02 {
+    border-top: 4px solid #b3d6d2;
+    border-bottom: 4px solid #b3d6d2;
+    width: 100%;
+    height: 54.6875vw; }
+    #content_02 .textBox_02 {
+      width: 100vw;
+      height: calc(18.75vw);
+      background-color: #ecf7f6; }
+      #content_02 .textBox_02 h2 {
+        font-size: 5.25vw;
+        font-family: 'Noto Sans Korean Regular ', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #006769;
+        padding-left: 24vw;
+        padding-top: 4.6875vw; }
+      #content_02 .textBox_02 h3 {
+        font-size: 2.8vw;
+        font-family: 'Noto Sans KR Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #6d6e6f;
+        text-align: center;
+        margin-top: 10px; }
+    #content_02 ul {
+      width: 100vw;
+      min-height: 200px;
+      height: 31.25vw;
+      background-color: #ecf7f6; }
+      #content_02 ul li {
+        width: 25%;
+        height: 35.95375vw;
+        background-color: #ecf7f6;
+        float: left; }
+        #content_02 ul li a {
+          width: 100%;
+          height: 100%; }
+          #content_02 ul li a div {
+            width: 100%;
+            height: 60%; }
+          #content_02 ul li a .icon_05 {
+            background-size: 72%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../../img/src/icon_05.png"); }
+          #content_02 ul li a .icon_06 {
+            background-size: 72%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../../img/src/icon_06.png"); }
+          #content_02 ul li a .icon_07 {
+            background-size: 72%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../../img/src/icon_07.png"); }
+          #content_02 ul li a .icon_08 {
+            background-size: 72%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../../img/src/icon_08.png"); }
+          #content_02 ul li a h4 {
+            width: 100%;
+            text-align: center;
+            font-size: 3.2vw;
+            font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+            line-height: 4;
+            color: #006769; }
+  #content_03 {
+    border-top: 4px solid #b3d6d2;
+    border-bottom: 4px solid #b3d6d2;
+    width: 100%;
+    min-height: 320px;
+    height: 62.5vw;
+    background-color: #fff; }
+    #content_03 ul {
+      width: 50%;
+      min-height: 270px;
+      height: 42.1875vw;
+      margin-top: 7.8125vw;
+      float: left; }
+      #content_03 ul li {
+        width: 100%;
+        height: 33.33333334%;
+        background-color: #e9e9e9; }
+    #content_03 div {
+      width: 50%;
+      min-height: 270px;
+      height: 42.1875vw;
+      margin-top: 7.8125vw;
+      float: right;
+      background-color: #ccc; }
+  #articleBox {
+    border-top: 2px solid #b3d6d2;
+    border-bottom: 2px solid #b3d6d2;
+    width: 100%;
+    min-height: 420px;
+    height: 65.625vw;
+    background-color: #518b8d; }
+  #articleBox::after {
+    content: "";
+    display: block;
+    z-index: 100;
+    position: absolute;
+    border: 8px solid #fff;
+    min-width: 560px;
+    width: 87.5vw;
+    min-height: 364px;
+    height: 56.875vw;
+    margin-top: 22px;
+    margin-left: 3.75vw; }
+  #articleTab {
+    border-top: 2px solid #b3d6d2;
+    border-bottom: 2px solid #b3d6d2;
+    width: 100%;
+    min-height: 240px;
+    height: 37.5vw;
+    background-color: #4c4d4f; }
+    #articleTab ul {
+      width: 100%;
+      height: 37.5vw; }
+      #articleTab ul li {
+        width: 100%;
+        height: 33.333334%; }
+  #footBox {
+    width: 100%;
+    min-height: 180px;
+    height: 28.125vw;
+    background-color: #fff; }
+    #footBox .snb {
+      width: 100%;
+      min-height: 60px;
+      height: 9.375vw;
+      background-color: #aaa; } }
