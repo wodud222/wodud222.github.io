@@ -49,13 +49,14 @@
       #navi > ul > li {
         position: relative;
         font-family: 'Noto Sans KR', sans-serif;
+        font-size: 18px;
         float: left;
         font-weight: bold;
         margin-top: 38px;
-        margin-left: 18px;
+        margin-left: 24px;
         color: #518b8d; }
         #navi > ul > li:nth-child(1) {
-          margin-left: 14px; }
+          margin-left: px; }
         #navi > ul > li:last-of-type::after {
           display: none; }
         #navi > ul > li::after {
@@ -65,10 +66,11 @@
           position: absolute;
           width: 10px;
           height: 14px;
-          border-right: 0.8px solid #4f3f3f;
+          border-right: 0.8px solid #6d6e6f;
           margin-left: 10%;
           bottom: 20%;
-          right: 0px;
+          right: 0;
+          top: 6px;
           margin-right: -10px; }
   #navi::after {
     content: "";
@@ -90,45 +92,41 @@
     height: 400px;
     width: 960px;
     position: relative; }
-    #addBanner h2 {
+    #addBanner > .mainBanner {
       position: absolute;
-      margin-top: 90px; }
-      #addBanner h2 p {
-        margin-left: 520px;
-        font-size: 30px;
-        font-family: 'Noto Sans Korean Regular ', arial, nanumGothic, "돋움", dotum, sans-serif;
-        color: #fff; }
-        #addBanner h2 p:nth-of-type(1), #addBanner h2 p:nth-of-type(2) {
-          display: block;
-          position: absolute;
-          left: -17%;
-          margin-top: 80px;
-          color: #006769;
-          z-index: 100; }
-        #addBanner h2 p:nth-of-type(2) {
-          margin-top: 120px; }
-    #addBanner h3 {
-      position: absolute;
-      margin-top: 180px; }
-      #addBanner h3 p {
-        font-weight: 200;
+      width: 100vw;
+      min-height: 190px;
+      height: 32.77777778vw;
+      margin-top: 40px;
+      margin-left: 3.66666667vw;
+      left: 0; }
+      #addBanner > .mainBanner > h2 {
+        margin-top: 56px;
+        margin-left: 480px;
+        font-size: 34px;
+        font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #eae2e3; }
+      #addBanner > .mainBanner > h3 {
         font-size: 20px;
-        font-family: 'Noto Sans KR Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+        font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
         color: #fff;
-        margin-left: 520px; }
-    #addBanner h4 {
-      position: absolute;
-      bottom: 0;
-      margin-bottom: 80px;
-      font-size: 20px;
-      font-family: 'Noto Sans Korean Regular ', arial, nanumGothic, "돋움", dotum, sans-serif;
-      margin-left: 520px; }
-    #addBanner > .whiteBox {
+        margin-left: 480px;
+        margin-top: 14px; }
+      #addBanner > .mainBanner > h4 {
+        margin-top: 14px; }
+        #addBanner > .mainBanner > h4 > a {
+          font-weight: 200;
+          font-size: 24px;
+          font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+          color: #fff;
+          margin-left: 480px;
+          margin-top: 14px; }
+    #addBanner > .leftBox {
       width: 206px;
       height: 100%;
       float: left;
       margin-left: 276px; }
-      #addBanner > .whiteBox > .textBanner {
+      #addBanner > .leftBox > div.textBanner {
         -webkit-opacity: 0.7;
         -moz-opacity: 0.7;
         -o-opacity: 0.7;
@@ -138,6 +136,12 @@
         background-color: #fff;
         margin-top: 58px;
         float: right; }
+        #addBanner > .leftBox > div.textBanner > p {
+          font-size: 36px;
+          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+          text-align: center;
+          padding-top: 106px;
+          padding-left: 0px; }
   #addBanner::after {
     content: "";
     display: block;
@@ -167,7 +171,7 @@
         padding-top: 25px; }
       #content_01 .textBox_01 h3 {
         font-size: 20px;
-        font-family: 'Noto Sans KR Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+        font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
         color: #6d6e6f;
         text-align: center;
         margin-top: 12px; }
@@ -238,7 +242,7 @@
         padding-top: 25px; }
       #content_02 .textBox_02 h3 {
         font-size: 20px;
-        font-family: 'Noto Sans KR Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+        font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
         color: #6d6e6f;
         text-align: center;
         margin-top: 10px; }

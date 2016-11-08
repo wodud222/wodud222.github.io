@@ -46,52 +46,58 @@
 			}
 	}
 	#navi{display:none;}
-	#addBanner{
+	#addBanner{margin:0 auto;
 		width:100%;
 		min-height:300px;
 		height:46.875vw;
 		position:relative;
 		@include back("../../img/src/ban_640.jpg",cover);
-		h2{position:absolute;margin-top:8.6666667vw;
-		
-		p{		&:nth-of-type(1),&:nth-of-type(2){display:block;position:absolute;left:-16%;margin-top:8.375vw;color:$g_font;z-index:100;}
-			&:nth-of-type(2){margin-top:12.625vw;}	
-				
-				@include font340(3.59375vw);
-				color:#fff;
-				margin-left:51.5625vw;}
-			 }
-		h3{ position:absolute;
-			margin-top:17.8125vw;
-			p{
-			font-weight:200;
-			@include font310(2.425vw);
-			color:#fff;
-			margin-left:51.5625vw;}
-			}
-		h4{ position:absolute;
-			bottom:0;
-			margin-bottom:11.375vw;
-			@include font340(3.125vw);
-			margin-left:51.5625vw;;
-		}
+			>.mainBanner{position:absolute;
+						 width:100vw;
+						 min-height:190px;
+						 height:32.77777778vw;
+						 margin-top:5.88888889vw;
+						 margin-left:3.66666667vw;
+						 left:0;
+				>h2{margin-top:2.6666667vw;
+					margin-left:51.5625vw;
+					@include font330(3.425vw);
+					color:#eae2e3} //h2
+					
+					
+				>h3{@include font330(2.8888889vw);
+					color:#fff;
+					margin-left:51.5625vw;} //h3
+					 
 
-		.whiteBox{width:50%;
-				  height:100%;
-				  float:left;
+				>h4{>a{font-weight:200;
+					@include font310(3.125vw);
+					color:#fff;
+					margin-left:51.5625vw;
+					margin-top:3.2vw;}//h4>a
+					
+					}//h4
+			
+			}//div
+		>div.leftBox{width:50%;
+				 	 height:100%;
+				 	 float:left;
 		
-			.textBanner{
+					>div.textBanner{>p{@include font330(32px)
+										  text-align:center;
+										  padding-top:86px;
+										  padding-left:14px;}
 						@include opacity(0.7);
 						width:16.0625vw;
 						height:36.375vw;
 						background-color:#fff;
 						float:right;
 						margin-top:3.125vw;
+		}//.textBanner
+	}//.whiteBox
 
-		}
-	}
+}//#addBanner
 
-}
 	#addBanner::after{
 		@include after();
 		border:10px solid #fff;
@@ -123,8 +129,48 @@
 
 		
 		}//textBox_01
+		.insideBox{	
+					width:100vw;
+					min-height:220px;
+					height:34.375vw;
+					background-color:#8f7;
+	
+			>li{width:25%
+				height:40.375vw;
+   				background-color:$imc;
+   				float:left;
+				.sizeBox{width:50vw;
+						 min-height:360px;
+						 height:50vw;
+					>li{width:100%;
+						height:40%;
+						background-color:#fff;}
+   				.icon_01{
+   					@include back("../../img/src/icon_01.jpg",50%);}
+   				.icon_02{
+   					@include back("../../img/src/icon_02.jpg",40%);}
+   				.icon_03{
+   					@include back("../../img/src/icon_03.jpg",40%);}	
+   				.icon_04{
+   					@include back("../../img/src/icon_04.jpg",40%);}	
+				h4{
+					@include font330(3.8125vw);
+					height:20%;}
+				h5{display:block;
+				   @include font320(2.5vw);
+				   height:40%;
+				   color:$b_font;}//.sizeBox
+   		
+		   		} //sizeBox
+			} //li
 		
+		} //insideBox
 
+
+
+
+		
+//이하 수정내용
 		ul{	width:100vw;
 			min-height:220px;
 			height:34.375vw;
@@ -149,7 +195,7 @@
 		   				@include back("../../img/src/icon_03.jpg",45%)};	
 		   			.icon_04{
 		   				@include back("../../img/src/icon_04.jpg",45%)};		
-		}
+			}
 		}
 
 	}

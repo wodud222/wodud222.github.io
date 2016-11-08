@@ -55,32 +55,37 @@
     position: relative;
     border-top: 2px solid #b3d6d2;
     border-bottom: 2px solid #b3d6d2; }
-    #addBanner > h2 {
+    #addBanner > .mainBanner {
       position: absolute;
-      margin-top: 8.6666667vw; }
-      #addBanner > h2 p:nth-of-type(1), #addBanner > h2 p:nth-of-type(2) {
-        display: none; }
-      #addBanner > h2 p {
-        font-size: 6.66667vw;
+      width: 91.1111111vw;
+      min-height: 190px;
+      height: 52.77777778vw;
+      margin-top: 5.88888889vw;
+      margin-left: 3.66666667vw;
+      left: 0; }
+      #addBanner > .mainBanner > h2 {
+        margin-top: 5.6666667vw;
+        margin-left: 16.6666667vw;
+        font-size: 6.33333vw;
+        font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #eae2e3; }
+      #addBanner > .mainBanner > h3 {
+        font-size: 4.66667vw;
         font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
         color: #fff;
         margin-left: 16.66666667vw; }
-    #addBanner h3 {
-      position: absolute;
-      margin-top: 25.3333333vw; }
-      #addBanner h3 p {
-        font-weight: 200;
-        font-size: 4.66667vw;
-        font-family: 'Noto Sans KR Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
-        color: #fff;
-        margin-left: 16.66666667vw; }
-    #addBanner h4 {
-      position: absolute;
-      bottom: 0;
-      margin-bottom: 10.55555556vw;
-      font-size: 4.44444vw;
-      font-family: 'Noto Sans Korean Regular ', arial, nanumGothic, "돋움", dotum, sans-serif;
-      margin-left: 16.66666667vw; }
+      #addBanner > .mainBanner > h4 {
+        margin-top: 2.8vw; }
+        #addBanner > .mainBanner > h4 > a {
+          font-weight: 200;
+          font-size: 4.66667vw;
+          font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+          color: #fff;
+          margin-left: 16.66666667vw; }
+    #addBanner > div.leftBox {
+      display: none; }
+    #addBanner > div.textBanner {
+      display: none; }
   #addBanner::after {
     content: "";
     display: block;
@@ -88,9 +93,9 @@
     position: absolute;
     border: 6px solid #fff;
     width: 91.1111111vw;
-    min-height: 200px;
-    height: 55.5555556vw;
-    margin-top: 3.88888889vw;
+    min-height: 190px;
+    height: 52.7777778vw;
+    margin-top: 5.888889vw;
     margin-left: 3.6666667vw;
     left: 0; }
   #content_01 {
@@ -109,53 +114,57 @@
       padding-top: 5.555555556vw; }
     #content_01 .textBox_01 h3 {
       font-size: 3.33333vw;
-      font-family: 'Noto Sans KR Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+      font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
       color: #6d6e6f;
       text-align: center;
       margin-top: 10px; }
-    #content_01 ul {
+    #content_01 .insideBox {
       width: 100vw;
       height: 90vw;
-      background-color: #8f7; }
-      #content_01 ul > li {
+      background-color: #fff; }
+      #content_01 .insideBox > li {
         width: 50vw;
-        height: 45vw;
-        background-color: #29aae1;
+        height: 50vw;
+        background-color: #fff;
         float: left; }
-        #content_01 ul > li div {
-          background-color: #fff; }
-        #content_01 ul > li div:nth-of-type(1) {
-          width: 100%;
-          height: 60%; }
-        #content_01 ul > li div:nth-of-type(2) {
-          font-size: 6.66667vw;
-          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
-          text-align: center;
-          line-height: 2.5;
-          height: 40%;
-          color: #006769; }
-        #content_01 ul > li div:nth-of-type(3) {
-          display: none; }
-        #content_01 ul > li .icon_01 {
-          background-size: 50%;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-image: url("../../img/src/icon_01.jpg"); }
-        #content_01 ul > li .icon_02 {
-          background-size: 40%;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-image: url("../../img/src/icon_02.jpg"); }
-        #content_01 ul > li .icon_03 {
-          background-size: 40%;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-image: url("../../img/src/icon_03.jpg"); }
-        #content_01 ul > li .icon_04 {
-          background-size: 40%;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-image: url("../../img/src/icon_04.jpg"); }
+        #content_01 .insideBox > li .sizeBox {
+          width: 50vw;
+          min-height: 360px;
+          height: 50vw; }
+          #content_01 .insideBox > li .sizeBox > li {
+            width: 100%;
+            height: 40%;
+            background-color: #fff; }
+          #content_01 .insideBox > li .sizeBox .icon_01 {
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../../img/src/icon_01.jpg"); }
+          #content_01 .insideBox > li .sizeBox .icon_02 {
+            background-size: 40%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../../img/src/icon_02.jpg"); }
+          #content_01 .insideBox > li .sizeBox .icon_03 {
+            background-size: 40%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../../img/src/icon_03.jpg"); }
+          #content_01 .insideBox > li .sizeBox .icon_04 {
+            background-size: 40%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../../img/src/icon_04.jpg"); }
+          #content_01 .insideBox > li .sizeBox h4 {
+            height: 60%;
+            font-size: 6.66667vw;
+            font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+            text-align: center;
+            color: #006769;
+            background-color: #fff; }
+          #content_01 .insideBox > li .sizeBox h5 {
+            display: none;
+            height: 40%; }
   #content_02 {
     border-top: 2px solid #b3d6d2;
     border-bottom: 2px solid #b3d6d2;
@@ -173,7 +182,7 @@
         padding-top: 5.555555556vw; }
       #content_02 .textBox_02 h3 {
         font-size: 3.33333vw;
-        font-family: 'Noto Sans KR Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+        font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
         color: #6d6e6f;
         text-align: center;
         margin-top: 10px; }

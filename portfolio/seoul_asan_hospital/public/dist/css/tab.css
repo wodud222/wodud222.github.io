@@ -42,6 +42,7 @@
   #navi {
     display: none; }
   #addBanner {
+    margin: 0 auto;
     width: 100%;
     min-height: 300px;
     height: 46.875vw;
@@ -50,44 +51,37 @@
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("../../img/src/ban_640.jpg"); }
-    #addBanner h2 {
+    #addBanner > .mainBanner {
       position: absolute;
-      margin-top: 8.6666667vw; }
-      #addBanner h2 p {
-        font-size: 3.59375vw;
-        font-family: 'Noto Sans Korean Regular ', arial, nanumGothic, "돋움", dotum, sans-serif;
+      width: 100vw;
+      min-height: 190px;
+      height: 32.77777778vw;
+      margin-top: 5.88888889vw;
+      margin-left: 3.66666667vw;
+      left: 0; }
+      #addBanner > .mainBanner > h2 {
+        margin-top: 2.6666667vw;
+        margin-left: 51.5625vw;
+        font-size: 3.425vw;
+        font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #eae2e3; }
+      #addBanner > .mainBanner > h3 {
+        font-size: 2.88889vw;
+        font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
         color: #fff;
         margin-left: 51.5625vw; }
-        #addBanner h2 p:nth-of-type(1), #addBanner h2 p:nth-of-type(2) {
-          display: block;
-          position: absolute;
-          left: -16%;
-          margin-top: 8.375vw;
-          color: #006769;
-          z-index: 100; }
-        #addBanner h2 p:nth-of-type(2) {
-          margin-top: 12.625vw; }
-    #addBanner h3 {
-      position: absolute;
-      margin-top: 17.8125vw; }
-      #addBanner h3 p {
+      #addBanner > .mainBanner > h4 > a {
         font-weight: 200;
-        font-size: 2.425vw;
-        font-family: 'Noto Sans KR Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+        font-size: 3.125vw;
+        font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
         color: #fff;
-        margin-left: 51.5625vw; }
-    #addBanner h4 {
-      position: absolute;
-      bottom: 0;
-      margin-bottom: 11.375vw;
-      font-size: 3.125vw;
-      font-family: 'Noto Sans Korean Regular ', arial, nanumGothic, "돋움", dotum, sans-serif;
-      margin-left: 51.5625vw; }
-    #addBanner .whiteBox {
+        margin-left: 51.5625vw;
+        margin-top: 3.2vw; }
+    #addBanner > div.leftBox {
       width: 50%;
       height: 100%;
       float: left; }
-      #addBanner .whiteBox .textBanner {
+      #addBanner > div.leftBox > div.textBanner {
         -webkit-opacity: 0.7;
         -moz-opacity: 0.7;
         -o-opacity: 0.7;
@@ -97,6 +91,12 @@
         background-color: #fff;
         float: right;
         margin-top: 3.125vw; }
+        #addBanner > div.leftBox > div.textBanner > p {
+          font-size: 32px;
+          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+          text-align: center;
+          padding-top: 86px;
+          padding-left: 14px; }
   #addBanner::after {
     content: "";
     display: block;
@@ -124,10 +124,58 @@
         padding-top: 4.6875vw; }
       #content_01 .textBox_01 h3 {
         font-size: 2.8vw;
-        font-family: 'Noto Sans KR Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+        font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
         color: #6d6e6f;
         text-align: center;
         margin-top: 12.5625px; }
+    #content_01 .insideBox {
+      width: 100vw;
+      min-height: 220px;
+      height: 34.375vw;
+      background-color: #8f7; }
+      #content_01 .insideBox > li {
+        width: 50vw;
+        height: 50vw;
+        background-color: #fff;
+        float: left; }
+        #content_01 .insideBox > li .sizeBox {
+          width: 50vw;
+          min-height: 360px;
+          height: 50vw; }
+          #content_01 .insideBox > li .sizeBox > li {
+            width: 100%;
+            height: 40%;
+            background-color: #fff; }
+          #content_01 .insideBox > li .sizeBox .icon_01 {
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../../img/src/icon_01.jpg"); }
+          #content_01 .insideBox > li .sizeBox .icon_02 {
+            background-size: 40%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../../img/src/icon_02.jpg"); }
+          #content_01 .insideBox > li .sizeBox .icon_03 {
+            background-size: 40%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../../img/src/icon_03.jpg"); }
+          #content_01 .insideBox > li .sizeBox .icon_04 {
+            background-size: 40%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../../img/src/icon_04.jpg"); }
+          #content_01 .insideBox > li .sizeBox h4 {
+            height: 60%;
+            font-size: 6.66667vw;
+            font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+            text-align: center;
+            color: #006769;
+            background-color: #fff; }
+          #content_01 .insideBox > li .sizeBox h5 {
+            display: none;
+            height: 40%; }
     #content_01 ul {
       width: 100vw;
       min-height: 220px;
@@ -151,7 +199,7 @@
         #content_01 ul li div:nth-of-type(3) {
           display: block;
           font-size: 2.5vw;
-          font-family: 'Noto Sans KR DemiLight', arial, nanumGothic, "돋움", dotum, sans-serif;
+          font-family: 'Noto Sans Korean DemiLight', arial, nanumGothic, "돋움", dotum, sans-serif;
           height: 40%;
           color: #6d6e6f; }
         #content_01 ul li .icon_01 {
@@ -191,7 +239,7 @@
         padding-top: 4.6875vw; }
       #content_02 .textBox_02 h3 {
         font-size: 2.8vw;
-        font-family: 'Noto Sans KR Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+        font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
         color: #6d6e6f;
         text-align: center;
         margin-top: 10px; }
