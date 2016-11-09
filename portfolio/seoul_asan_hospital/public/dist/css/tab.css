@@ -134,48 +134,49 @@
       height: 34.375vw;
       background-color: #8f7; }
       #content_01 .insideBox > li {
-        width: 50vw;
-        height: 50vw;
-        background-color: #fff;
+        width: 25%;
+        height: 40.375vw;
+        background-color: #518b8d;
         float: left; }
         #content_01 .insideBox > li .sizeBox {
-          width: 50vw;
-          min-height: 360px;
-          height: 50vw; }
+          width: 100%; }
           #content_01 .insideBox > li .sizeBox > li {
             width: 100%;
             height: 40%;
             background-color: #fff; }
           #content_01 .insideBox > li .sizeBox .icon_01 {
-            background-size: 50%;
+            background-size: 60%;
             background-repeat: no-repeat;
             background-position: center;
             background-image: url("../../img/src/icon_01.jpg"); }
           #content_01 .insideBox > li .sizeBox .icon_02 {
-            background-size: 40%;
+            background-size: 45%;
             background-repeat: no-repeat;
             background-position: center;
             background-image: url("../../img/src/icon_02.jpg"); }
           #content_01 .insideBox > li .sizeBox .icon_03 {
-            background-size: 40%;
+            background-size: 45%;
             background-repeat: no-repeat;
             background-position: center;
             background-image: url("../../img/src/icon_03.jpg"); }
           #content_01 .insideBox > li .sizeBox .icon_04 {
-            background-size: 40%;
+            background-size: 45%;
             background-repeat: no-repeat;
             background-position: center;
             background-image: url("../../img/src/icon_04.jpg"); }
           #content_01 .insideBox > li .sizeBox h4 {
-            height: 60%;
-            font-size: 6.66667vw;
+            font-size: 3.8125vw;
             font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+            height: 20%;
             text-align: center;
-            color: #006769;
-            background-color: #fff; }
+            margin-top: 15px; }
           #content_01 .insideBox > li .sizeBox h5 {
-            display: none;
-            height: 40%; }
+            display: block;
+            font-size: 2.5vw;
+            font-family: 'Noto Sans Korean DemiLight', arial, nanumGothic, "돋움", dotum, sans-serif;
+            height: 40%;
+            color: #6d6e6f;
+            text-align: center; }
     #content_01 ul {
       width: 100vw;
       min-height: 220px;

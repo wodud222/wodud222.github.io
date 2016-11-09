@@ -28,26 +28,26 @@ var browserSync = require('browser-sync').create();
 
 //Static server + watching scss/html files
 
-gulp.task('serve',['sass','jade'],function(){
+gulp.task('serve', ['sass','jade'], function(){
       browserSync.init({
          server:"./public/dist"
       });
 
       gulp.watch('./public/src/jade/**/*.jade',['jade']);
       gulp.watch('./public/src/scss/**/*.scss',['sass']);
-      gulp.watch("./public/dist/*.html").on('change',browserSync.reload);
+      gulp.watch("./public/dist/*.html").on('change',browserSync.reload );
          //change => 브라우저싱크 변경기능
 });
 
 
 //Compile sass into CSS & auto-inject into browsers
 
-gulp.task('sass',function(){
-   return gulp.src("./public/src/scss/**/*.scss")
-         .pipe(sass())
-         .pipe(gulp.dest('./public/dist/css'))
-         .pipe(browserSync.stream());
-});
+// gulp.task('sass',function(){
+//    return gulp.src("./public/src/scss/**/*.scss")
+//          .pipe(sass())
+//          .pipe(gulp.dest('./public/dist/css'))
+//          .pipe(browserSync.stream());
+// });
 
 //jade
 gulp.task('jade',function(){
@@ -61,7 +61,8 @@ gulp.task('jade',function(){
 gulp.task('sass', function() {
    return gulp.src('./public/src/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./public/dist/css'));
+    .pipe(gulp.dest('./public/dist/css'))
+    .pipe(browserSync.stream());
 });
 
 gulp.task('default',['serve']);
