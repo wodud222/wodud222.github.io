@@ -4,21 +4,21 @@
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
-OutlineFileName:C:\Users\301\Desktop\Font\font\fender_font.zip
+OutlineFileName:D:\soul\wodud222.github.io\fender\fender\Font\font\fender_font.zip
 FileModTime:1478075640
 %EndFont
 
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
-OutlineFileName:C:\Users\301\Desktop\Font\font\Open_Sans.zip
+OutlineFileName:D:\soul\wodud222.github.io\fender\fender\Font\font\Open_Sans.zip
 FileModTime:1478075640
 %EndFont
 
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
-OutlineFileName:C:\Users\301\Desktop\Font\font\Open_Sans\LICENSE.txt
+OutlineFileName:D:\soul\wodud222.github.io\fender\fender\Font\font\Open_Sans\LICENSE.txt
 FileModTime:1296572400
 %EndFont
 
@@ -32,7 +32,7 @@ FullName:Open Sans Bold
 MenuName:Open Sans
 StyleBits:2
 WritingScript:Roman
-OutlineFileName:C:\Users\301\Desktop\Font\font\Open_Sans\OpenSans-Bold.ttf
+OutlineFileName:D:\soul\wodud222.github.io\fender\fender\Font\font\Open_Sans\OpenSans-Bold.ttf
 DataFormat:sfntData
 FileLength:224592
 FileModTime:1296572400
@@ -51,7 +51,7 @@ FullName:Open Sans Bold Italic
 MenuName:Open Sans
 StyleBits:3
 WritingScript:Roman
-OutlineFileName:C:\Users\301\Desktop\Font\font\Open_Sans\OpenSans-BoldItalic.ttf
+OutlineFileName:D:\soul\wodud222.github.io\fender\fender\Font\font\Open_Sans\OpenSans-BoldItalic.ttf
 DataFormat:sfntData
 FileLength:213292
 FileModTime:1296572400
@@ -70,7 +70,7 @@ FullName:Open Sans Extrabold
 MenuName:Open Sans Extrabold
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:C:\Users\301\Desktop\Font\font\Open_Sans\OpenSans-ExtraBold.ttf
+OutlineFileName:D:\soul\wodud222.github.io\fender\fender\Font\font\Open_Sans\OpenSans-ExtraBold.ttf
 DataFormat:sfntData
 FileLength:222584
 FileModTime:1296572400
@@ -89,7 +89,7 @@ FullName:Open Sans Extrabold Italic
 MenuName:Open Sans Extrabold
 StyleBits:1
 WritingScript:Roman
-OutlineFileName:C:\Users\301\Desktop\Font\font\Open_Sans\OpenSans-ExtraBoldItalic.ttf
+OutlineFileName:D:\soul\wodud222.github.io\fender\fender\Font\font\Open_Sans\OpenSans-ExtraBoldItalic.ttf
 DataFormat:sfntData
 FileLength:213420
 FileModTime:1296572400
@@ -108,7 +108,7 @@ FullName:Open Sans Italic
 MenuName:Open Sans
 StyleBits:1
 WritingScript:Roman
-OutlineFileName:C:\Users\301\Desktop\Font\font\Open_Sans\OpenSans-Italic.ttf
+OutlineFileName:D:\soul\wodud222.github.io\fender\fender\Font\font\Open_Sans\OpenSans-Italic.ttf
 DataFormat:sfntData
 FileLength:212896
 FileModTime:1296572400
@@ -127,7 +127,7 @@ FullName:Open Sans Light
 MenuName:Open Sans Light
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:C:\Users\301\Desktop\Font\font\Open_Sans\OpenSans-Light.ttf
+OutlineFileName:D:\soul\wodud222.github.io\fender\fender\Font\font\Open_Sans\OpenSans-Light.ttf
 DataFormat:sfntData
 FileLength:222412
 FileModTime:1296572400
@@ -146,7 +146,7 @@ FullName:Open Sans Light Italic
 MenuName:Open Sans Light
 StyleBits:1
 WritingScript:Roman
-OutlineFileName:C:\Users\301\Desktop\Font\font\Open_Sans\OpenSans-LightItalic.ttf
+OutlineFileName:D:\soul\wodud222.github.io\fender\fender\Font\font\Open_Sans\OpenSans-LightItalic.ttf
 DataFormat:sfntData
 FileLength:213128
 FileModTime:1296572400
@@ -165,7 +165,7 @@ FullName:Open Sans
 MenuName:Open Sans
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:C:\Users\301\Desktop\Font\font\Open_Sans\OpenSans-Regular.ttf
+OutlineFileName:D:\soul\wodud222.github.io\fender\fender\Font\font\Open_Sans\OpenSans-Regular.ttf
 DataFormat:sfntData
 FileLength:217360
 FileModTime:1296572400
@@ -184,7 +184,7 @@ FullName:Open Sans Semibold
 MenuName:Open Sans Semibold
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:C:\Users\301\Desktop\Font\font\Open_Sans\OpenSans-Semibold.ttf
+OutlineFileName:D:\soul\wodud222.github.io\fender\fender\Font\font\Open_Sans\OpenSans-Semibold.ttf
 DataFormat:sfntData
 FileLength:221328
 FileModTime:1296572400
@@ -203,7 +203,7 @@ FullName:Open Sans Semibold Italic
 MenuName:Open Sans Semibold
 StyleBits:1
 WritingScript:Roman
-OutlineFileName:C:\Users\301\Desktop\Font\font\Open_Sans\OpenSans-SemiboldItalic.ttf
+OutlineFileName:D:\soul\wodud222.github.io\fender\fender\Font\font\Open_Sans\OpenSans-SemiboldItalic.ttf
 DataFormat:sfntData
 FileLength:212820
 FileModTime:1296572400

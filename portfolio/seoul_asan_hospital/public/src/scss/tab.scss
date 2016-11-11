@@ -2,7 +2,7 @@
 
 @import "_mixin";
 
-@media screen and (min-width:640px) and (max-width:959px){
+@media screen and (min-width:640px) and (max-width:959px) {
 	#headBox{
 		width:100%;
 		height:80px;
@@ -26,7 +26,7 @@
 			  float:left;
 			  margin-left:2.7777778vw;
 			  margin-top:15px;
-			  
+			   
 			  i{
 			  	font-size:50px;
 			  	color:$ic;
@@ -61,20 +61,22 @@
 						 left:0;
 				>h2{margin-top:2.6666667vw;
 					margin-left:51.5625vw;
-					@include font330(3.425vw);
+					@include font330(3.025vw);
 					color:#eae2e3} //h2
 					
 					
-				>h3{@include font330(2.8888889vw);
+				>h3{@include font310(2.425vw);
 					color:#fff;
+					margin-top:1.5vw;
 					margin-left:51.5625vw;} //h3
 					 
 
-				>h4{>a{font-weight:200;
-					@include font310(3.125vw);
+				>h4{margin-top:1.5vw;
+					>a{font-weight:200;
+					@include font330(3.125vw);
 					color:#fff;
 					margin-left:51.5625vw;
-					margin-top:3.2vw;}//h4>a
+					}//h4>a
 					
 					}//h4
 			
@@ -96,7 +98,7 @@
 		}//.textBanner
 	}//.whiteBox
 
-}//#addBanner
+	}//#addBanner
 
 	#addBanner::after{
 		@include after();
@@ -110,7 +112,7 @@
 	#content_01{
 		width:100%;
 		height:62.5vw;
-		background-color:#f07;
+		background-color:#fff;
 		.textBox_01{
 					width:100vw;
 					height:calc(100% - 40.375vw);
@@ -133,73 +135,43 @@
 					width:100vw;
 					min-height:220px;
 					height:34.375vw;
-					background-color:#8f7;
 	
 			>li{width:25%;
 				height:40.375vw;
-   				background-color:$ic;
+   				background-color:#fff;
    				float:left;
 				.sizeBox{width:100%;
+						 height:100%;					
 					>li{width:100%;
-						height:40%;
+						&:nth-of-type(1){height:40%;}
 						background-color:#fff;}
-   				.icon_01{
-   					@include back("../../img/src/icon_01.jpg",60%);}
-   				.icon_02{
-   					@include back("../../img/src/icon_02.jpg",45%);}
-   				.icon_03{
-   					@include back("../../img/src/icon_03.jpg",45%);}	
-   				.icon_04{
-   					@include back("../../img/src/icon_04.jpg",45%);}	
+	   				>.icon_01{
+	   					@include back("../img/src/icon_01.jpg",60%);}
+	   				>.icon_02{
+	   					@include back("../img/src/icon_02.jpg",45%);}
+	   				>.icon_03{
+	   					@include back("../img/src/icon_03.jpg",45%);}	
+	   				>.icon_04{
+	   					@include back("../img/src/icon_04.jpg",45%);}
 				h4{
 					@include font330(3.8125vw);
-					height:20%;
-					text-align:center;
-					margin-top:15px;}
+					height:auto;
+					text-align:center; 
+					margin-top:10px;}
+				
 				h5{display:block;
 				   @include font320(2.5vw);
 				   height:40%;
 				   color:$b_font;
-				   text-align:center;}//.sizeBox
+				   text-align:center;
+				   margin-top:20px;}//h5
    		
 		   		} //sizeBox
 			} //li
 		
 		} //insideBox
+	}//#content_01
 
-
-
-
-		
-//이하 수정내용
-		ul{	width:100vw;
-			min-height:220px;
-			height:34.375vw;
-			background-color:#8f7;
-		
-		li{width:25%;
-		   height:40.375vw;
-		   background-color:$imc;
-		   float:left;
-		   			div{background-color:#fff;text-align:center;}
-		   			div:nth-of-type(1){width:100%;
-		   				height:40%
-		   				}
-		   			div:nth-of-type(2){@include font330(3.8125vw);height:20%;}
-		   			div:nth-of-type(3){display:block;@include font320(2.5vw);height:40%;color:$b_font;}
-
-		   			.icon_01{
-		   				@include back("../../img/src/icon_01.jpg",55%)};
-		   			.icon_02{
-		   				@include back("../../img/src/icon_02.jpg",45%)};
-		   			.icon_03{
-		   				@include back("../../img/src/icon_03.jpg",45%)};	
-		   			.icon_04{
-		   				@include back("../../img/src/icon_04.jpg",45%)};		
-			}
-		}
-
-	}
 	#content_02{
 		@include b-set(4px);
 		width:100%;
@@ -213,15 +185,15 @@
 					color:$g_font;
 					padding-left:24vw;
 					padding-top:4.6875vw;
+					}//h2
 				
-				};//h2
 				
 				h3{
 					@include font310(2.8vw);
 					color:$b_font;
 					text-align:center;
 					margin-top:10px;}
-			};
+					} //.textBox_02
 
 		ul{
 			width:100vw;
@@ -235,9 +207,9 @@
 			background-color:$nav;
 			float:left;
 			
-			a{width:100%;height:100%;
+			a{width:100%;height:100%; display: block;
 				
-				div{width:100%;height:60%;} //div
+				div{width:100%; height:60%;} //div
 					
 					.icon_05{@include back("../../img/src/icon_05.png",72%);}
 					.icon_06{@include back("../../img/src/icon_06.png",72%);}
@@ -246,23 +218,25 @@
 			
 				h4{width:100%;
 					text-align:center;
-					@include font330(3.2vw);line-height:4;
+					@include font330(3.2vw); line-height:4;
 					color:$g-font;}
 						
 					}//a
-				
-
 				}//li
 			}//ul
 		}//#content_02
+
 	#content_03{
 		@include b-set(4px);
 		width:100%;
 		min-height:320px;
 		height:62.5vw;
 		background:{color:#fff}
-		ul{
-			width:50%;
+		h2{@include font340(5.25vw);
+			color:$g_font;
+			padding-left:24vw;
+			padding-top:4.6875vw;}
+		ul{	width:50%;
 			min-height:270px;
 			height:42.1875vw;
 			margin-top:7.8125vw;
@@ -270,7 +244,7 @@
 		li{ width:100%;
 			height:33.33333334%;
 			background-color:$e9;}
-		}
+		}// ul
 		div{width:50%;
 			min-height:270px;
 			height:42.1875vw;
@@ -278,17 +252,17 @@
 			float:right;
 			background-color:#ccc;
 			
-		}
-	}
+		} // div
+	} // #content_03
+
 	#articleBox{
 		@include b-set();
 		width:100%;
 		min-height:420px;
 		height:65.625vw;
-		background:{color:$ic;};
+		background:{color:$ic;}
 	}
-	#articleBox::after{
-		
+	#articleBox::after{		
 		@include after();
 		border:8px solid #fff;
 		min-width:560px;
@@ -297,9 +271,7 @@
 		height:56.875vw;
 		margin-top:22px;
 		margin-left:3.75vw;
-
-
-	}
+	}// #articleBox::after
 	
 	#articleTab{
 		@include b-set();
@@ -308,9 +280,9 @@
 		height:37.5vw;
 		background:{color:$blc};
 		ul{width:100%;height:37.5vw;
-		li{width:100%;height:33.333334%;}
-	}
-}
+			li{width:100%;height:33.333334%;}
+		}
+	}// #articleTab
 	
 	#footBox{
 		width:100%;
@@ -322,7 +294,7 @@
 			min-height:60px;
 			height:9.375vw;
 			background-color:#aaa;}
-	} 
+	} // #footBox 
 
 	
-}//media screen
+}//media screen  
