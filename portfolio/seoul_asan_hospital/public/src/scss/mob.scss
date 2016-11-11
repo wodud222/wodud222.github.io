@@ -102,7 +102,7 @@
 		min-height:190px;
 		height:52.7777778vw;
 		margin-top:5.888889vw;
-		margin-left:3.6666667vw;
+		margin-left:1.6666667vw;
 		left:0;
 
 	}//addBanner::after
@@ -244,8 +244,7 @@
 		>div.imgBox{width:100%;
 					min-height:170px;
 					height:47.22222222vw;
-					background-color:#fab;
-					@include back("../img/src/donation_pic.jpg",50%);}
+					@include back("../img/src/donation_pic.png",60%);}
 		
 		>ul{width:100vw;
 			min-height:200px;
@@ -253,39 +252,59 @@
 				>li{
 					width:100vw;
 					height:33.33333334%;
-					background-color:$e9;
 					@include font340(5.3333334vw);
-					>ul{width:20%;
+					>ul{width:30%;
 						height:100%;
-						background-color:#f0b;
 						float:left;
 						>li{
 							float:left;
-							width:80%;
+							width:100%;
 							height:100%;
-							background-color:#fa0;
 							box-sizing:border-box; 
-							padding-right:0;
-						&.con03_icon01{@include back("../img/src/beautiful_icon.jpg",70%);}
-						&.con03_icon02{@include back("../img/src/center_icon.jpg",70%);}
-						&.con03_icon03{@include back("../img/src/story_icon.jpg",70%);} 
+						&.con03_icon01{@include back("../img/src/beautiful_icon.jpg",30%);}
+						&.con03_icon02{@include back("../img/src/center_icon.jpg",30%);}
+						&.con03_icon03{@include back("../img/src/story_icon.jpg",30%);} 
 							}
+					}//_ul 
 					>h3{width:70%;
 						height:100%;
-						float:left;
-						line-height:3.5;
-						margin-top:30px;}
-					}//_ul 
+						padding-top:6.2222222vw;
+						@include font330(4.66666667vw);
+						color:$ic;}
 		}
 	}//content_03
 }
+	
+#content_04{width:100%;
+		   min-height:510px;
+		   height:141.66666667vw;
+
+		   &::after{
+						@include after();
+						border:6px solid #fff;
+						width:91.1111111vw;
+						height:72.2222222vw;
+						margin-top:3.88888889vw;
+						margin-left:1.7777778vw;
+		   			}
+
 	#articleBox{
 		@include b-set();
 		width:100%;
 		min-height:300px;
 		height:83.33333333vw;
 		background-color:$ic;
+	>.art_textBox{@include p_abs(300);
+				 width:91.1111111vw;
+				 height:72.2222222vw;
+				 margin-top:3.88888889vw;
+				 margin-left:1.77777778vw;
+				 background-color:#f77;
+
+				}
+
 	}//articleBox
+
 	#articleBox::after{
 						@include after();
 						border:6px solid #fff;
@@ -304,8 +323,6 @@
 		min-height:210px;
 		height:58.33333333vw;
 		background-color:$blc;
-		padding-left:100px;
-		box-sizing:border-box;
 		
 		ul{width:100%;height:100%;
 			>li{width:100%;
@@ -313,6 +330,8 @@
 			}
 	}//ul
 }//articleTab
+
+}
 	
 	#footBox{
 		width:100%;

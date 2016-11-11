@@ -31,7 +31,7 @@
 			a{display:block;
 			  width:100%;
 			  height:100%;
-			  @include back("../../img/src/logo_640.jpg",100%);
+			  @include back("../img/src/logo_640.jpg",100%);
 
 		} // #headBox > h1 >a
 	
@@ -73,10 +73,11 @@
 					height:100px;
 					background-color:$lgc;
 					left:50%;
-					top:7%;
+					top:7.5%;
 					margin-left:-50vw}
 	#addBanner{
-		@include back("../../img/src/ban_640.jpg",cover);
+		@include back("../img/src/ban_640.jpg",cover);
+		@include b-set(2px);
 		margin:0 auto;
 		height:400px;
 		width:960px;
@@ -130,6 +131,7 @@
 	
 	#addBanner::after{
 		@include after();
+		@include b-set(2px);
 	 	border:10px solid #fff;
 	 	width:506px;
 	 	height:306px;
@@ -148,7 +150,7 @@
 			height:160px;
 			background-color:#fff;
 			h2{
-			@include font340(40px);
+			@include font340(36px);
 			color:$g_font;
 			padding-left:388px;
 			padding-top:25px}
@@ -179,13 +181,13 @@
 						&:nth-of-type(1){width:100%;height:40%;}
 						}//li
    				.icon_01{
-   					@include back("../../img/src/icon_01.jpg",60%);}
+   					@include back("../img/src/icon_01.jpg",60%);}
    				.icon_02{
-   					@include back("../../img/src/icon_02.jpg",45%);}
+   					@include back("../img/src/icon_02.jpg",45%);}
    				.icon_03{
-   					@include back("../../img/src/icon_03.jpg",45%);}	
+   					@include back("../img/src/icon_03.jpg",45%);}	
    				.icon_04{
-   					@include back("../../img/src/icon_04.jpg",45%);}
+   					@include back("../img/src/icon_04.jpg",45%);}
 				h4{
    				@include font330(34px);
    				text-align:center;
@@ -205,7 +207,7 @@
 	}
 	#content_02{
 		@include max;
-		@include b-set(4px);
+		@include b-set(2px);
 		margin:0 auto;
 		width:960px;
 		height:452px;
@@ -215,7 +217,7 @@
 			height:120px;
 			background-color:$lgc;
 
-			h2{	@include font340(40px);
+			h2{	@include font340(36px);
 			color:$g_font;
 			padding-left:276px;
 			padding-top:25px;
@@ -245,10 +247,10 @@
 				
 				div{width:100%;height:60%;} //div
 					
-					.icon_05{@include back("../../img/src/icon_05.png",72%);}
-					.icon_06{@include back("../../img/src/icon_06.png",72%);}
-					.icon_07{@include back("../../img/src/icon_07.png",72%);}
-					.icon_08{@include back("../../img/src/icon_08.png",72%);}
+					.icon_05{@include back("../img/src/icon_05.png",72%);}
+					.icon_06{@include back("../img/src/icon_06.png",72%);}
+					.icon_07{@include back("../img/src/icon_07.png",72%);}
+					.icon_08{@include back("../img/src/icon_08.png",72%);}
 			
 				h4{width:100%;height:40%;
 					text-align:center;
@@ -268,7 +270,7 @@
 		background:{color:#fff};
 		margin:0 auto;
 		>h2{width:100%;height:74px;text-align:center;
-			line-height:1.8;@include font340(40px)}
+			line-height:1.8;@include font340(36px);padding-top:25px;}
 		.con03_leftBox{ @include max;
 			width:50%;
 			height:370px;
@@ -277,12 +279,13 @@
 		>li{ @include max;
 			width:100%;
 			height:33.33333334%;
-			>ul{width:20%;height:100%;widht:88px;
+			padding-left:40px;
+			>ul{width:20%;height:100%;width:88px;
 				float:left;padding-left:32px;
 				>li{width:100%;height:100%;
-				&.con03_icon01{@include back("../img/src/beautiful_icon.jpg",70%);}
-				&.con03_icon02{@include back("../img/src/center_icon.jpg",70%);}
-				&.con03_icon03{@include back("../img/src/story_icon.jpg",70%);} 
+				&.con03_icon01{@include back("../img/src/beautiful_icon.jpg",90%);}
+				&.con03_icon02{@include back("../img/src/center_icon.jpg",90%);}
+				&.con03_icon03{@include back("../img/src/story_icon.jpg",90%);} 
 					}
 				}
 			>h3{float:left;line-height:5.1;@include font330(24px);padding-left:20px;}
@@ -299,7 +302,7 @@
 	}// #content_03
 
 	#content_04{@include max;
-				width:100%;
+				width:960px;
 				height:400px;
 				margin:0 auto;
 				background-color:#f0b;
@@ -310,15 +313,15 @@
 	 	width:500px;
 	 	height:340px;
 	 	margin-top:22px;
-	 	margin-left:166px;}
+	 	margin-left:36px;}
 
 	#articleBox{
-				@include b-set();
+				@include b-set(2px);
 				@include p_rel;
 				width:50%;
 				height:400px;
 				float:left;
-				padding-left:320px;
+				padding-left:200px;
 				box-sizing:border-box;
 				@include back("../img/src/united_forign.jpg",cover);
 	// &::after{@include after();
@@ -350,41 +353,139 @@
 					
 	}// #articleBox
 	#articleTab{
-		@include b-set();
+		@include b-set(1px);
 		@include padding(30px,50px,14px,102px);
 		width:50%;
 		height:400px;
-		background-color:$blc;
+
 		float:right;
 		box-sizing:border-box;
+		background-color:$blc;
 		ul{width:356px;
 			height:328px;
 			
 
-			li{	width:100%;
-				height:33.333334%;
-				>ul{
-					>li{&:nth-of-type{width:52px;height:100%;background-color:#fab;}
-						&.artTab_01{@include back("../img/src/earth.jpg",100%);}
-						&.artTab_02{@include back("../img/src/awards.jpg",100%);}
-						&.artTab_03{@include back("../img/src/robot.jpg",100%);}	
-							}
-					}
+		li{	width:100%;
+			height:33.333334%;
+			color:#efefef;
+			padding-top:25px;
+			background-color:$blc;
+			span{width:52px;height:52px;
+				float:left;
+			&.artTab_icon_01{@include back("../img/src/awards.png",100%);}
+			&.artTab_icon_02{@include back("../img/src/earth.png",100%);
+							 @include font310(20px);}
+			&.artTab_icon_03{@include back("../img/src/robot.png",100%);}
+			
+
+			}
+			p{width:280px;@include font320(18px);float:left;padding-left:30px;@include font330(20px);color:#efefef;}
+			a{display:block;width:calc(100%-52px);float:right;padding-top:20px;@include font310(18px);color:#efefef;}
+
 				}
-		}//ul
-	}//#articleTab
-	
+				
+		}
+}
 	#footBox{
 		@include max;
 		margin:0 auto;
-		width:100%;
+		width:960px;
 		height:310px;
-		background-color:#eee;
-		.snb{margin:0 auto;
+		background-color:#fff;
+		.snb{@include b-set(1px);
+			margin:0 auto;
 			width:100%;
 			height:100px;
-			background-color:#aaa;}//.snb
-	 
-	  }//#footBox
+			background-color:#efefef;
+			position:relative;
+			>ul{width:100%;
+				height:100%;
+				padding-top:36px;
+				>li{float:left;
+					&:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),&:nth-of-type(8){@include font330(20px);}
+					&.snb_01{padding-left:14px;}
+					&.snb_01::before{@include after(100);@include back("../img/src/footer_icon.png",100%);width:18px;height:10px;left:145px;top:44%;}
+					
+					&.snb_02{padding-left:54px;}
+					&.snb_02:after{@include after(100);@include back("../img/src/footer_icon.png",100%);width:18px;height:10px;left:335px;top:44%}
+					&.snb_03{padding-left:54px;}
+					&.snb_04{padding-left:24px;font-style:bold;}
+					&.snb_05{padding-left:24px;}
+					&.snb_06{padding-left:16px;}
+					&.snb_06::after{@include after(100);}
+					&.snb_07{padding-left:16px;}
+					&.snb_07::after{@include after(100);}
+					&.snb_08{color:#f68b1f;padding-left:24px;}
+					
+						}
+				}
+		&::before{ 
+					@include after(-100);
+					@include b-set(1px);
+					width:100vw;
+					height:100px;
+					background-color:#efefef;
+					left:50%;
+					bottom:0;
+					margin-left:-50vw;
+					margin-top:10px;}
+			}//.snb
+	 	.fnb{
+	 		width:960px;
+	 		height:210px;
+			
+			>ul{width:inherit;
+				height:inherit;
+				
+				>li{margin:0 auto;
+				
+				&.medals{padding-left:218px;
+					>ul{width:524px;
+						height:52px;}
+						li{width:20%;
+						   height:inherit;
+						   float:left;
+						   &:nth-of-type(1){@include back("../img/src/banner0On.png",50%)}
+						   &:nth-of-type(2){@include back("../img/src/banner1On.png",50%)}
+						   &:nth-of-type(3){@include back("../img/src/banner2On.png",45%)}
+						   &:nth-of-type(4){@include back("../img/src/banner3On.png",45%)}
+						   &:nth-of-type(5){@include back("../img/src/banner4On.png",50%)}
+							}
+
+						}//medals
+				
+
+				&.footQuick{width:800px;height:40px;
+					   text-align:center;
+					ul{width:inherit;
+					   height:inherit;
+					   &.first_line{padding-left:40px;padding-top:10px;}
+					   &.second_line{padding-left:170px;padding-top:2px;}
+					   
+					   >li{ @include font330(16px);
+					   		color:$b_font;
+					   		float:left;
+					   	   margin-left:24px;
+
+					   	}
+					}//ul
+
+				}//.footQuick
+				
+
+				&.address{@include font330(16px);
+						  color:$b_font;
+						  width:100%;
+						  height:120px;
+						  padding-top:40px;
+						  text-align:center;
+						  >address:nth-of-type(2){padding-top:16px;}
+						}//address
+
+			   		}//li
+				
+				}//ul
+	 		}
+		}//#footBox
 	
 }//media screen
