@@ -20,7 +20,7 @@
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url("../../img/src/logo_360.jpg"); }
+        background-image: url("../img/src/logo_360.jpg"); }
     #headBox #menu {
       width: 34px;
       height: 24px;
@@ -49,7 +49,7 @@
     height: 66.666667vw;
     background-color: #518b8d;
     repeat: no-repeat;
-    image: url("../../img/src/ban_360.jpg");
+    image: url("../img/src/ban_360.jpg");
     size: cover;
     background-position: center;
     position: relative;
@@ -131,28 +131,29 @@
           height: 50vw; }
           #content_01 .insideBox > li .sizeBox > li {
             width: 100%;
-            height: 40%;
-            background-color: #fff; }
+            height: 40%; }
+            #content_01 .insideBox > li .sizeBox > li:nth-of-type(3) {
+              display: none; }
           #content_01 .insideBox > li .sizeBox > .icon_01 {
             background-size: 50%;
             background-repeat: no-repeat;
             background-position: center;
-            background-image: url("../../img/src/icon_01.jpg"); }
+            background-image: url("../img/src/icon_01.jpg"); }
           #content_01 .insideBox > li .sizeBox > .icon_02 {
             background-size: 40%;
             background-repeat: no-repeat;
             background-position: center;
-            background-image: url("../../img/src/icon_02.jpg"); }
+            background-image: url("../img/src/icon_02.jpg"); }
           #content_01 .insideBox > li .sizeBox > .icon_03 {
             background-size: 40%;
             background-repeat: no-repeat;
             background-position: center;
-            background-image: url("../../img/src/icon_03.jpg"); }
+            background-image: url("../img/src/icon_03.jpg"); }
           #content_01 .insideBox > li .sizeBox > .icon_04 {
             background-size: 40%;
             background-repeat: no-repeat;
             background-position: center;
-            background-image: url("../../img/src/icon_04.jpg"); }
+            background-image: url("../img/src/icon_04.jpg"); }
           #content_01 .insideBox > li .sizeBox h4 {
             height: 60%;
             font-size: 6.66667vw;
@@ -161,8 +162,7 @@
             color: #006769;
             background-color: #fff; }
           #content_01 .insideBox > li .sizeBox h5 {
-            display: none;
-            height: 40%; }
+            display: none; }
   #content_02 {
     background-color: #ecf7f6;
     border-top: 2px solid #b3d6d2;
@@ -296,16 +296,6 @@
     width: 100%;
     min-height: 510px;
     height: 141.66666667vw; }
-    #content_04::after {
-      content: "";
-      display: block;
-      z-index: 100;
-      position: absolute;
-      border: 6px solid #fff;
-      width: 91.1111111vw;
-      height: 72.2222222vw;
-      margin-top: 3.88888889vw;
-      margin-left: 1.7777778vw; }
     #content_04 #articleBox {
       border-top: 2px solid #b3d6d2;
       border-bottom: 2px solid #b3d6d2;
@@ -319,7 +309,31 @@
         height: 72.2222222vw;
         margin-top: 3.88888889vw;
         margin-left: 1.77777778vw;
-        background-color: #f77; }
+        padding-left: 12vw;
+        padding-top: 8vw; }
+        #content_04 #articleBox > .art_textBox > h2 {
+          font-size: 6.77778vw;
+          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+          color: #fefefe;
+          padding-left: 6vw; }
+        #content_04 #articleBox > .art_textBox > h3 {
+          font-size: 4.66667vw;
+          font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+          color: #e0e9e9;
+          padding-top: 4vw; }
+        #content_04 #articleBox > .art_textBox > h4 {
+          font-size: 3.88889vw;
+          font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+          color: #ecf7f6;
+          padding-top: 4vw; }
+        #content_04 #articleBox > .art_textBox > a {
+          font-size: 4.66667vw;
+          font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+          display: block;
+          width: auto;
+          height: auto;
+          color: #ecf7f6;
+          padding-top: 4vw; }
     #content_04 #articleBox::after {
       content: "";
       display: block;
@@ -343,13 +357,80 @@
         height: 100%; }
         #content_04 #articleTab ul > li {
           width: 100%;
-          height: 33.333334%; }
+          height: 33.333334%;
+          color: #efefef;
+          padding-top: 18px; }
+          #content_04 #articleTab ul > li span {
+            width: 52px;
+            height: 52px;
+            background-color: #fff;
+            float: left;
+            margin-left: 30px; }
+            #content_04 #articleTab ul > li span.artTab_icon_01 {
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-image: url("../img/src/awards.png"); }
+            #content_04 #articleTab ul > li span.artTab_icon_02 {
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-image: url("../img/src/earth.png"); }
+            #content_04 #articleTab ul > li span.artTab_icon_03 {
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-image: url("../img/src/robot.png"); }
+          #content_04 #articleTab ul > li p {
+            width: 63.333333vw;
+            font-size: 3.97778vw;
+            font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+            float: left;
+            padding-left: 60px;
+            color: #efefef; }
+          #content_04 #articleTab ul > li a {
+            display: block;
+            float: right;
+            padding-top: 30px;
+            float: right;
+            font-size: 2.9vw;
+            font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+            color: #efefef;
+            padding-right: 10px; }
   #footBox {
     width: 100%;
     min-height: 180px;
-    height: 50vw;
+    height: 40vw;
     background-color: #fff; }
     #footBox .snb {
       width: 100%;
       height: 16.6666667vw;
-      background-color: #efefef; } }
+      background-color: #efefef; }
+      #footBox .snb > .snb_for_mini {
+        width: inherit;
+        height: inherit;
+        padding-top: 4.555555vw;
+        padding-left: 10.4444445vw; }
+        #footBox .snb > .snb_for_mini > li {
+          float: left;
+          font-size: 5.22222vw;
+          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif; }
+          #footBox .snb > .snb_for_mini > li:nth-of-type(2) {
+            color: #f68b1f;
+            margin-left: 3.444444vw; }
+          #footBox .snb > .snb_for_mini > li:nth-of-type(3) {
+            margin-left: 4.444444vw; }
+          #footBox .snb > .snb_for_mini > li > i {
+            color: #f68b1f;
+            padding-right: 3.222222vw; }
+    #footBox .snb_for_pc {
+      display: none; }
+    #footBox .fnb_for_pc {
+      display: none; }
+    #footBox .fnb_for_mini {
+      font-size: 16px;
+      font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+      text-align: center;
+      padding-top: 20px; }
+      #footBox .fnb_for_mini > li:nth-of-type(2) {
+        padding-top: 16px; } }

@@ -4,7 +4,7 @@
 
 @mixin b-set($size:2px,$borderColor:$bc)
 		{
-			border:{top:$size solid $borderColor;				bottom:$size solid $borderColor;}
+			border:{top:$size solid $borderColor;bottom:$size solid $borderColor;}
 		}
 @mixin rounded($i){
 	-webkit-border-radius:$i;

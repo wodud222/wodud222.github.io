@@ -47,21 +47,47 @@
 	<nav id="navi">
 		
 		<ul>
-			<li>진료안내</li>
-			<li>병원이용안내</li>
-			<li>진료과ㆍ의료진</li>
-			<li>예약ㆍ조회ㆍ발급</li>
-			<li>고객서비스</li>
-			<li>의학교육</li>
-			<li>건강정보</li>
-			<li>병원소개</li>
+			<li><a href="">진료안내</a></li>
+			<li><a href="">병원이용안내</a></li>
+			<li><a href="">진료과ㆍ의료진</a></li>
+			<li><a href="">예약ㆍ조회ㆍ발급</a></li>
+			<li><a href="">고객서비스</a></li>
+			<li><a href="">의학교육</a></li>
+			<li><a href="">건강정보</a></li>
+			<li><a href="">병원소개</a></li>
 		</ul>
 	</nav>
-
-<article id=""></article>
-
+	<nav id="navi_popup">
+	<ul class="pop_01">
+		<li>외래진료 안내</li>
+		<li>응급진료 안내</li>
+		<li>입원진료 안내</li>
+		<li>가정간호 안내</li>
+		<li>검사실 안내</li>
+	</ul>
+	<ul class="pop_02">
+		<li>진료 절차</li>
+		<li>진료 안내</li>
+		<li>선택 진료</li>
+	</ul>
+	<ul class="pop_03">
+		<li>
+			<img src="./img/src/tab_icon_01.png" alt="외래진료" />
+			<span>외래진료</span>
+			<p>입원부터 퇴원까지의 모든정보</p>
+		</li>
+		<li>
+			<img src="./img/src/tab_icon_02.png" alt="응급진료" />
+			<span>응급진료</span>
+			<p>24시간 어떠한 응급상황도 대비</p>
+		</li>
+	</ul>
+	</nav>
 <!-- addBanner -->
+	<section id="Banner">
 	<section id="addBanner">
+		<button type="button" class="addNavi_01"></button>
+		<button type="button" class="addNavi_02"></button>
 		<div class="mainBanner">
 		<h2>서울아산병원 10년연속<br>
 		존경받는 병원 1위</h2>
@@ -82,6 +108,34 @@
 		</div>
 		</div>
 	
+	</section>
+	<section id="addBanner_02">
+		<button type="button" class="addNavi_01"></button>
+		<button type="button" class="addNavi_02"></button>
+		<div class="mainBanner_02">
+		<h2>서울아산병원<br>
+		2016 희망나누기</h2>
+		
+		<h3>수술치료비 지원사업 안내</h3>
+	
+		
+		<h4>
+		<span>지원대상</span> : 척추측만증,선천성 위장관 질환, 각막이식,<br> 인공와우사지기형,크론병,약물 난치성 간질,파킨슨,<br>선천성 태아질환<br>
+		<span>접수문의</span> : 2016년 12월 31일까지 <br>(마감일까지 우편 수시 접수)
+		</h4>
+		<p><span>접수처</span> :(05505) 서울 송파구 올림픽로 43길 88 서울아산병원 사회복지팀<br>
+		<span>문의</span> : 02-3010-4083 희망나누기 캠페인 담당자
+		</p>
+		<a>+ 자세히보기
+		</a>
+		</div> 
+		<div class="leftBox">
+		<div class="textBanner">
+		<p>2016<br>캠페인</p>
+		</div>
+		</div>
+	
+	</section>
 	</section>
 
 <!--content_01-->
@@ -220,8 +274,8 @@
 		</h3>
 		<h4>' 2016 이주민 가을 축제 한마당 '<br>
 			개최다문화 인식 개선 프로그램<br>
-			장기자랑 행사 통해 나눔ㆍ소통ㆍ화합 의미 되새겨<br>
-			고향을 떠나 온 외국인 근로자들....		
+			장기자랑 행사 통해 나눔ㆍ소통ㆍ화합<br>
+			의미 되새겨 고향을 떠나 온 외국인 근로자들....		
 			</h4>
 		<a>자세히 보기</a>
 		</div>
@@ -257,9 +311,10 @@
 		</ul>
 	</article>
 	</div>
+
 	<footer id="footBox">
 		<div class="snb">
-			<ul>
+			<ul class="snb_for_pc">
 				<li class="snb_01">전체 메뉴 보기</li>
 				<li class="snb_02">사이트 바로가기</li>
 				<li class="snb_03">비급여 진료비</li>
@@ -269,9 +324,15 @@
 				<li class="snb_07">채용</li>
 				<li class="snb_08">전화예약 : 1688-7575</li>
 			</ul>
+			<ul class="snb_for_mini">
+				<li>로그인</li>
+				<li><i class="fa fa-phone" aria-hidden="true"></i>1688-7575</li>
+				<li>PC버전</li>
+			</ul>
 		</div>
 		<div class="fnb">
-			<ul>
+			<!-- fnb_for_pc -->
+			<ul class="fnb_for_pc">
 				<li class="medals">
 					<ul>
 						<li class="medal_01"></li>
@@ -299,17 +360,22 @@
 					<address>05505 서울특별시 송파구 올림픽로 43길 88 서울아산병원(서울특별시 송파구 풍납2동 388-1) Tel.1688-7575  /  webmaster@amc.seoul.kr</address>
 					<address>Copyright@2014 by Asan Medical Center.All Rights reserved</address>
 				</li>
+			</ul><!--fnb_for_pc  -->
+			<ul class="fnb_for_mini">
+				<li>05505 서울특별시 송파구 올림픽로 43길 88 서울아산병원<br>(서울특별시 송파구 풍납2동 388-1)</li>
+				<li>Copyright@2014 by Asan Medical Center.All Rights reserved</li>
 			</ul>
 		</div>
+	<div id="footPopup_01">
+		<button type="button"></button>
+	</div>
 	</footer>
 
-	<article id="footPopup_01">
-		
-	</article>
 	<article id="footPopup_02">
 		
 	</article>
-
+	<script src="./js/src/Banner.js"></script>
+	<script src="./js/src/header_tab.js"></script>
 </body>
 </html>
 

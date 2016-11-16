@@ -52,6 +52,7 @@
         font-size: 18px;
         float: left;
         font-weight: bold;
+        color: #006869;
         margin-top: 38px;
         margin-left: 24px;
         color: #518b8d; }
@@ -83,6 +84,84 @@
     left: 50%;
     top: 7.5%;
     margin-left: -50vw; }
+  #navi_popup {
+    width: 960px;
+    height: 314px;
+    background-color: #fefbfb;
+    position: fixed;
+    top: 0;
+    margin-top: 174px;
+    z-index: 1000;
+    left: 50%;
+    margin-left: -480px;
+    border-top: 1px solid #b3d6d2;
+    border-bottom: 1px solid #b3d6d2;
+    display: none; }
+    #navi_popup > ul {
+      float: left;
+      height: 100%; }
+      #navi_popup > ul.pop_01 {
+        width: 190px;
+        padding-left: 38px;
+        padding-top: 46px;
+        border: 1px solid #b3d6d2;
+        border-top: 0;
+        border-bottom: 0; }
+        #navi_popup > ul.pop_01 > li {
+          margin-top: 24px;
+          font-size: 19px;
+          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+          color: #4c4d4f; }
+          #navi_popup > ul.pop_01 > li:nth-of-type(1) {
+            margin-top: 0; }
+      #navi_popup > ul.pop_02 {
+        width: 190px;
+        padding-left: 52px;
+        padding-top: 46px;
+        border-right: 1px solid #b3d6d2; }
+        #navi_popup > ul.pop_02 > li {
+          margin-top: 24px;
+          font-size: 19px;
+          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+          color: #4c4d4f; }
+          #navi_popup > ul.pop_02 > li:nth-of-type(1) {
+            margin-top: 0; }
+      #navi_popup > ul.pop_03 {
+        width: 580px;
+        padding-left: 45px;
+        padding-bottom: 70px;
+        padding-top: 70px; }
+        #navi_popup > ul.pop_03 > li {
+          width: 220px;
+          height: 162px;
+          float: left; }
+          #navi_popup > ul.pop_03 > li:nth-of-type(2) {
+            margin-left: 60px; }
+          #navi_popup > ul.pop_03 > li > img {
+            width: 80px;
+            height: 80px;
+            margin-left: 80px; }
+          #navi_popup > ul.pop_03 > li > span {
+            width: 240px;
+            height: auto;
+            margin-top: 12px;
+            float: left;
+            text-align: center;
+            font-size: 22px;
+            font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif; }
+          #navi_popup > ul.pop_03 > li > p {
+            width: 240px;
+            height: auto;
+            float: left;
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+            padding-top: 10px; }
+  #Banner {
+    width: 960px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative; }
   #addBanner {
     background-size: cover;
     background-repeat: no-repeat;
@@ -93,14 +172,24 @@
     margin: 0 auto;
     height: 400px;
     width: 960px;
-    position: relative; }
+    position: absolute; }
+    #addBanner > .addNavi_01, #addBanner .addNavi_02 {
+      width: 8px;
+      height: 8px;
+      background-color: #fff;
+      border-radius: 50%;
+      margin-top: 18%;
+      right: 3%;
+      position: absolute; }
+    #addBanner > .addNavi_02 {
+      margin-top: 22%; }
     #addBanner > .mainBanner {
       position: absolute;
       width: 100vw;
       min-height: 190px;
       height: 32.77777778vw;
       margin-top: 40px;
-      margin-left: 3.66666667vw;
+      margin-left: 2.66666667vw;
       left: 0; }
       #addBanner > .mainBanner > h2 {
         margin-top: 56px;
@@ -139,6 +228,95 @@
         margin-top: 58px;
         float: right; }
         #addBanner > .leftBox > div.textBanner > p {
+          font-size: 36px;
+          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+          text-align: center;
+          padding-top: 106px;
+          padding-left: 0px; }
+  #addBanner_02 {
+    border-top: 2px solid #b3d6d2;
+    border-bottom: 2px solid #b3d6d2;
+    margin: 0 auto;
+    height: 400px;
+    width: 960px;
+    position: absolute;
+    background-image: url("../img/src/secondBanner.png");
+    background-repeat: no-repeat;
+    display: none; }
+    #addBanner_02 > .addNavi_01, #addBanner_02 .addNavi_02 {
+      width: 8px;
+      height: 8px;
+      background-color: #fff;
+      border-radius: 50%;
+      margin-top: 18%;
+      right: 3%;
+      position: absolute; }
+    #addBanner_02 > .addNavi_02 {
+      margin-top: 22%; }
+    #addBanner_02 > .mainBanner_02 {
+      width: 520px;
+      min-height: 190px;
+      height: 400px;
+      float: right;
+      background-color: rgba(51, 133, 135, 0.95);
+      padding-left: 46px; }
+      #addBanner_02 > .mainBanner_02 > h2 {
+        width: auto;
+        height: auto;
+        margin-top: 56px;
+        font-size: 30px;
+        font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #eae2e3; }
+      #addBanner_02 > .mainBanner_02 > h3 {
+        width: auto;
+        height: auto;
+        float: left;
+        font-size: 20px;
+        font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #fff;
+        margin-top: 14px; }
+      #addBanner_02 > .mainBanner_02 > h4 {
+        float: left;
+        font-weight: 200;
+        font-size: 16px;
+        font-family: 'Noto Sans Korean DemiLight', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #fff;
+        margin-top: 14px;
+        margin-top: 14px;
+        line-height: 1.4; }
+        #addBanner_02 > .mainBanner_02 > h4 span {
+          font-size: 16px;
+          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif; }
+      #addBanner_02 > .mainBanner_02 > p {
+        float: left;
+        margin-top: 4px;
+        font-size: 16px;
+        font-family: 'Noto Sans Korean DemiLight', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #fff; }
+        #addBanner_02 > .mainBanner_02 > p span {
+          font-size: 16px;
+          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif; }
+      #addBanner_02 > .mainBanner_02 > a {
+        display: block;
+        float: left;
+        font-size: 18px;
+        font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+        margin-top: 10px; }
+    #addBanner_02 > .leftBox {
+      width: 440px;
+      height: 400px;
+      float: left; }
+      #addBanner_02 > .leftBox > div.textBanner {
+        -webkit-opacity: 0.7;
+        -moz-opacity: 0.7;
+        -o-opacity: 0.7;
+        opacity: 0.7;
+        width: 126px;
+        height: 306px;
+        background-color: #fff;
+        margin-top: 58px;
+        float: right; }
+        #addBanner_02 > .leftBox > div.textBanner > p {
           font-size: 36px;
           font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
           text-align: center;
@@ -489,7 +667,8 @@
     margin: 0 auto;
     width: 960px;
     height: 310px;
-    background-color: #fff; }
+    background-color: #fff;
+    position: relative; }
     #footBox .snb {
       border-top: 1px solid #b3d6d2;
       border-bottom: 1px solid #b3d6d2;
@@ -645,4 +824,24 @@
             padding-top: 40px;
             text-align: center; }
             #footBox .fnb > ul > li.address > address:nth-of-type(2) {
-              padding-top: 16px; } }
+              padding-top: 16px; }
+    #footBox .snb_for_mini {
+      display: none; }
+    #footBox .fnb_for_mini {
+      display: none; }
+  #footPopup_01 {
+    width: 960px;
+    height: 400px;
+    background-color: #fefbfb;
+    position: absolute;
+    bottom: 320px;
+    z-index: 300;
+    border: 2px solid #b3d6d2; }
+    #footPopup_01 > button {
+      width: 60px;
+      height: 60px;
+      background-color: #fa0;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -30px; } }

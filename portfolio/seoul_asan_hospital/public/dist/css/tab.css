@@ -18,7 +18,7 @@
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url("../../img/src/logo_640.jpg"); }
+        background-image: url("../img/src/logo_640.jpg"); }
     #headBox #menu {
       width: 34px;
       height: 24px;
@@ -50,7 +50,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../../img/src/ban_640.jpg"); }
+    background-image: url("../img/src/ban_640.jpg"); }
     #addBanner > .mainBanner {
       position: absolute;
       width: 100vw;
@@ -182,8 +182,8 @@
             text-align: center;
             margin-top: 20px; }
   #content_02 {
-    border-top: 4px solid #b3d6d2;
-    border-bottom: 4px solid #b3d6d2;
+    border-top: 2px solid #b3d6d2;
+    border-bottom: 2px solid #b3d6d2;
     width: 100%;
     height: 54.6875vw; }
     #content_02 .textBox_02 {
@@ -247,35 +247,71 @@
             line-height: 4;
             color: #006769; }
   #content_03 {
-    border-top: 4px solid #b3d6d2;
-    border-bottom: 4px solid #b3d6d2;
+    border-top: 1px solid #b3d6d2;
+    border-bottom: 1px solid #b3d6d2;
     width: 100%;
     min-height: 320px;
     height: 62.5vw;
     background-color: #fff; }
-    #content_03 h2 {
+    #content_03 > h2 {
       font-size: 5.25vw;
       font-family: 'Noto Sans Korean Regular ', arial, nanumGothic, "돋움", dotum, sans-serif;
       color: #006769;
       padding-left: 24vw;
       padding-top: 4.6875vw; }
-    #content_03 ul {
+    #content_03 .con03_leftBox {
+      max-width: 1200px;
       width: 50%;
       min-height: 270px;
       height: 42.1875vw;
-      margin-top: 7.8125vw;
-      float: left; }
-      #content_03 ul li {
+      float: left;
+      margin-top: 7.8125vw; }
+      #content_03 .con03_leftBox > li {
+        max-width: 1200px;
         width: 100%;
         height: 33.33333334%;
-        background-color: #e9e9e9; }
-    #content_03 div {
+        padding-left: 2.25vw; }
+        #content_03 .con03_leftBox > li > ul {
+          width: 50%;
+          height: 100%;
+          width: 13.75vw;
+          float: left;
+          padding-left: 5vw; }
+          #content_03 .con03_leftBox > li > ul > li {
+            width: 100%;
+            height: 100%; }
+            #content_03 .con03_leftBox > li > ul > li.con03_icon01 {
+              background-size: 90%;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-image: url("../img/src/beautiful_icon.jpg"); }
+            #content_03 .con03_leftBox > li > ul > li.con03_icon02 {
+              background-size: 90%;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-image: url("../img/src/center_icon.jpg"); }
+            #content_03 .con03_leftBox > li > ul > li.con03_icon03 {
+              background-size: 90%;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-image: url("../img/src/story_icon.jpg"); }
+        #content_03 .con03_leftBox > li > h3 {
+          line-height: 2vw;
+          font-size: 3.25vw;
+          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+          padding-left: 4.25vw;
+          padding-top: 5.8125vw;
+          float: left; }
+    #content_03 .imgBox {
       width: 50%;
       min-height: 270px;
       height: 42.1875vw;
       margin-top: 7.8125vw;
       float: right;
-      background-color: #ccc; }
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("../img/src/donation_pic.png"); }
   #articleBox {
     border-top: 2px solid #b3d6d2;
     border-bottom: 2px solid #b3d6d2;
@@ -283,6 +319,37 @@
     min-height: 420px;
     height: 65.625vw;
     background-color: #518b8d; }
+    #articleBox > .art_textBox {
+      position: absolute;
+      width: 91.1111111vw;
+      height: 72.2222222vw;
+      margin-top: 3.88888889vw;
+      margin-left: 1.77777778vw;
+      padding-left: 12vw;
+      padding-top: 5vw; }
+      #articleBox > .art_textBox > h2 {
+        font-size: 6.44445vw;
+        font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #fefefe;
+        padding-left: 6vw; }
+      #articleBox > .art_textBox > h3 {
+        font-size: 4.22222vw;
+        font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #e0e9e9;
+        padding-top: 3vw; }
+      #articleBox > .art_textBox > h4 {
+        font-size: 3.66667vw;
+        font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+        color: #ecf7f6;
+        padding-top: 2vw; }
+      #articleBox > .art_textBox > a {
+        font-size: 3.66667vw;
+        font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+        display: block;
+        width: auto;
+        height: auto;
+        color: #ecf7f6;
+        padding-top: 3vw; }
   #articleBox::after {
     content: "";
     display: block;
@@ -304,10 +371,49 @@
     background-color: #4c4d4f; }
     #articleTab ul {
       width: 100%;
-      height: 37.5vw; }
-      #articleTab ul li {
+      height: 100%; }
+      #articleTab ul > li {
         width: 100%;
-        height: 33.333334%; }
+        height: 33.333334%;
+        color: #efefef;
+        padding-top: 12px; }
+        #articleTab ul > li span {
+          width: 52px;
+          height: 52px;
+          background-color: #fff;
+          float: left;
+          margin-left: 30px; }
+          #articleTab ul > li span.artTab_icon_01 {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../img/src/awards.png"); }
+          #articleTab ul > li span.artTab_icon_02 {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../img/src/earth.png"); }
+          #articleTab ul > li span.artTab_icon_03 {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../img/src/robot.png"); }
+        #articleTab ul > li p {
+          width: 63.333333vw;
+          font-size: 3.44445vw;
+          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+          float: left;
+          padding-left: 60px;
+          color: #efefef; }
+        #articleTab ul > li a {
+          display: block;
+          float: right;
+          padding-top: 30px;
+          float: right;
+          font-size: 2.9vw;
+          font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+          color: #efefef;
+          padding-right: 6.25vw; }
   #footBox {
     width: 100%;
     min-height: 180px;
@@ -317,8 +423,54 @@
       width: 100%;
       min-height: 60px;
       height: 9.375vw;
-      background-color: #aaa; }
-      #footBox .snb > ul {
+      background-color: #efefef; }
+      #footBox .snb .snb_for_pc {
         display: none; }
-    #footBox .fnb > ul {
-      display: none; } }
+      #footBox .snb > .snb_for_mini {
+        width: inherit;
+        height: inherit;
+        padding-top: 1.555555vw;
+        padding-left: 14.4444445vw; }
+        #footBox .snb > .snb_for_mini > li {
+          float: left;
+          font-size: 4.22222vw;
+          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif; }
+          #footBox .snb > .snb_for_mini > li:nth-of-type(2) {
+            color: #f68b1f;
+            margin-left: 8.444444vw; }
+          #footBox .snb > .snb_for_mini > li:nth-of-type(3) {
+            margin-left: 8.444444vw; }
+          #footBox .snb > .snb_for_mini > li > i {
+            color: #f68b1f;
+            padding-right: 2.222222vw; }
+    #footBox .fnb > .fnb_for_mini {
+      display: none; }
+    #footBox .fnb > .fnb_for_pc > .medals {
+      display: none; }
+    #footBox .fnb .footQuick {
+      width: 100vw;
+      height: 6.25vw;
+      text-align: center; }
+      #footBox .fnb .footQuick ul {
+        width: inherit;
+        height: inherit; }
+        #footBox .fnb .footQuick ul.first_line {
+          padding-left: 2.1875vw;
+          padding-top: 3.125vw; }
+        #footBox .fnb .footQuick ul.second_line {
+          display: none; }
+        #footBox .fnb .footQuick ul > li {
+          font-size: 2.2vw;
+          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+          color: #6d6e6f;
+          float: left;
+          margin-left: 24px; }
+    #footBox .fnb .address {
+      font-size: 17px;
+      font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+      color: #4c4d4f;
+      width: 100%;
+      height: 18.75vw;
+      padding-top: 2.1875vw;
+      text-align: center;
+      line-height: 1.6; } }
