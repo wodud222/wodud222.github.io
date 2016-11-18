@@ -1,6 +1,21 @@
 //_mixin.scss
 @import "_color";
 
+//@expend @contend @for @if @for-each @switch
+
+//#{} <<<<<<<<
+$mob:360;
+$tab:640;
+$pc:960;
+
+@function mobile($width, $viewWidth:$mob){
+	@return ($width / $viewWidth)*100vw;
+}@function tab($width, $viewWidth:$tab){
+	@return ($width / $viewWidth)*100vw;
+}@function mobile($width, $viewWidth:$pc){
+	@return ($width / $viewWidth)*100vw;
+}
+
 
 @mixin b-set($size:2px,$borderColor:$bc)
 		{
@@ -32,11 +47,11 @@
 			box-sizing:border-box;
 }
 
-@mixin wcalc($i){
-	-webkit-width:calc($i);
-	-moz-width:calc($i);
-	-o-width:calc($i);
-	   width:calc($i);
+@mixin wcalc($i, $j, $k){
+	-webkit-width:calc($i - $k);
+	-moz-width:calc($i - $k);
+	-o-width:calc($i - $k);
+	   width:calc($i - $k);
 }
 @mixin hcalc($i){
 	-webkit-height:calc($i);

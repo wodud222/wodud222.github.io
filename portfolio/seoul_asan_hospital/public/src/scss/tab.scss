@@ -17,7 +17,7 @@
 			a{display:block;
 			  width:100%;
 			  height:100%;
-			  @include back("../img/src/logo_640.jpg",100%);}
+			  @include back("../img/src/logo_640.jpg",70%);}
 		}
 
 		#menu{width:34px;
@@ -25,39 +25,123 @@
 			  background-color:transparent;
 			  float:left;
 			  margin-left:2.7777778vw;
-			  margin-top:15px;
+			  margin-top:20px;
 			   
 			  i{
-			  	font-size:50px;
+			  	font-size:40px;
 			  	color:$ic;
+			  	transition:all 0.3s;
+			  	&:hover{transform:scale(1.2)}
 			  }
 			}
 		#home{width:34px;
 			  height:24px;
 			  background-color:transparent;
 			  margin-right:2.7777778vw;
-			  margin-top:15px;
+			  margin-top:20px;
 			  float:right;
 			
 			  i{
-			  	font-size:50px;
+			  	font-size:40px;
 			  	color:$ic;
+			  	transition:all 0.3s;
+			  	&:hover{transform:scale(1.2)}
 			  }
 			}
 	}
-	#navi{display:none;}
-	#addBanner{margin:0 auto;
-		width:100%;
-		min-height:300px;
-		height:46.875vw;
-		position:relative;
-		@include back("../img/src/ban_640.jpg",cover);
+	#navi,#navi_popup_pc{display:none;}
+
+
+// #navi_accordion ----------------------------------------------
+	#navi_accordion{position:absolute;
+					width:46vw;
+					height:auto;
+					background-color:#fdfefe;
+					left:0;
+					top:0;
+					margin-top:80px;
+					z-index:500;
+					border:2px solid #b6d7d4;
+					display:none;
+					>h2{width:100%;
+						height:8.125vw;
+						color:#f68b1f;
+						padding-top:1.25vw;
+						padding-left:5.625vw;
+						font-size:2.8125vw;
+						@include font330(3.125vw);
+						>i{font-size:4.375vw;
+						   margin-top:0.3125vw;
+						   margin-right:1.5625vw;
+						   float:left;
+						   transition:all 0.3s;
+						   &:hover{color:#f68b1f;}
+							}
+						>span{float:left;
+							  padding-top:0.625vw;
+							  padding-left:1.5625vw;
+							  text-align:center;}
+						}//h2
+					dt{ width:100%;
+						height:8.125vw;
+						border-top:1px solid #b6d7d4;
+						border-bottom:1px solid #b6d7d4;
+						float:left;
+						text-align:left;
+						padding-left:5vw;
+						padding-top:2.1875vw;
+						@include font330(3.125vw);
+						color:$b_font;
+						transition:all 0.5s;
+						&:hover{background-color:$b_font;color:#fff}
+						cursor:pointer;}
+					dd{width:100%;
+					   height:auto;
+					   display:none;
+					   cursor:pointer;
+					   >ul{&:nth-of-type(1){width:55%;}
+					  	   &:nth-of-type(2){width:45%;}
+					   	   height:auto;
+					   	   float:left;
+					   	   text-align:left;
+						   &:nth-of-type(2){display:none}					   	   	   	  
+					   	   >li{@include font330(2.3vw);
+					   	   	   padding-left:6.25vw;	
+					   	   	   color:$b_font;
+					   	   	   width:100%;
+					   	   	   height:6.25vw;
+					   	   	   line-height:2.4;
+					   	   	   border-right:solid 2px #b6d7d4;
+					   	   	   transition:all 0.5s;
+							   &:hover{background-color:$b_font;color:#fff;}
+									
+					   	   		}//li
+
+					   	   }
+					   }
+
+				}//navi_accordion
+
+
+
+
+
+// #addBanner --------------------------------------------------
+
+	#addBanner{
+				transition:all 0.3s;
+				margin:0 auto;
+				width:100%;
+				min-height:300px;
+				height:46.875vw;
+				position:relative;
+				@include back("../img/src/ban_640.jpg",cover);
 			>.mainBanner{position:absolute;
 						 width:100vw;
 						 min-height:190px;
 						 height:32.77777778vw;
 						 margin-top:5.88888889vw;
-						 margin-left:3.66666667vw;
+						 margin-left:2.66666667vw;
 						 left:0;
 				>h2{margin-top:2.6666667vw;
 					margin-left:51.5625vw;
@@ -85,31 +169,41 @@
 				 	 height:100%;
 				 	 float:left;
 		
-					>div.textBanner{>p{@include font330(32px)
+					>div.textBanner{>p{@include font330(4.5625vw)
 										  text-align:center;
-										  padding-top:86px;
-										  padding-left:14px;}
+										  padding-top:12.5625vw;
+										  padding-left:0.625vw;}
 						@include opacity(0.7);
-						width:16.0625vw;
-						height:36.375vw;
+						width:15.0625vw;
+						min-width:60px;
+						min-height:236px;
+						height:34.975vw;
+						max-height:350px;
 						background-color:#fff;
 						float:right;
-						margin-top:3.125vw;
+						margin-top:5.825vw;
 		}//.textBanner
 	}//.whiteBox
 
 	}//#addBanner
 
-	#addBanner::after{
+	#addBanner::after{transition:all 0.3s;
 		@include after();
-		border:10px solid #fff;
+		border:6px solid #fff;
 		width:53.125vw;
 		min-height:220px;
 		height:34.375vw;
 		margin-top:3.125vw;
 		margin-left:34vw;
 	}
-	#content_01{
+// addBanner_02 ---------------------------------------------
+
+#addBanner_02{display:none}
+
+//# content --------------------------------------------------
+
+
+	#content_01{transition:all 0.3s;
 		width:100%;
 		height:62.5vw;
 		background-color:#fff;
@@ -118,13 +212,13 @@
 					height:calc(100% - 40.375vw);
 					background-color:#fff;
 						h2{
-							@include font340(5.25vw);
+							@include font340(4.25vw);
 							color:$g_font;
-							padding-left:36vw;
+							padding-left:38vw;
 							padding-top:4.6875vw;} //h2
 						
 						h3{
-							@include font310(2.8vw);
+							@include font310(2.4vw);
 							color:$b_font;
 							text-align:center;
 							margin-top:12.5625px;} //h3
@@ -146,7 +240,7 @@
 						&:nth-of-type(1){height:40%;}
 						background-color:#fff;}
 	   				>.icon_01{
-	   					@include back("../img/src/icon_01.jpg",60%);}
+	   					@include back("../img/src/icon_01.jpg",55%);}
 	   				>.icon_02{
 	   					@include back("../img/src/icon_02.jpg",45%);}
 	   				>.icon_03{
@@ -154,17 +248,17 @@
 	   				>.icon_04{
 	   					@include back("../img/src/icon_04.jpg",45%);}
 				h4{
-					@include font330(3.8125vw);
+					@include font330(2.8125vw);
 					height:auto;
 					text-align:center; 
-					margin-top:10px;}
+					margin-top:3.6875vw;}
 				
 				h5{display:block;
-				   @include font320(2.5vw);
+				   @include font310(2.2vw);
 				   height:40%;
 				   color:$b_font;
 				   text-align:center;
-				   margin-top:20px;}//h5
+				   margin-top:4.625vw;}//h5
    		
 		   		} //sizeBox
 			} //li
@@ -172,7 +266,7 @@
 		} //insideBox
 	}//#content_01
 
-	#content_02{
+	#content_02{transition:all 0.3s;
 		@include b-set(2px);
 		width:100%;
 		height:54.6875vw;
@@ -181,18 +275,19 @@
 			width:100vw;
 			height:calc(18.75vw);
 			background-color:$lgc;
-				h2{	@include font340(5.25vw);
+				h2{	@include font340(4.25vw);
 					color:$g_font;
-					padding-left:24vw;
+					padding-left:26vw;
 					padding-top:4.6875vw;
 					}//h2
 				
 				
 				h3{
-					@include font310(2.8vw);
+					@include font310(2.4vw);
 					color:$b_font;
 					text-align:center;
-					margin-top:10px;}
+					margin-top:12.5625px;
+					margin-left:-2vw;}
 					} //.textBox_02
 
 		ul{
@@ -211,14 +306,14 @@
 				
 				div{width:100%; height:60%;} //div
 					
-					.icon_05{@include back("../../img/src/icon_05.png",72%);}
-					.icon_06{@include back("../../img/src/icon_06.png",72%);}
-					.icon_07{@include back("../../img/src/icon_07.png",72%);}
-					.icon_08{@include back("../../img/src/icon_08.png",72%);}
+					.icon_05{@include back("../img/src/icon_05.png",65%);}
+					.icon_06{@include back("../img/src/icon_06.png",65%);}
+					.icon_07{@include back("../img/src/icon_07.png",65%);}
+					.icon_08{@include back("../img/src/icon_08.png",65%);}
 			
 				h4{width:100%;
 					text-align:center;
-					@include font330(3.2vw); line-height:4;
+					@include font330(2.8vw); line-height:4;
 					color:$g-font;}
 						
 					}//a
@@ -226,7 +321,7 @@
 			}//ul
 		}//#content_02
 
-	#content_03{
+	#content_03{transition:all 0.3s;
 		@include b-set(1px);
 		width:100%;
 		min-height:320px;
@@ -268,7 +363,7 @@
 		} // imgBox
 	} // #content_03
 
-	#articleBox{
+	#articleBox{transition:all 0.3s;
 		@include b-set();
 		width:100%;
 		min-height:420px;
@@ -299,7 +394,7 @@
 		margin-left:3.75vw;
 	}// #articleBox::after
 	
-	#articleTab{
+	#articleTab{transition:all 0.3s;
 		@include b-set();
 		width:100%;
 		min-height:240px;
@@ -326,7 +421,7 @@
 	}//ul
 	}// #articleTab
 	
-	#footBox{
+	#footBox{transition:all 0.3s;
 		width:100%;
 		min-height:180px;
 		height:28.125vw;
@@ -355,7 +450,8 @@
 		.fnb{>.fnb_for_mini{display:none;}
 			 >.fnb_for_pc{>.medals{display:none;}
 							}
-.footQuick{width:100vw;
+.footQuick{	transition:all 0.3s;
+			width:100vw;
 			height:6.25vw;
 			text-align:center;
 			ul{width:inherit;
@@ -370,7 +466,8 @@
 
 		
 			}//.footQuick
-.address{@include font330(17px);
+.address{		  transition:all 0.3s;
+				  @include font330(17px);
 				  color:$blc;
 				  width:100%;
 				  height:18.75vw;
@@ -381,6 +478,9 @@
 		}//.fnb
 	
 	} // #footBox 
+// footPopup_for_pc --------------------------------------------
 
+#footPopup_site{display:none;}
+#footPopup_allMenu{display:none;}
 	
 }//media screen  

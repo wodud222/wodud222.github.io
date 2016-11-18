@@ -1,15 +1,18 @@
 // header_tab.js
 
 $(function(){
+	
+//메인 nav
+	
 	$('#navi>ul>li').on('mouseenter',function(){
 	var li_num = $('#navi>ul>li').index(this);
 
 	console.log(li_num);
 
-	$('#navi_popup').show().fadeIn(500);
+	$('#navi_popup_pc').show()
 	});
 	$('#navi').on('mouseleave',function(){
-	$('#navi_popup').hide();
+	$('#navi_popup_pc').hide();
 	
 	});
 	
@@ -27,6 +30,25 @@ var list_02 = [
 ];
 	});
 
-});
+
+
+//accordion pop_up
+    var acco = $('#navi_accordion');
+    $('#menu').on('click',function(){
+      acco.fadeToggle(300);
+    
+    });
+//dt hover시 dd오픈
+    acco.find('dt').on('click',function(){
+    	acco.find('dd').slideUp();
+    	$(this).next('dd').slideDown();
+
+    	
+    	});
+
+    acco.find('.test_01').on('mouseenter',function(){
+    	$(this).next('ul').fadeIn();
+    });
+}); //function
 
 

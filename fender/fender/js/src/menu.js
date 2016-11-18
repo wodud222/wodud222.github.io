@@ -3,7 +3,7 @@
 $(function(){
 	//menu버튼 on / off
 
-	$('#menu_02').on('click',function(){
+	$('#menu').on('click',function(){
 		$('#mnb').fadeIn(500);
 		(function() {
 		var mnb = $('#mnb').css('display');

@@ -1,7 +1,7 @@
 //show_up.js
 $(function(){
 var bg_box_01 =  $('.bg_box').fadeIn(3000);
-var menu = $('#menu_02').delay(1000).fadeIn(500);
+var menu = $('#menu').delay(1000).fadeIn(500);
 var logo = $('#topBtn').delay(1000).fadeIn(500);
 // + $('#topBtn').delay(100).fadeIn(500);
 var main_01 = $('#mainBox').find('.mainTitle_01').delay(1500).fadeIn(500);

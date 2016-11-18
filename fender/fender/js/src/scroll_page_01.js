@@ -92,31 +92,51 @@ $(function() {
 	    mainBox_offset = $('#mainBox').offset().top,
 	    bodyBox_offset = $('#bodyBox').offset().top,
 	    neckBox_offset = $('#neckBox').offset().top,
+	    elecBox_offset = $('#elecBox').offset().top,
+	    hardBox_offset = $('#hardBox').offset().top,
 	    ul_offset = $('#snb>ul').offset().top;
 
+
+	    // scroll 위치에 따른 배경색상 변경
+	$('#snb li').eq(0).css({'backgroundColor':'#ff0000'});
 	$(window).on('scroll', function() {
 		var scroll_top = $(window).scrollTop();
 		// headbox.addClass('fix');
-		headScroll(scroll_top);
 		// console.log(head_offset);
 		// console.log(scroll_top);
-		
-		if(scroll_top = bodyBox_offset){
-			$('#snb li').eq(1).css({'backgroundColor':'#ff0000'})
-		}else if(scroll_top > bodyBox_offset){
-			$('#snb li').eq(1).css({'backgroundColor':'#fff'})
+		if(scroll_top == mainBox_offset){
+			$('#mainBox').stop().animate({'backgroundColor':'#1C1F22'},1000);
+			$('#snb li').eq(0).css({'backgroundColor':'#ff0000'});
+		}else{
+			$('#snb li').eq(0).css({'backgroundColor':'#fff'});
 		}
-		
 
-		// 
-		if(scroll_top = bodyBox_offset){
+		if(scroll_top == bodyBox_offset){
 			$('#bodyBox').find('p').fadeIn(1000);
-			$('#bodyBox').animate({'backgroundColor':'#360E1A'},2000);
-		}
-		if(scroll_top = neckBox_offset){
-			$('#neckBox').animate({'backgroundColor':'#09152B'},2000);
+			$('#bodyBox').stop().animate({'backgroundColor':'#360E1A'},1000);
+			$('#snb li').eq(1).css({'backgroundColor':'#ff0000'});
+		}else{
+			$('#snb li').eq(1).css({'backgroundColor':'#fff'});
 		}
 		
+		if(scroll_top == neckBox_offset){
+			$('#neckBox').stop().animate({'backgroundColor':'#09152B'},1000);
+			$('#snb li').eq(2).css({'backgroundColor':'#ff0000'});
+		}else{
+			$('#snb li').eq(2).css({'backgroundColor':'#fff'});
+		}
+		if(scroll_top == elecBox_offset){
+			$('#elecBox').stop().animate({'backgroundColor':'#1C1F22'},1000);
+			$('#snb li').eq(3).css({'backgroundColor':'#ff0000'});
+		}else{
+			$('#snb li').eq(3).css({'backgroundColor':'#fff'});
+		}
+		if(scroll_top == hardBox_offset){
+			$('#hardBox').stop().animate({'backgroundColor':'#46262E'},1000);
+			$('#snb li').eq(4).css({'backgroundColor':'#ff0000'});
+		}else{
+			$('#snb li').eq(4).css({'backgroundColor':'#fff'});
+		}
 
 		if(scroll_top >= neckBox_offset){
 			// 첫번째 방법(delay기능을 이용하여 시간순으로 나타나기)
@@ -154,17 +174,5 @@ $(function() {
 
 
 	});
-
-
-
-	function headScroll(t) {
-
-		if(head_offset <= t){
-				headbox.addClass('fix');
-			}else{
-				headbox.removeClass('fix');
-			}
-	};
-
 
 });

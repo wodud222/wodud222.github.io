@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">	
 	<link rel="stylesheet" href="./css/bin/reset.css" />
+	<link rel="stylesheet" href="./css/src/base.css" />
 	<link rel="stylesheet" href="./css/src/scroll_page_01.css" />
 	<script src="js/jquery/jquery-1.12.4.min.js"></script>
 	<script src="js/jquery/jquery-ui.min.js"></script>
@@ -16,7 +17,7 @@
 	<div class="content">
 		<header id="headBox">
 			<h1 id="topBtn"><a href="#"><span class="hidden">main</span></a></h1>
-			<button type=button id="menu_02">
+			<button type=button id="menu">
 				<ul class="menuSmall_01">
 				<li></li>
 				<li></li>
@@ -42,11 +43,11 @@
 				<div class="mnbRedLine"></div>
 			</div>
 			<div class="mnbTextBox">
-				<ul class="mnbTextUl">
+				<ul class="mnbTextUl link">
 					<li class="mnbHome"></li>
-					<li class="mnbProduct"></li>
-					<li class="mnbVideo"></li>
-					<li class="mnbAbout"></li>
+					<li class="mnbProduct"><a href="./index.html"></a></li>
+					<li class="mnbVideo"><a href="./video.html"><span>video_channel</span></a></li>
+					<li class="mnbAbout"><a href="aboutus.html"></a></li>
 					<li class="mnbContact"></li>
 				</ul>
 			</div>
@@ -71,7 +72,7 @@
 			</ul>
 		</nav><!-- snb-->
 		
-		<article id="mainBox">
+		<article id="mainBox" class="wheel_area">
 			<h2 id="mainTitleBox">
 				<div class="mainTitle_01"></div>
 				<div class="mainTitle_02"></div>
@@ -90,18 +91,18 @@
 			</div>
 		</article>
 		
-		<article id="bodyBox"><h2>bodyBox</h2>
+		<article id="bodyBox" class="wheel_area"><h2>bodyBox</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus beatae, sed ab. Expedita qui deleniti laborum facilis, cupiditate adipisci ea, eos id quaerat quis. Iusto suscipit dolore veniam earum, doloremque consequatur necessitatibus illo, provident fuga, soluta aliquam. Harum tempora natus veniam labore beatae libero mollitia suscipit unde vero maiores adipisci fugiat sit, necessitatibus, facere </p>
 		</article>
-		<article id="neckBox"><h2>neckBox</h2>
-			<img src="./img/cars/car_01_thum.jpg" alt="">
-			<img src="./img/cars/car_02_thum.jpg" alt="">
-			<img src="./img/cars/car_03_thum.jpg" alt="">
-			<img src="./img/cars/car_04_thum.jpg" alt="">
-			<img src="./img/cars/car_05_thum.jpg" alt="">
+		<article id="neckBox" class="wheel_area"><h2>neckBox</h2>
+			<img src="./img/cars/car" alt="">
+			<img src="./img/cars/car" alt="">
+			<img src="./img/cars/car" alt="">
+			<img src="./img/cars/car" alt="">
+			<img src="./img/cars/car" alt="">
 		</article>
-		<article id="elecBox"><h2>elecBox</h2></article>
-		<article id="hardBox"><h2>hardBox</h2></article>
+		<article id="elecBox" class="wheel_area"><h2>elecBox</h2></article>
+		<article id="hardBox" class="wheel_area"><h2>hardBox</h2></article>
 		<footer id="footer"><h2>footer</h2></footer>
 	</div>
 	<div id="scrollDown">
@@ -117,5 +118,5 @@
 	<script src="./js/src/scroll_page_01.js"></script>
 	<script src="./js/src/pagexy_01.js"></script>
 	<script src="./js/src/show_up.js"></script>
-</body>
+	<script src="./js/src/mousewheel_01.js"></script>
 </html>

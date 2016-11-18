@@ -17,7 +17,7 @@ a:focus, input:focus, button:focus, textarea:focus, select:focus{
 	outline:2px solid #fa0; outline-offset:3px; position:relative; z-index:1000;}
 address{font-style:normal;}
 /* html5 */
-header, nav, article, section, footer, aside{display: block;}
+header, article, section, footer, aside{display: block;}
 
 /* input */
 [type="text"],

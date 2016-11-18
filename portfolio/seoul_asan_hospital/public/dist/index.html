@@ -41,48 +41,197 @@
 <body>
 	<header id="headBox">
 		<h1><a href="#"><span class="hidden">서울아산병원</span></a></h1>
-		<button type="button" id="menu"><i class="fa fa-bars" aria-hidden="true"><span class="hidden">메뉴</span></i></button>
-		<button type="button" id="home"><a href=""><i class="fa fa-home" aria-hidden="true"><span class="hidden">홈</span></i></a></button>
-	</header>
-	<nav id="navi">
 		
-		<ul>
-			<li><a href="">진료안내</a></li>
-			<li><a href="">병원이용안내</a></li>
-			<li><a href="">진료과ㆍ의료진</a></li>
-			<li><a href="">예약ㆍ조회ㆍ발급</a></li>
-			<li><a href="">고객서비스</a></li>
-			<li><a href="">의학교육</a></li>
-			<li><a href="">건강정보</a></li>
-			<li><a href="">병원소개</a></li>
+		<button type="button" id="menu">
+			<i class="fa fa-bars" aria-hidden="true">
+				<span class="hidden">메뉴</span>
+			</i>
+		</button>
+		<nav id="navi_accordion">
+			<h2>
+				<i class="fa fa-phone" aria-hidden="true"></i>
+				<span>1688-7575(전화예약)</span>
+			</h2>
+			<dl>
+			<dt>진료안내</dt>
+			<dd>
+				<ul>
+					<li>외래 진료</li>
+					<li>응급 진료</li>
+					<li>입원 진료</li>
+					<li>가정 간호</li>
+					<li>검사실 안내</li>
+				</ul>
+				<ul>
+				<li>진료 절차</li>
+				<li>진료 안내</li>
+				<li>선택 진료</li>
+				</ul>
+			</dd>
+			<dt>병원이용안내</dt>
+			<dd>
+				<ul>
+					<li>찾아오시는 길</li>
+					<li>주요 전화번호</li>
+					<li>층별 위치안내</li>
+					<li>병원시설</li>
+					<li>자원봉사</li>
+				</ul>
+				<ul></ul>
+			</dd>
+			<dt>진료과ㆍ의료진</dt>
+			<dd>
+				<ul>
+					<li>의료진 찾기</li>
+					<li>진료과</li>
+					<li>어린이병원</li>
+					<li>암병원</li>
+					<li>심장병원</li>
+					<li>센터</li>
+					<li>클리닉</li>
+				</ul>
+				<ul></ul>
+			</dd>
+			<dt>예약ㆍ조회ㆍ발급</dt>
+			<dd>
+				<ul>
+					<li>예약</li>
+					<li>조회</li>
+					<li>발급</li>
+				</ul>
+				<ul></ul>
+			</dd>
+			<dt>고객서비스</dt>
+			<dd>
+				<ul>
+					<li>자주하는 질문</li>
+					<li>고객의소리</li>
+					<li>칭찬코너</li>
+					<li>사이트 이용문의</li>
+					<li>콘텐츠 제공안내</li>
+				</ul>
+				<ul></ul>
+			</dd>
+			<dt>건강정보</dt>
+			<dd>
+				<ul>
+					<li>학술 행사</li>
+					<li>학술 영상</li>
+					<li>의학포스</li>
+					<li>3D자료</li>
+				</ul>
+				<ul></ul>
+			</dd>
+			<dt>의학교육</dt>
+			<dd>
+				<ul>
+					<li>의료정보</li>
+					<li>건강TV</li>
+					<li>건강이야기</li>
+				</ul>
+				<ul></ul>
+			</dd>
+			<dt>병원소개</dt>
+			<dd>
+				<ul>
+					<li>재단소개</li>
+					<li>병원소개</li>
+					<li>소식</li>
+					<li>정기간행물</li>
+					<li>교육장안내</li>
+				</ul>
+				<ul></ul>
+			</dd>
+			</dl>
+		</nav>
+		<button type="button" id="home">
+			<a href="">
+				<i class="fa fa-home" aria-hidden="true">
+				<span class="hidden">홈</span></i>
+			</a>
+		</button>
+
+	</header>
+		<nav id="navi">
+			
+			<ul>
+				<li><a href="">진료안내</a></li>
+				<li><a href="">병원이용안내</a></li>
+				<li><a href="">진료과ㆍ의료진</a></li>
+				<li><a href="">예약ㆍ조회ㆍ발급</a></li>
+				<li><a href="">고객서비스</a></li>
+				<li><a href="">의학교육</a></li>
+				<li><a href="">건강정보</a></li>
+				<li><a href="">병원소개</a></li>
+			</ul>
+		</nav>
+		<nav id="navi_popup_pc">
+		<ul class="pop_01">
+			<li>외래진료 안내</li>
+			<li>응급진료 안내</li>
+			<li>입원진료 안내</li>
+			<li>가정간호 안내</li>
+			<li>검사실 안내</li>
 		</ul>
-	</nav>
-	<nav id="navi_popup">
-	<ul class="pop_01">
-		<li>외래진료 안내</li>
-		<li>응급진료 안내</li>
-		<li>입원진료 안내</li>
-		<li>가정간호 안내</li>
-		<li>검사실 안내</li>
-	</ul>
-	<ul class="pop_02">
-		<li>진료 절차</li>
-		<li>진료 안내</li>
-		<li>선택 진료</li>
-	</ul>
-	<ul class="pop_03">
-		<li>
-			<img src="./img/src/tab_icon_01.png" alt="외래진료" />
-			<span>외래진료</span>
-			<p>입원부터 퇴원까지의 모든정보</p>
-		</li>
-		<li>
-			<img src="./img/src/tab_icon_02.png" alt="응급진료" />
-			<span>응급진료</span>
-			<p>24시간 어떠한 응급상황도 대비</p>
-		</li>
-	</ul>
-	</nav>
+		<ul class="pop_02">
+			<li>진료 절차</li>
+			<li>진료 안내</li>
+			<li>선택 진료</li>
+		</ul>
+		<ul class="pop_03">
+			<li>
+				<img src="./img/src/tab_icon_01.png" alt="외래진료" />
+				<span>외래진료</span>
+				<p>입원부터 퇴원까지의 모든정보</p>
+			</li>
+			<li>
+				<img src="./img/src/tab_icon_02.png" alt="응급진료" />
+				<span>응급진료</span>
+				<p>24시간 어떠한 응급상황도 대비</p>
+			</li>
+		</ul>
+		</nav>
+<!-- 	<nav id="navi_accordion">
+		<ul>진료안내
+			<li>
+				<p>외래진료 안내</p>
+				<p>응급진료 안내</p>
+				<p>입원진료 안내</p>
+				<p>가정간호 안내</p>
+				<p>검사실 안내</p>
+			</li>
+			<li>	
+			</li>
+		</ul>
+		<ul>병원이용안내
+			<li></li>
+			<li></li>
+		</ul>
+		<ul>진료과ㆍ의료진
+			<li></li>
+			<li></li>
+		</ul>
+		<ul>예약|조회|발급
+			<li></li>
+			<li></li>
+		</ul>
+		<ul>고객서비스
+			<li></li>
+			<li></li>
+		</ul>
+		<ul>건강정보
+			<li></li>
+			<li></li>
+		</ul>
+		<ul>의학교육
+			<li></li>
+			<li></li>
+		</ul>
+		<ul>병원소개
+			<li></li>
+			<li></li>
+		</ul>
+	</nav> -->
 <!-- addBanner -->
 	<section id="Banner">
 	<section id="addBanner">
@@ -366,15 +515,166 @@
 				<li>Copyright@2014 by Asan Medical Center.All Rights reserved</li>
 			</ul>
 		</div>
-	<div id="footPopup_01">
-		<button type="button"></button>
-	</div>
-	</footer>
-
-	<article id="footPopup_02">
+	<div id="footPopup_allMenu">
+		<ul class="allMenu_title">
+			<li>진료안내</li>
+			<li>병원이용안내</li>
+			<li>진료과ㆍ의료진</li>
+			<li>예약ㆍ조회ㆍ발급</li>
+			<li>고객서비스</li>
+			<li>의학교육</li>
+			<li>건강정보</li>
+			<li>병원소개</li>
+		</ul>
+		<ul class="allMenu_text">
+			<li class="all_Text_01">
+				<a href="#">외래 진료</a>
+				<a href="#">응급 진료</a>
+				<a href="#">입원 진료</a>
+				<a href="#">가정 간호</a>
+				<a href="#">검사실</a>
+	
+			</li>
+			<li class="allText_02">
+				<a href="">찾아오시는 길</a>
+				<a href="">주요 전화번호</a>
+				<a href="">층별 위치안내</a>
+				<a href="">병원시설</a>
+				<a href="">자원봉사</a>
+			</li>
+			<li class="allText_03">
+				<a href="">의료진 찾기</a>
+				<a href="">진료과</a>
+				<a href="">어린이병원</a>
+				<a href="">암병원</a>
+				<a href="">심장병원</a>
+				<a href="">센터</a>
+				<a href="">클리닉</a>
+			</li>
+			<li class="allText_04">
+				<a href="">예약</a>
+				<a href="">조회</a>
+				<a href="">발급</a>
+			</li>
+			<li class="allText_05">
+				<a href="">자주하는 질문</a>
+				<a href="">고객의소리</a>
+				<a href="">칭찬코너</a>
+				<a href="">홈페이지 <br>이용문의</a>
+				<a href="">콘텐츠<br>제공안내</a>
+			</li>
+			<li class="allText_06">
+				<a href="">학술 일정</a>
+				<a href="">학술 영상</a>
+				<a href="">의학포스</a>
+				<a href="">3D자료</a>
+			</li>
+			<li class="allText_07">
+				<a href="">의료정보</a>
+				<a href="">건강TV</a>
+				<a href="">건강이야기</a>
+			</li>
+			<li class="allText_08">
+				<a href="">재단소개</a>
+				<a href="">병원소개</a>
+				<a href="">소식</a>
+				<a href="">정기간행물</a>
+				<a href="">교육장안내</a>
+			</li>
+		</ul>
 		
-	</article>
-	<script src="./js/src/Banner.js"></script>
+		<button type="button" class="allMenu_Btn">
+		<i class="fa fa-angle-down" aria-hidden="true"></i>
+		</button>
+
+	</div>
+
+	<div id="footPopup_site">
+		<ul class="popup_title">
+			<li>진료과</li>
+			<li>암병원</li>
+			<li>어린이병원</li>
+			<li>심장병원</li>
+			<li>센터</li>
+			<li>클리닉</li>
+			<li>기타</li>
+			<li>재단 및 재단 산하병원</li>
+			<li>관련기관</li>
+		</ul>
+		<ul class="popup_text">
+			<li class="popup_01">
+				<a href="#">가정의학과</a>
+				<a href="#">간담도췌외과</a>
+				<a href="#">간이식및<br>간담도외과</a>
+				<a href="#">감염내과</a>
+				<a href="#">건강의학과</a>
+				<a href="#">구강악안면외과</a>
+	
+			</li>
+			<li class="popup_02">
+				<a href="">내과의국</a>
+				<a href="">내분비내과</a>
+				<a href="">노년내과</a>
+				<a href="">대장항문외과</a>
+				<a href="">류마티스내과</a>
+				<a href="">마취통증의학과</a>
+			</li>
+			<li class="popup_03">
+				<a href="">방사선종양학과</a>
+				<a href="">병리과</a>
+				<a href="">비뇨기과</a>
+				<a href="">산부인과</a>
+				<a href="">성형외과</a>
+				<a href="">소화기내과</a>
+			</li>
+			<li class="popup_04">
+				<a href="">신경과</a>
+				<a href="">신경외과</a>
+				<a href="">신경내과</a>
+				<a href="">심장외과</a>
+				<a href="">안과</a>
+				<a href="">알레르기내과</a>
+			</li>
+			<li class="popup_05">
+				<a href="">영상의학과</a>
+				<a href="">위장관외과</a>
+				<a href="">유방내분비외과</a>
+				<a href="">응급의학과</a>
+				<a href="">의공학과</a>
+				<a href="">이비인후과</a>
+			</li>
+			<li class="popup_06">
+				<a href="">일반외과</a>
+				<a href="">임상약리학과</a>
+				<a href="">재활의학과</a>
+				<a href="">정신건강의학과</a>
+				<a href="">정형외과</a>
+				<a href="">종양내과</a>
+			</li>
+			<li class="popup_07">
+				<a href="">진단검사의학과</a>
+				<a href="">치과 교정과</a>
+				<a href="">치과 보존과</a>
+				<a href="">치과 보철과</a>
+				<a href="">치주과</a>
+				<a href="">폐식도외과</a>
+			</li>
+			<li class="popup_08">
+				<a href="">피부과</a>
+				<a href="">핵의학과</a>
+				<a href="">혈관외과</a>
+				<a href="">혈액내과</a>
+				<a href="">호흡기내과</a>
+				<a href="">흉부외과</a>
+			</li>
+		</ul>
+		<button type="button" class="site_Btn">
+			<i class="fa fa-angle-down" aria-hidden="true"></i>
+		</button>
+	</div>	
+	</footer>
+	<script src="./js/src/footer_tab.js"></script>
+<!-- 	<script src="./js/src/Banner.js"></script> -->
 	<script src="./js/src/header_tab.js"></script>
 </body>
 </html>
