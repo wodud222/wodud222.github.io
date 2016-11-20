@@ -3,7 +3,6 @@
 /* header ----------------------------------------*/
 .content{width: 100%; height: 100vh;}
 	#headBox{width: 100%; height: 80px; box-sizing:border-box; position: fixed; z-index:500;top:0; left: 0;}
-	/*#headBox.fix{position: fixed; top: 0}*/
 	h1{width: 164px; height: 64px; float: left; background-image:url("../../img/fender_logo.png"); 
 	background-repeat:no-repeat; background-position:center; margin-top:42px; margin-left:64px; display:none;}
 
@@ -35,33 +34,35 @@
 /*neckBox ----------------------------------------*/
 	#neckBox{position:relative;background-color:#171B1E;background-position:left;background-repeat:no-repeat;}
 
-/*mainText_box*/
+/*#neckTitleBox*/
 	#neckTitleBox{width:550px; height:180px; margin: 160px 360px 80px; margin-right: 0; 
 		background-repeat: no-repeat; background-size:50%; background-image: url("../../img/title/neckTitle.png"); 
 		border: 1px solid #fff;}
 
-/*mainColor_box------------------------------------*/
+/*#neckTextBox------------------------------------*/
 
 	#neckTextBox{width:500px; margin-left:360px;}
-	#neckTextBox>ul{height:auto; margin-bottom: 1.098096vw;} /*size*/
+	#neckTextBox>ul{ margin-bottom: 1.098096vw;} /*size*/
 	#neckTextBox>ul:last-child{margin-bottom: 0;}
-	#neckTextBox>ul>li{font-size: 1.756954vw; text-indent: 0.732064vw; padding: 0.219619vw 0; box-sizing: border-box;
-	background-color: #fff;}
-  #neckTextBox>ul>li:nth-of-type(2){display: none;}
-	  .neckText_01>li:nth-of-type(1){width: 19.033674vw;}
+	#neckTextBox>ul>li{height:3rem; font-size: 1.610541vw; text-indent: 0.732064vw; padding: 0.219619vw 0; box-sizing: border-box;background-color: #fff;cursor:pointer;}
+  #neckTextBox>ul{position: relative;cursor:pointer;}
+  #neckTextBox>ul>li:nth-of-type(1){z-index: 500;}
+  #neckTextBox>ul>li:nth-of-type(1)>span{height:3rem;}
+	.neckText_01>li:nth-of-type(1){width: 19.033674vw;}
     .neckText_02>li:nth-of-type(1){width: 10.980966vw;}
     .neckText_03>li:nth-of-type(1){width: 24.158129vw;}
     .neckText_04>li:nth-of-type(1){width: 17.569546vw;}
     .neckText_05>li:nth-of-type(1){width: 19.033674vw;}
     .neckText_06>li:nth-of-type(1){width: 16.105417vw;}
 
-
-
-
-
-/*	#mainColorBox>div{width:25%;height:inherit;float:left;background-repeat:no-repeat;
-	background-position:center;transition:all 0.5s;
-	display:none;cursor:pointer;}*/
+  #neckTextBox>ul>li:nth-of-type(2){position: absolute; top: 0; left: 0;width:0;}
+  #neckTextBox>ul>li:nth-of-type(2)>span{display: none;height:auto;cursor:none;}
+  	.neckText_01>li:nth-of-type(2)>span{width: 28.550512vw;}
+    .neckText_02>li:nth-of-type(2)>span{width: 14.641288vw;}
+    .neckText_03>li:nth-of-type(2)>span{width: 16.837481vw;}
+    .neckText_04>li:nth-of-type(2)>span{width: 14.641288vw;}
+    .neckText_05>li:nth-of-type(2)>span{width: 17.569546vw;}
+    .neckText_06>li:nth-of-type(2)>span{width: 19.765739vw;}
 
 
 /* ------------------------------------------------*/
