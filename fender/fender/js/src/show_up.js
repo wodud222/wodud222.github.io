@@ -1,5 +1,8 @@
 //show_up.js
 $(function(){
+
+//메인페이지
+
 var bg_box_01 =  $('.bg_box').fadeIn(3000);
 var menu = $('#menu').delay(1000).fadeIn(500);
 var logo = $('#topBtn').delay(1000).fadeIn(500);
@@ -18,4 +21,14 @@ var snb_04 = $('#snb').find('li').eq(3).delay(3000).fadeIn(1000);
 var snb_05 = $('#snb').find('li').eq(4).delay(3000).fadeIn(1000);
 var scroll = $('#scrollDown').delay(3200).fadeIn(1000);
 	
+
+
+ // 링크연결 
+ $('.mnbTextUl>li').on('click',function(e){
+ 	$('#mnb').fadeOut(1000,function(){
+ 		$('content').fadeOut(1000);
+ 		});
+ 	});
+
 });
+

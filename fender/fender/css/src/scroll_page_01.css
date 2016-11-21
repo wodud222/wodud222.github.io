@@ -57,32 +57,73 @@
 	#neckBox>img{width:300px; margin:1rem;
 		display: none;}
 	#elecBox{background-color: #171B1E;}
-	#hardBox{background-color: #171B1E;}
 	article>h2{font-size: 3rem; 
 		text-align: center;
 		padding-top: 3rem;
 		text-shadow:0.1rem 0.1rem 0.1rem #333;
 		color:#fff;}
+/*neckBox ----------------------------------------*/
+	#neckBox{position:relative;background-color:#171B1E;background-position:left;background-repeat:no-repeat;}
+
+/*#neckTitleBox*/
+	#neckTitleBox{width:550px;
+				  height:180px; 
+				  margin: 160px 360px 80px; 
+				  margin-right: 0; 
+				  background-repeat: no-repeat;
+		 		  background-size:50%; 
+		 		  background-image: url("../../img/title/neckTitle.png");
+		 		  position:absolute;top:0; }
+
+/*#neckTextBox------------------------------------*/
+
+	#neckTextBox{width:500px; margin-left:360px;position:absolute;bottom:25%;}
+	#neckTextBox>ul{ margin-bottom: 1.098096vw;} /*size*/
+	#neckTextBox>ul:last-child{margin-bottom: 0;}
+	#neckTextBox>ul>li{height:2.8rem; font-size: 1.610541vw; text-indent: 0.732064vw; padding: 0.219619vw 0; box-sizing: border-box;
+	background-color: #fff; }/*font-size:22px*/
+  #neckTextBox>ul{position: relative;}
+  #neckTextBox>ul>li:nth-of-type(1){z-index: 500; }
+		.neckText_01>li:nth-of-type(1){width: 16.837481vw;}
+    .neckText_02>li:nth-of-type(1){width: 9.516837vw;}
+    .neckText_03>li:nth-of-type(1){width: 21.229868vw;}
+    .neckText_04>li:nth-of-type(1){width: 15.373352vw;}
+    .neckText_05>li:nth-of-type(1){width: 16.105417vw;}
+    .neckText_06>li:nth-of-type(1){width: 13.909224vw;}
+
+  #neckTextBox>ul>li:nth-of-type(2){position: absolute; top: 0; left: 0; background-color: #c20c0c; color: #fff;}
+  	.neckText_01>li:nth-of-type(2){width: 25.622254vw;}
+    .neckText_02>li:nth-of-type(2){width: 12.445095vw;}
+    .neckText_03>li:nth-of-type(2){width: 14.641288vw;}
+    .neckText_04>li:nth-of-type(2){width: 12.445095vw;}
+    .neckText_05>li:nth-of-type(2){width: 15.373352vw;}
+    .neckText_06>li:nth-of-type(2){width: 17.569546vw;}
+
+
+
+
+
+	#hardBox>h2,
 /*hardware -----------------------------------*/
 
 
 /*aboutBox ----------------------------------------*/
-	#hardwareBox{position:relative; background-color:rgba(0,0,0,0.5);  }
-	#hardwareBox>h2, #hardwardBox>div{margin-left:360px;}
+	#hardBox{background-color:rgba(0,0,0,0.5);}
+	#hardBox>h2, #hardBox>div{margin-left:360px;}*/
 	
 /*aboutTitleBox ------------------------------------*/
 	#hardTitleBox{width:1270px; height:400px; margin-top:60px;background-repeat: no-repeat; 
-		background-image: url("../../img/test_1.svg"); background-size:97%;}
+		background-image: url("../../img/test_1.svg"); background-size:97%;}*/
 	
 /*aboutTextBox ------------------------------------*/
-  #hardTextBox{width:1270px; height:230px; margin-top:60px; /*border: 1px solid #fff;*/}
-  #hardTextBox>dl{width: 350px; height: 90px; float: left; /*border: 1px solid #fff;*/ margin-right: 80px;}
+/*  #hardTextBox{width:1270px; height:230px; margin-top:60px; /*border: 1px solid #fff;*/}
+/*  #hardTextBox>dl{width: 350px; height: 90px; float: left;*/ /*border: 1px solid #fff;*//* margin-right: 80px;}*/*/
   /*#hardTextBox>dl:nth-of-type(1),#hardTextBox>dl:nth-of-type(4){margin-right: 48px;}*/
-  #hardTextBox>dl:nth-of-type(3){margin-right: 0;}
+/*  #hardTextBox>dl:nth-of-type(3){margin-right: 0;}
   #hardTextBox>dl:nth-of-type(4), #hardTextBox>dl:nth-of-type(5){margin-top: 20px;}
   #hardTextBox>dl>img{width: 50px; height: 50px; margin-right: 35px; float: left;}
   #hardTextBox>dl>dt{color: #fff; font-size: 1.4rem; /*line-height: 3rem;*/}
-  #hardTextBox>dl>dd{margin-top: 5px; font-size: 1.2rem;  padding-left:55px; box-sizing: border-box;}
+ /* #hardTextBox>dl>dd{margin-top: 5px; font-size: 1.2rem;  padding-left:55px; box-sizing: border-box;}*/*/
 
 
 
@@ -90,7 +131,7 @@
 
 /*#scrollDown---------------------------------*/
 
-#scrollDown{width:90px;height:200px;position:fixed;bottom:-15%;left:50%;margin-left:-2.34375vw;cursor:pointer;display:none;}
+#scrollDown{width:90px;height:200px;position:fixed;bottom:0;left:50%;margin-left:-2.34375vw;cursor:pointer;}
 #scrollDown>span{width:6.6875vw;height:10.41666667vw;
 				font-family:'Open Sans', nanumGothic, "돋움",dotum;
 				 animation-name:scrolled;
