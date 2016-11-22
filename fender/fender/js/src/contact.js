@@ -11,14 +11,10 @@ var map = $('#contact .map');
    
  
 /*시작할때 나라이름 한번 나타남*/
-	map.find('dt').fadeIn(1000).delay(700).fadeOut(700);
+	map.find('dt').fadeIn(2000).delay(700).fadeOut(700);
 	
-	map.find('dt').eq(0).delay(1500).fadeIn(1000);
+	map.find('dt').eq(0).fadeIn(500);
 	
-	/*while(MouseEvent=1){
-	map.find{'.headquarterBtn'}.show();
-		
-	}*/
     
 /*각 나라위치에 마우스를 올렸을때 이름(dt)가 나타남 */    
     map.find('.btn').mouseenter(function(){

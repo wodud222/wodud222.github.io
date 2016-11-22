@@ -21,6 +21,14 @@ var snb_04 = $('#snb').find('li').eq(3).delay(3000).fadeIn(1000);
 var snb_05 = $('#snb').find('li').eq(4).delay(3000).fadeIn(1000);
 var scroll = $('#scrollDown').delay(3200).fadeIn(1000);
 	
+// neck
+var neck_tit = $('#neckBox').find('#neckTitleBox').fadeIn()
+// about
+var about_tit = $('#aboutBox').find('#aboutTitleBox').delay(1500).fadeIn(500);
+var about_txt = $('#aboutBox').find('#aboutTextBox').delay(2000).fadeIn(1500);
+var about_btn = $('#aboutBox').find('button').delay(2500).fadeIn(1500);
+
+
 
 
  // 링크연결 

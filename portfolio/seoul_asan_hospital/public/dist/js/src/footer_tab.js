@@ -19,7 +19,7 @@ $(function(){
 	
 	$('.allMenu_Btn').on('click',function(){
 		$('#footPopup_allMenu').fadeOut(400);
-	})
+	});
 	
 	});
 

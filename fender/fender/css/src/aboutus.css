@@ -1,7 +1,5 @@
 /* aboutus.css */
 .content{width: 100%; height: 100vh;}
-	h1{display:block;}
-	#menu{display:block;}
 	article{width: 100%; height:100vh; padding-top: 5rem; box-sizing: border-box;}
 
 /*aboutBox ----------------------------------------*/
@@ -13,13 +11,13 @@
 	
 /*aboutTitleBox ------------------------------------*/
 	#aboutTitleBox{width:926px; height:180px; margin-top:160px; background-repeat: no-repeat; background-size:50%;
-		background-image: url("../../img/about/aboutTitle.png"); }
+		background-image: url("../../img/about/aboutTitle.png");display:none; }
 	
 /*aboutTextBox ------------------------------------*/
-  #aboutTextBox{width:840px;height:100px; margin-top:20px;}
+  #aboutTextBox{width:840px;height:100px; margin-top:20px;display:none;}
   #aboutBox p, button>a{color: #fff; font-size: 1.5rem;}
   #aboutBox p{}
   #aboutBox>button{width: 150px; height: 50px; background-color: transparent; border: 1px solid #fff; 
-  	margin-top:50px;}
+  	margin-top:50px;display:none;}
   #aboutBox>button:hover{background-color:rgba(210,2,2,0.5); border: 0; transition: all 0.8s; }
   #aboutBox>button:hover a{color: #000;transition: all 0.8s; }

@@ -63,7 +63,7 @@ $(function() {
 	console.log(div_num);
 
 	console.log(front_list[div_num].img);
-	var fr_img = $('.bg_box').find('img');
+	var fr_img = $('#mainBox').find('img');
 
 	console.log(fr_img);
 	fr_img.eq(0).attr({src:baseUrl+front_list[div_num].img});

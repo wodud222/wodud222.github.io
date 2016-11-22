@@ -34,21 +34,56 @@ var list_02 = [
 
 //accordion pop_up
     var acco = $('#navi_accordion');
+    var acco_li = $('#navi_accordion').find('dt').next('dd').find('ul').eq(0).find('li');
+    var acco_dd = $('#navi_accordion').find('dt').next('dd');
+    
+
     $('#menu').on('click',function(){
       acco.fadeToggle(300);
-    
-    });
-//dt hover시 dd오픈
-    acco.find('dt').on('click',function(){
-    	acco.find('dd').slideUp();
-    	$(this).next('dd').slideDown();
+      // acco_dd.on('click',function(){
+      // acco_dd
+      acco.on('mouseleave',function(){
+      	acco.fadeOut();
+      	})
+      });
 
+// var li_list = [
+// {"first":"진료안내","second":"응급증상"},
+// {"first":"진료안내","second":"응급증상","third":"","forth":""},
+// {"first":"진료안내","second":"응급증상"},
+// ];
+
+ 		// var acco_i = $('#navi_accordion').find('dt').next('dd').find('ul').eq(0).find('li').eq(i);
+
+//dt hover시 dd오픈
+acco.find('dt').on('click',function(){
+		acco.find('dd').slideUp();
+		$(this).next('dd').slideDown();
+    	acco.find('dt')
+
+
+        });
     	
+ 		acco_li.eq(0).on('mouseenter',function(){
+    	acco_dd.find('ul').eq(1).fadeIn();
+    	
+    	acco.find('dd').eq(0).on('mouseleave',function(){
+    	acco_dd.find('ul').eq(1).css({'display':'none'});
+    		
     	});
+    	
+
+    		
+    	
+   });
 
     acco.find('.test_01').on('mouseenter',function(){
     	$(this).next('ul').fadeIn();
     });
+
+
+
+
 }); //function
 
 
