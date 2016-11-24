@@ -81,8 +81,12 @@ acco.find('dt').on('click',function(){
     	$(this).next('ul').fadeIn();
     });
 
+//sub page lnb accordion
+    
+  $('#lnb').find('dt').on('click',function(){
+    $(this).next('dd').slideToggle();
 
-
+  });
 
 }); //function
 

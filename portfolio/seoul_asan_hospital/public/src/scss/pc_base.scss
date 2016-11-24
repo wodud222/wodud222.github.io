@@ -544,14 +544,14 @@
 		position:relative;
 		.snb{@include b-set(1px);
 			margin:0 auto;
-			width:100%;
+			width:960px;
 			height:100px;
 			background-color:#efefef;
 			position:relative;
 			>ul{width:100%;
-				height:100%;
+				height:100px;
 				padding-top:36px;
-				>li{float:left;
+				>li{
 					&:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),&:nth-of-type(8){@include font330(20px);}
 					&.snb_01{padding-left:14px;cursor:pointer;}
 					&.snb_01::before{@include after(100);@include back("../img/src/footer_icon.png",100%);width:18px;height:10px;left:145px;top:44%;
