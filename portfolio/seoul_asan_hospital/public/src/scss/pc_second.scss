@@ -3,27 +3,11 @@
 body{height:auto;}
 #wrap{width:960px;height:1445px;margin:0 auto;opacity:0.8;}
 
+// important ! ----------------------------------------------------------
 
-// lnb ------------------------------------------------------------------
-
-
-#lnb{width:202px;height:1375px;background-color:#fff;/* rgba(235,235,235,0.45) */;float:left;@include b-all(2px);padding-top:70px;}
-#lnb>h2{width:100%;height:30px;@include font330(29px);padding-left:37px;padding-bottom:20px;}
-#lnb>span{margin-top:40px;}
-#lnb>dl{padding-top:40px;background-color:#fff}
-#lnb>dl>dt{width:100%;height:52px;background-color:#fcfefd;@include b-set(1px);@include font330(20px);color:#fff;padding-left:40px;padding-top:10px;color:#4c4d4f;transition:all 0.1s;cursor:pointer;cursor:pointer;}
-#lnb>dl>dt:hover{background-color:#006869;color:#fff;}
-#lnb>dl>dd{width:100%;height:auto;@include font330(16px);font-weight:bold;display:none;background-color:#fcfefd;}
-#lnb>dl>dd>ul{width:inherit;height:inherit;}
-#lnb>dl>dd>ul>li{padding-top:8px;padding-bottom:8px;padding-left:40px;line-height:1.5;}
-#lnb>dl>dd>ul>li:hover{background-color:#006869;color:#fff;}
-
-.reservBox{width:162px;padding-left:20px;height:110px;background-color:#fa0;margin-top:40px;margin-left:20px;background-color:#efefef;padding-top:30px;}
-
-.reservBox>span{width:auto;height:auto;text-align:center;@include font330(18px);}
-.reservBox>span:nth-of-type(1){padding-left:26px;}
-.reservBox>span:nth-of-type(2){padding-left:10px;}
-
+#lnb>dl>dt:nth-of-type(1){background-color:#006869;color:#fff;}
+#lnb>dl>dt:nth-of-type(1)+dd{display:block;}
+#lnb>dl>dt:nth-of-type(1)+dd>ul>li:nth-of-type(1){background-color:#efefef;color:#c0c0;}
 
 // content ---------------------------------------------------------------
 
@@ -94,11 +78,12 @@ body{height:auto;}
 
 // three_buttons
 
-	#three_buttons{width:40px;height:300px;position:absolute;z-index:1000;margin-left:166px;margin-top:600px;@include font360(20px);}
-	#three_buttons>div{margin-top:2px;color:#fff;padding-left:4px;}
-	.first_button{width:40px;height:100px;background-color:#499C9F;}
-	.second_button{width:40px;height:100px;background-color:#FFA039;}
-	.third_button{width:40px;height:100px;background-color:#6097C2;}
+	#three_buttons{width:40px;height:420px;position:absolute;z-index:1000;margin-left:166px;margin-top:600px;@include font360(20px);}
+	#three_buttons>div{margin-top:2px;color:#fff;padding-left:12px;@include nanum(16px,600);text-shadow:1px 1px 1px #666;transition:all 0.3s;cursor:pointer;}
+	#three_buttons>div:hover{transform:scale(1.03);}
+	.first_button{width:40px;height:120px;background-color:#5EB300;padding-top:20px;}
+	.second_button{width:40px;height:120px;background-color:#5276A6;padding-top:10px;}
+	.third_button{width:40px;height:120px;background-color:#6F6F6F;padding-top:10px;}
 
 
 table{@include b-all(2px);border-collapse:collapse;margin-top:30px;@include font330(13px);font-weight:bold;margin-bottom:10px;}

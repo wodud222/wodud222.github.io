@@ -1,6 +1,8 @@
 //_mixin.scss
 @import "_color";
 
+//define class
+
 //@expend @contend @for @if @for-each @switch
 
 //#{} <<<<<<<<
@@ -16,6 +18,15 @@ $pc:960;
 	@return ($width / $viewWidth)*100vw;
 }
 
+//폰트 
+
+//font weight:100~900 /ultrathin thin normal bold boolder light / normal : 400 bold :600 //
+
+@mixin noto($i:16px,$j:normal){font-family: 'Noto Sans KR', sans-serif; font-size:$i; font-weight:$j;}
+@mixin nanum($i:16px,$j:normal){font-family: 'Nanum Gothic', sans-serif; font-size:$i; font-weight:$j;}
+
+
+//보더라인 
 
 @mixin b-set($size:2px,$borderColor:$bc)
 		{
@@ -25,6 +36,9 @@ $pc:960;
 		{
 			border:{top:$size solid $borderColor;left:$size solid $borderColor;right:$size solid $borderColor;bottom:$size solid $borderColor;}
 		}
+
+
+//벤더프리픽스 
 
 @mixin rounded($i){
 	-webkit-border-radius:$i;
@@ -74,8 +88,9 @@ $pc:960;
 
 // position     ---------------------------------
 
-@mixin p_abs($i:100){$z-index:$i;position:absolute;};
-@mixin p_rel($i:100){$z-index:$i;position:relative;};
+@mixin p_abs($i:100){$z-index:$i;position:absolute;}
+@mixin p_rel($i:100){$z-index:$i;position:relative;}
+@mixin p_fix($i:100){$z-index:$i;position:fixed;}
 
 // margin / padding -----------------------------
 

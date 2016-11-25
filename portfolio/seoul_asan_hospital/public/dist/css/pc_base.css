@@ -51,6 +51,7 @@
         position: relative;
         font-family: 'Noto Sans KR', sans-serif;
         font-size: 18px;
+        font-weight: normal;
         float: left;
         font-weight: bold;
         color: #006869;
@@ -58,7 +59,7 @@
         margin-left: 24px;
         color: #518b8d; }
         #navi > ul > li:nth-child(1) {
-          margin-left: px; }
+          margin-left: 20px; }
         #navi > ul > li:last-of-type::after {
           display: none; }
         #navi > ul > li::after {
@@ -110,8 +111,9 @@
         border-bottom: 0; }
         #navi_popup_pc > ul.pop_01 > li {
           margin-top: 24px;
+          font-family: 'Noto Sans KR', sans-serif;
           font-size: 19px;
-          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+          font-weight: normal;
           color: #4c4d4f; }
           #navi_popup_pc > ul.pop_01 > li:nth-of-type(1) {
             margin-top: 0; }
@@ -122,8 +124,9 @@
         border-right: 1px solid #b3d6d2; }
         #navi_popup_pc > ul.pop_02 > li {
           margin-top: 24px;
+          font-family: 'Noto Sans KR', sans-serif;
           font-size: 19px;
-          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+          font-weight: normal;
           color: #4c4d4f; }
           #navi_popup_pc > ul.pop_02 > li:nth-of-type(1) {
             margin-top: 0; }
@@ -148,15 +151,17 @@
             margin-top: 12px;
             float: left;
             text-align: center;
+            font-family: 'Noto Sans KR', sans-serif;
             font-size: 22px;
-            font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif; }
+            font-weight: normal; }
           #navi_popup_pc > ul.pop_03 > li > p {
             width: 240px;
             height: auto;
             float: left;
             text-align: center;
+            font-family: 'Noto Sans KR', sans-serif;
             font-size: 18px;
-            font-family: 'Noto Sans Korean Thin', arial, nanumGothic, "돋움", dotum, sans-serif;
+            font-weight: normal;
             padding-top: 10px; }
   #navi_accordion {
     display: none; }
@@ -683,72 +688,75 @@
         width: 100%;
         height: 100px;
         padding-top: 36px; }
-        #footBox .snb > ul > li:nth-of-type(1), #footBox .snb > ul > li:nth-of-type(2), #footBox .snb > ul > li:nth-of-type(3), #footBox .snb > ul > li:nth-of-type(4), #footBox .snb > ul > li:nth-of-type(5), #footBox .snb > ul > li:nth-of-type(6), #footBox .snb > ul > li:nth-of-type(7), #footBox .snb > ul > li:nth-of-type(8) {
-          font-size: 20px;
-          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif; }
-        #footBox .snb > ul > li.snb_01 {
-          padding-left: 14px;
-          cursor: pointer; }
-        #footBox .snb > ul > li.snb_01::before {
-          content: "";
-          display: block;
-          z-index: 100;
-          position: absolute;
-          background-size: 100%;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-image: url("../img/src/footer_icon.png");
-          width: 18px;
-          height: 10px;
-          left: 145px;
-          top: 44%;
-          transition: all 0.3s; }
-        #footBox .snb > ul > li.snb_01:hover::before {
-          transform: translateY(-4px); }
-        #footBox .snb > ul > li.snb_02 {
-          padding-left: 54px;
-          cursor: pointer; }
-        #footBox .snb > ul > li.snb_02::after {
-          content: "";
-          display: block;
-          z-index: 100;
-          position: absolute;
-          background-size: 100%;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-image: url("../img/src/footer_icon.png");
-          width: 18px;
-          height: 10px;
-          left: 335px;
-          top: 44%;
-          transition: all 0.3s;
-          cursor: pointer; }
-        #footBox .snb > ul > li.snb_02:hover::after {
-          transform: translateY(-4px); }
-        #footBox .snb > ul > li.snb_03 {
-          padding-left: 54px; }
-        #footBox .snb > ul > li.snb_04 {
-          padding-left: 24px;
-          font-style: bold; }
-        #footBox .snb > ul > li.snb_05 {
-          padding-left: 24px; }
-        #footBox .snb > ul > li.snb_06 {
-          padding-left: 16px; }
-        #footBox .snb > ul > li.snb_06::after {
-          content: "";
-          display: block;
-          z-index: 100;
-          position: absolute; }
-        #footBox .snb > ul > li.snb_07 {
-          padding-left: 16px; }
-        #footBox .snb > ul > li.snb_07::after {
-          content: "";
-          display: block;
-          z-index: 100;
-          position: absolute; }
-        #footBox .snb > ul > li.snb_08 {
-          color: #f68b1f;
-          padding-left: 24px; }
+        #footBox .snb > ul > li {
+          float: left; }
+          #footBox .snb > ul > li:nth-of-type(1), #footBox .snb > ul > li:nth-of-type(2), #footBox .snb > ul > li:nth-of-type(3), #footBox .snb > ul > li:nth-of-type(4), #footBox .snb > ul > li:nth-of-type(5), #footBox .snb > ul > li:nth-of-type(6), #footBox .snb > ul > li:nth-of-type(7), #footBox .snb > ul > li:nth-of-type(8) {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 18px;
+            font-weight: normal; }
+          #footBox .snb > ul > li.snb_01 {
+            padding-left: 50px;
+            cursor: pointer; }
+          #footBox .snb > ul > li.snb_01::before {
+            content: "";
+            display: block;
+            z-index: 100;
+            position: absolute;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../img/src/footer_icon.png");
+            width: 18px;
+            height: 10px;
+            left: 18.5%;
+            top: 44%;
+            transition: all 0.3s; }
+          #footBox .snb > ul > li.snb_01:hover::before {
+            transform: translateY(-4px); }
+          #footBox .snb > ul > li.snb_02 {
+            padding-left: 54px;
+            cursor: pointer; }
+          #footBox .snb > ul > li.snb_02::after {
+            content: "";
+            display: block;
+            z-index: 100;
+            position: absolute;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../img/src/footer_icon.png");
+            width: 18px;
+            height: 10px;
+            left: 36.5%;
+            top: 44%;
+            transition: all 0.3s;
+            cursor: pointer; }
+          #footBox .snb > ul > li.snb_02:hover::after {
+            transform: translateY(-4px); }
+          #footBox .snb > ul > li.snb_03 {
+            padding-left: 54px; }
+          #footBox .snb > ul > li.snb_04 {
+            padding-left: 24px;
+            font-style: bold; }
+          #footBox .snb > ul > li.snb_05 {
+            padding-left: 24px; }
+          #footBox .snb > ul > li.snb_06 {
+            padding-left: 16px; }
+          #footBox .snb > ul > li.snb_06::after {
+            content: "";
+            display: block;
+            z-index: 100;
+            position: absolute; }
+          #footBox .snb > ul > li.snb_07 {
+            padding-left: 16px; }
+          #footBox .snb > ul > li.snb_07::after {
+            content: "";
+            display: block;
+            z-index: 100;
+            position: absolute; }
+          #footBox .snb > ul > li.snb_08 {
+            color: #f68b1f;
+            padding-left: 40px; }
       #footBox .snb::before {
         content: "";
         display: block;
@@ -873,8 +881,9 @@
         #footPopup_allMenu > ul.allMenu_title > li {
           float: left;
           margin-left: 18px;
-          font-size: 20px;
-          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+          font-family: 'Nanum Gothic', sans-serif;
+          font-size: 19.5px;
+          font-weight: normal;
           color: #006869;
           font-weight: bold; }
           #footPopup_allMenu > ul.allMenu_title > li::after {
@@ -912,8 +921,9 @@
           #footPopup_allMenu > ul.allMenu_text > li > a {
             transition: all 0.3s;
             margin-top: 10px;
+            font-family: 'Noto Sans KR', sans-serif;
             font-size: 16px;
-            font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+            font-weight: normal;
             display: block;
             width: auto;
             height: auto; }
@@ -957,8 +967,9 @@
           float: left;
           margin-left: 22px;
           transition: all 0.3s;
+          font-family: 'Noto Sans KR', sans-serif;
           font-size: 22px;
-          font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+          font-weight: normal;
           color: #006869; }
           #footPopup_site > ul.popup_title > li:nth-of-type(1) {
             margin-left: 0;
@@ -966,8 +977,9 @@
           #footPopup_site > ul.popup_title > li:nth-of-type(1):after {
             display: block; }
           #footPopup_site > ul.popup_title > li:hover {
+            font-family: 'Noto Sans KR', sans-serif;
             font-size: 26px;
-            font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif; }
+            font-weight: normal; }
           #footPopup_site > ul.popup_title > li:hover::after {
             display: block; }
           #footPopup_site > ul.popup_title > li::after {
@@ -990,8 +1002,9 @@
           #footPopup_site > ul.popup_text > li > a {
             transition: all 0.3s;
             margin-top: 10px;
+            font-family: 'Noto Sans KR', sans-serif;
             font-size: 16px;
-            font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+            font-weight: 500;
             display: block;
             width: auto;
             height: auto; }
