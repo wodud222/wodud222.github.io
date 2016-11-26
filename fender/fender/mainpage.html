@@ -8,15 +8,21 @@
 	<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">	
 	<link rel="stylesheet" href="./css/bin/reset.css" />
 	<link rel="stylesheet" href="./css/src/base.css" />
-	<link rel="stylesheet" href="./css/src/scroll_page_01.css" />
+	<link rel="stylesheet" href="./css/src/scroll_page.css" />
+	<link rel="stylesheet" href="./css/src/body.css" />
 	<script src="js/jquery/jquery-1.12.4.min.js"></script>
 	<script src="js/jquery/jquery-ui.min.js"></script>
 	<title>Document</title>
 </head>
-<body id="allBox">
+<body>
 	<div class="content">
+		<div class="fixedBox">
 		<header id="headBox">
-			<h1 id="topBtn"><a href="#"><span class="hidden">main</span></a></h1>
+			<h1 id="topBtn">
+				<a href="#">
+				<span class="hidden">main</span>
+				</a>
+			</h1>
 			<button type=button id="menu">
 				<ul class="menuSmall_01">
 				<li></li>
@@ -36,6 +42,7 @@
 				</ul>
 			</button>
 		</header>
+	
 	<div id="mnb">
 		<div class="mnbBox">
 			<div class="mnbLineBox">
@@ -59,9 +66,10 @@
 					<li><i class="fa fa-twitter" aria-hidden="true"></i></li>
 					<li><i class="fa fa-youtube" aria-hidden="true"></i></li>
 				</ul>
-			</div>
-		</div>
-		</div>
+			</div><!-- mnbUnderBox -->
+		</div><!-- mnbBox -->
+	</div><!-- mnb -->
+		
 		<nav id ="snb">
 			<ul>
 				<li><a href="#mainBox"><span class="hidden">mainBox</span></a></li>
@@ -72,9 +80,20 @@
 			</ul>
 		</nav><!-- snb-->
 		
+		<div class="bg_box">
+			<img src="./img/red_front.png" alt="guitar" class="front" />
+			<img src="./img/red_back.png" alt="guitar" class="back" />
+		</div>
+		
+		</div><!-- fixedBox -->
+	
+	
+
+	<!-- article area -->
+		<div id="articleBox">
+		
 		<article id="mainBox" class="wheel_area">
 			<h2 id="mainTitleBox">
-
 			</h2>
 			<div id="mainColorBox">
 				<div class="red"></div>
@@ -82,23 +101,42 @@
 				<div class="black"></div>
 				<div class="green"></div>
 			</div>
-				<img src="./img/red_front.png" alt="guitar" class="front" />
-				<img src="./img/red_back.png" alt="guitar" class="back" />
-		<div id="scrollDown">
-		<span>Scroll down</span>
-		<ul class="triangle">
-			<li><i class="fa fa-caret-down" aria-hidden="true"></i></li>
-			<li><i class="fa fa-caret-down" aria-hidden="true"></i></li>
-			<li><i class="fa fa-caret-down" aria-hidden="true"></i></li>
-		</ul>
-	</div>
-		</article>
+			<div id="scrollDown">
+				<span>Scroll down</span>
+				<ul class="triangle">
+					<li><i class="fa fa-caret-down" aria-hidden="true"></i></li>
+					<li><i class="fa fa-caret-down" aria-hidden="true"></i></li>
+					<li><i class="fa fa-caret-down" aria-hidden="true"></i></li>
+				</ul>
+			</div>
+		</article><!-- mainBox -->
 		
-		<article id="bodyBox" class="wheel_area"><h2>bodyBox</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus beatae, sed ab. Expedita qui deleniti laborum facilis, cupiditate adipisci ea, eos id quaerat quis. Iusto suscipit dolore veniam earum, doloremque consequatur necessitatibus illo, provident fuga, soluta aliquam. Harum tempora natus veniam labore beatae libero mollitia suscipit unde vero maiores adipisci fugiat sit, necessitatibus, facere </p>
+		<article id="bodyBox" class="wheel_area">
+
+		  <div id="body">
+          	<div class="bodyName"></div>
+          	<div class="bodyText">
+              <ul>
+                  <li><span>Body shape</span><div></div></li>
+                  <li><span>Body material</span><div></div></li>
+                  <li><span>Body finish</span><div></div></li>
+              </ul>
+          </div>
+        <article class="speaker">
+				<div class="dot"></div>
+				<div class="circlebox circle_1"></div>
+				<div class="circlebox circle_2"></div>
+				<div class="circlebox circle_3"></div>
 		</article>
+       </div>
+
+
+		</article><!-- bodyBox -->
+		
 		<article id="neckBox">
-			<h2 id="neckTitleBox"><span class="hidden">neck</span></h2>
+			<h2 id="neckTitleBox">
+				<span class="hidden">neck</span>
+			</h2>
 
 			<div id="neckTextBox">
 			  <ul class="neckText_01">
@@ -126,15 +164,19 @@
 			  	<li><span>42mm &#124; Synthetic Bone</span></li>
 			  </ul>
 			</div>
-		</article>
-	</div>
+		</article><!-- neckBox -->
+		
 		<article id="elecBox" class="wheel_area">
-		<h2>elecBox</h2>
-		</article>
-		<article id="hardBox" class="wheel_area">
-			<h2 id="hardTitleBox"></h2>
+			<h2>elecBox</h2>
+		</article><!-- elecBox -->
+		
+		<article id="hardBox">
+		<div id="hardwareBox" class="wheel_area">
+		</div>
+		
 			<div id="hardTextBox">
-			  <dl><img src="./img/bridge.png" alt="">
+			  <dl>
+			  	<img src="./img/bridge.png" alt="">
 			  	<dt>Bridge</dt>
 			  	<dd>6-Saddie Standard Strings</dd>
 			  </dl>
@@ -155,7 +197,10 @@
 			  	<dd>Knurled Flat-Top</dd>
 			  </dl>
 			</div>
-		</article>
+		</article><!-- hardBox -->
+
+
+		</div><!-- articleBox -->
 <!-- 		<article id="hardwareBox">
 			<h2 id="hardTitleBox"></h2>
 
@@ -183,13 +228,14 @@
 			</div>
 		</article> -->
 
-	</div>
+	</div><!-- content -->
 <!-- jQuery -->
 	
 	<script src="./js/src/menu.js"></script>
 	<script src="./js/src/neck.js"></script>
 	<script src="./js/src/scroll_page_01.js"></script>
 	<script src="./js/src/pagexy_01.js"></script>
+	<script src="./js/src/body.js"></script>
 	<script src="./js/src/show_up.js"></script>
-	<script src="./js/src/mousewheel_01.js"></script>
+<!-- 	<script src="./js/src/mousewheel_01.js"></script> -->
 </html>

@@ -1,0 +1,10 @@
+/*body.css*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+#body{width: 100vw;height: 100vh;box-sizing: border-box;padding: 20vh 50vw 12vh 22vw}
+#body .bodyName{width: 100%;height: 30%;margin-bottom: 5%;/*box-sizing: border-box;border:1px solid #fff;*/background-image: url(../../img/title/BodyTitle.png);background-size: contain;background-position: left;background-repeat: no-repeat;}
+#body .bodyText{/*box-sizing: border-box;border:1px solid #fff;*/width: 100%;height: 65%;overflow: hidden}
+#body .bodyText ul{width: 100%;height: auto;margin-top: 3rem;margin-left: -100%;}
+#body .bodyText li{width: 200%;height: 3rem;line-height: 3rem;position: relative;}
+#body .bodyText span{width:auto;font-size: 1.5rem;padding:0 2.5rem 0.2rem 0.8rem;font-family: 'Open Sans', sans-serif;margin-left:50%;color: #111;background-color: #fff;}
+#body .bodyText div{height: 3rem;background-color: transparent;position: absolute;top: 0;left: 50%;z-index: 200}

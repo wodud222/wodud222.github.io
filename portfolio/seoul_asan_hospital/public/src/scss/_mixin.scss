@@ -18,7 +18,7 @@ $pc:960;
 	@return ($width / $viewWidth)*100vw;
 }
 
-//폰트 
+// font
 
 //font weight:100~900 /ultrathin thin normal bold boolder light / normal : 400 bold :600 //
 
@@ -26,7 +26,7 @@ $pc:960;
 @mixin nanum($i:16px,$j:normal){font-family: 'Nanum Gothic', sans-serif; font-size:$i; font-weight:$j;}
 
 
-//보더라인 
+// border line
 
 @mixin b-set($size:2px,$borderColor:$bc)
 		{
@@ -38,7 +38,7 @@ $pc:960;
 		}
 
 
-//벤더프리픽스 
+//vender prefix
 
 @mixin rounded($i){
 	-webkit-border-radius:$i;

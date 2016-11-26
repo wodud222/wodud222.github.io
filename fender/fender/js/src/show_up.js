@@ -3,7 +3,10 @@ $(function(){
 
 //메인페이지
 
-var bg_box_01 =  $('.bg_box').fadeIn(3000);
+var bg_box_00 =  $('.bg_box').fadeIn(700);
+var bg_box_01 =  $('.bg_box').find('.front').fadeIn(1200);
+var bg_box_02 =  $('.bg_box').find('.back').fadeIn(1200);
+
 var menu = $('#menu').delay(1000).fadeIn(500);
 var logo = $('#topBtn').delay(1000).fadeIn(500);
 // + $('#topBtn').delay(100).fadeIn(500);
@@ -21,8 +24,11 @@ var snb_04 = $('#snb').find('li').eq(3).delay(3000).fadeIn(1000);
 var snb_05 = $('#snb').find('li').eq(4).delay(3000).fadeIn(1000);
 var scroll = $('#scrollDown').delay(3200).fadeIn(1000);
 	
+
 // neck
 var neck_tit = $('#neckBox').find('#neckTitleBox').fadeIn()
+
+
 // about
 var about_tit = $('#aboutBox').find('#aboutTitleBox').delay(1500).fadeIn(500);
 var about_txt = $('#aboutBox').find('#aboutTextBox').delay(2000).fadeIn(1500);

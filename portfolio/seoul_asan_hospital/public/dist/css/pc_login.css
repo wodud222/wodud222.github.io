@@ -675,7 +675,8 @@
     width: 960px;
     height: 310px;
     background-color: #fff;
-    position: relative; }
+    position: relative;
+    bottom: 0; }
     #footBox .snb {
       border-top: 1px solid #b3d6d2;
       border-bottom: 1px solid #b3d6d2;
@@ -1060,8 +1061,9 @@
   background-color: #efefef;
   border-top: 1px solid #b3d6d2;
   border-bottom: 1px solid #b3d6d2;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
-  font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+  font-weight: normal;
   color: #fff;
   padding-left: 40px;
   padding-top: 10px;
@@ -1077,8 +1079,9 @@
 #lnb > dl > dd {
   width: 100%;
   height: auto;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
-  font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif;
+  font-weight: normal;
   font-weight: bold;
   display: none;
   background-color: #fcfefd; }
@@ -1111,8 +1114,9 @@
   width: auto;
   height: auto;
   text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 18px;
-  font-family: 'Noto Sans Korean Medium', arial, nanumGothic, "돋움", dotum, sans-serif; }
+  font-weight: normal; }
 
 .reservBox > span:nth-of-type(1) {
   padding-left: 26px; }

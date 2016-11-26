@@ -675,7 +675,8 @@
     width: 960px;
     height: 310px;
     background-color: #fff;
-    position: relative; }
+    position: relative;
+    bottom: 0; }
     #footBox .snb {
       border-top: 1px solid #b3d6d2;
       border-bottom: 1px solid #b3d6d2;
