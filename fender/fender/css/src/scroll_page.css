@@ -12,8 +12,8 @@
 
 	article{width: 100vw; height:100vh;}
 	
-	#mainBox{display:none;}
-	#bodyBox{display:block;}
+	#mainBox{display:block;}
+	#bodyBox{display:none;}
 	#elecBox{display:none;}
 	#neckBox{display:none;}
 	#hardBox{display:none;}
@@ -69,10 +69,10 @@
 				  top:20%;
 				  left:6%;
 				  margin-left:11.458333333vw;
-				  background-image:url("../../img/title/svg/main.svg")
-				  ;background-repeat:no-repeat;
+				  background-image:url("../../img/title/svg/main.svg");
+				  background-repeat:no-repeat;
 				  background-size:contain;
-				  background-position:center;}
+				  background-position:center;display:none;}
 	
 	
 /*mainColor_box------------------------------------*/

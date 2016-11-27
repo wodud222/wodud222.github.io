@@ -93,7 +93,7 @@ $(function() {
 			article.eq(1).delay(500).fadeIn(500);	
 			
 		}else if($(this).index() == 2){
-/*			$('#articleBox').animate({backgroundColor:'#0915EB'},1000);*/
+			$('#articleBox').animate({backgroundColor:'#0915EB'},1000);
 			article.fadeOut(500);
 			article.eq(2).delay(500).fadeIn(500);
 
