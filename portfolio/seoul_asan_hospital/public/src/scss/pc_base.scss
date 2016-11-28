@@ -534,6 +534,7 @@
 				
 		}
 }
+
 	#footBox{
 		@include max;
 		margin:0 auto;
@@ -622,6 +623,7 @@
 					   	   margin-left:24px;
 
 					   	}
+					
 					}//ul
 
 				}//.footQuick
@@ -639,6 +641,7 @@
 			   		}//li
 				
 				}//ul
+	 		
 	 		}
 			.snb_for_mini{display:none;}
 			.fnb_for_mini{display:none;}
@@ -651,7 +654,7 @@
 			  	   height:400px;
 			  	   background-color:#fefbfb;
 			  	   position:absolute;
-			  	   bottom:-130%;
+			  	   bottom:-140%;
 			  	   z-index:300;
 			  	   border: 2px solid $bc;
 			  	   border-radius:10px; 
@@ -670,8 +673,8 @@
 					&:hover i{transform:scale(1.5);}
 					}
 
-			>ul{width:960px;
-				&.allMenu_title{padding-left:12px;
+				>ul{width:960px;
+					&.allMenu_title{padding-left:12px;
 							  	padding-top:40px;
 							  	padding-bottom:20px;
 					   		  	height:100px;
@@ -734,7 +737,7 @@
 			  height:400px;
 			  background-color:#fefbfb;
 			  position:absolute;
-			  bottom:-130%;
+			  bottom:-140%;
 			  z-index:300;
 			  border: 2px solid $bc;
 			  border-radius:10px; 

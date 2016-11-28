@@ -21,6 +21,7 @@ $(function(){
 		$('.pop_02').on('mouseleave',function(){
 		$('.pop_02').hide();
 		});
+
 var list_02 = [
 	{"first":"찾아오시는길"},
 	{"first":"주차 안내"},
@@ -28,6 +29,7 @@ var list_02 = [
 	{"first":"층별 위치 안내"},
 	{"first":"병원시설"},
 ];
+
 	});
 
 
@@ -87,6 +89,11 @@ acco.find('dt').on('click',function(){
     $(this).next('dd').slideToggle();
 
   });
+  
+  var banheight = $('#mainBanner').offset().top;
+  
+  console.log(banheight);
+
 
 }); //function
 

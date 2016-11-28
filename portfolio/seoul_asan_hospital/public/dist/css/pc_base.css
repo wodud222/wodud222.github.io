@@ -854,7 +854,7 @@
     height: 400px;
     background-color: #fefbfb;
     position: absolute;
-    bottom: -130%;
+    bottom: -140%;
     z-index: 300;
     border: 2px solid #b3d6d2;
     border-radius: 10px; }
@@ -939,7 +939,7 @@
     height: 400px;
     background-color: #fefbfb;
     position: absolute;
-    bottom: -130%;
+    bottom: -140%;
     z-index: 300;
     border: 2px solid #b3d6d2;
     border-radius: 10px; }
