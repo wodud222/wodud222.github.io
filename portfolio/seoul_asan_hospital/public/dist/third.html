@@ -23,10 +23,8 @@
 
 	<title>index</title>
     <style>
-    	/*최근 사용하는 반응형 구조*/
-    	/*@media screen and (min-width:)and(max-width:){}*/
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);	
+	@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+	@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);	
 
     </style>
     <script src="./js/jquery/jquery-1.12.4.min.js"></script>
@@ -408,12 +406,33 @@
 				<span>홈&gt;병원이용 안내&gt;오시는 길</span>
 			</div>
 			<div class="guideBox">
-				<ul class="guidBox_info">
-					<li></li>
-					<li></li>
+				<ul class="guideBox_info">
+					<li>
+						<img src="./img/src/hospital_icon.png" alt="병원 아이콘">
+						<p>서울아산병원 주소</p>
+						<p>[05505]서울특별시 송파구 올림픽로 43길 88 서울아산병원</p>
+					</li>
+					<li>
+						<img src="./img/src/phone_icon.png" alt="전화기 아이콘">
+						<p>교통안내</p>
+						<p>1688-7575</p>
+					</li>
 				</ul>
-				<img src=""/>
-			</div>
+				<div id="daumRoughmapContainer1480311077118" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+				<div class="third_tab">
+					<ul>
+						<li>순환버스</li>
+						<li>지하철</li>
+						<li>승용차</li>
+					</ul>
+				</div>
+				<div class="tabBox">
+					<div class="tab_01"></div>
+					<div class="tab_02"></div>
+					<div class="tab_03"></div>
+				</div>
+			
+			</div><!--guideBox  -->
 		</article>
 		<div id="three_buttons">
 			<div class="first_button">진료예약</div>
@@ -421,6 +440,7 @@
 			<div class="third_button">빠른서비스</div>
 		</div>
 	</article>
+
 <!-- footer -->
 	<footer id="footBox">
 		<div class="snb">
@@ -633,11 +653,25 @@
 		</button>
 	</div>	
 	</footer>
-
+	
+	
 	<script src="./js/src/footer_tab.js"></script>
+	<script src="./js/src/lnb_tab.js"></script>
+	<script src="./js/src/lnb.js"></script>
 <!-- 	<script src="./js/src/Banner.js"></script> -->
 	<script src="./js/src/header_tab.js"></script>
 	<script src="./js/src/popup.js"></script>
+	<!-- map 불러오기 -->
+	<script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js">
+	</script>
+	<script charset="UTF-8">
+				new daum.roughmap.Lander({
+				"timestamp" : "1480311077118",
+				"key" : "ee7u",
+				"mapWidth" : "670",
+				"mapHeight" : "300"
+				}).render();
+	</script>
 </body>
 </html>
 

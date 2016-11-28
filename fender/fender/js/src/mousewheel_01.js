@@ -19,44 +19,44 @@ $(function() {
 	});
 	*/
 
-	// console.log('gnb영역 리스트 갯수: ', $('#gnb').find('li').length);
-	// console.log($('.wheel_area').length);
-	var win_h = $(window).height();
-
-	$('#gnb').find('li').on('click',function(e) {
-		e.preventDefault();
-
-		// console.log($(this).index());
-		var li_index = $(this).index();
-		var scroll_h = win_h * li_index;
-		$('html, body').animate({scrollTop:scroll_h});
-	});
-
 $('.wheel_area').on('mousewheel DOMMouseScroll', function(e) {
-		var evt = e.originalEvent;
-		var delta = 0;
+				var evt = e.originalEvent;
+				var delta = 0;
 			//firefox 에서는 originalEvent내에 detail이 존재
 				var wheel_i = $(this).index();
+				var mainb = $('#mainBox').css({display:'block'});
+				var bodyb = $('#bodyBox').css({display:'block'});
+				var elecb = $('#elecBox').css({display:'block'});
+				var neckb = $('#neckBox').css({display:'block'});
+				var hardb = $('#hardBox').css({display:'block'});
+
+				var main = $('#mainBox')
+				var body = $('#bodyBox')
+				var elec = $('#elecBox')
+				var neck = $('#neckBox')
+				var hard = $('#hardBox')
+
+
 			if(!!evt.detail){
 				var wheel_delta = evt.wheelDetail;
-				if( wheel_delta <0){
-				var wheel_h = (wheel_i-4) * win_h;
-				}else{
-					var wheel_h = (wheel_i-2) * win_h;
+				if( wheel_delta < 0 && mainb){
+					main.fadeOut(500);
+					body.fadeOut(500);
+				}else if( wheel_delta<0 && bodyb){
+					body.fadeOut(500);
+					neck.fadeIn(500);
 				}
-
-				$('html, body').stop().animate({scrollTop:wheel_h});
 			}
 			//그외 기능에서는 wheelDelta값이 존재
 			else{
 				var wheel_delta = evt.wheelDelta;
-				if( wheel_delta <0){
-				var wheel_h = (wheel_i-2) * win_h;
-				}else{
-					var wheel_h = (wheel_i-4) * win_h;
+				if( wheel_delta < 0 && mainb){
+					main.fadeOut(500);
+					body.fadeOut(500);
+				}else if( wheel_delta<0 && bodyb){
+					body.fadeOut(500);
+					neck.fadeIn(500);
 				}
-
-				$('html, body').stop().animate({scrollTop:wheel_h});
 			}
 	});
 });

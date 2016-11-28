@@ -1,7 +1,7 @@
 @charset "UTF-8";
 #lnb {
   width: 202px;
-  height: 1375px;
+  height: inherit;
   background-color: #fff;
   /* rgba(235,235,235,0.45) */
   float: left;

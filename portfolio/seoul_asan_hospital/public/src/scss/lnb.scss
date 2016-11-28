@@ -3,7 +3,12 @@
 // lnb ------------------------------------------------------------------
 
 
-#lnb{width:202px;height:1375px;background-color:#fff;/* rgba(235,235,235,0.45) */;float:left;@include b-all(2px);padding-top:70px;}
+#lnb{width:202px;
+	height:inherit;background-color:#fff;
+	/* rgba(235,235,235,0.45) */;
+	float:left;
+	@include b-all(2px);
+	padding-top:70px;}
 #lnb>h2{width:100%;height:30px;@include noto(29px);padding-left:27px;padding-bottom:20px;position:relative;}
 
 #lnb>h2::before{@include after();width:2px;height:28px;background-color:#006869;left:10px;right:0;top:4px;}

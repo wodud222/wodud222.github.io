@@ -675,7 +675,6 @@
     width: 960px;
     height: 310px;
     background-color: #fff;
-    position: relative;
     bottom: 0; }
     #footBox .snb {
       border-top: 1px solid #b3d6d2;
@@ -684,6 +683,7 @@
       width: 960px;
       height: 100px;
       background-color: #efefef;
+      float: left;
       position: relative; }
       #footBox .snb > ul {
         width: 100%;
@@ -774,7 +774,8 @@
         margin-top: 10px; }
     #footBox .fnb {
       width: 960px;
-      height: 210px; }
+      height: 210px;
+      float: left; }
       #footBox .fnb > ul {
         width: inherit;
         height: inherit; }
@@ -853,7 +854,7 @@
     height: 400px;
     background-color: #fefbfb;
     position: absolute;
-    bottom: 320px;
+    bottom: -130%;
     z-index: 300;
     border: 2px solid #b3d6d2;
     border-radius: 10px; }
@@ -938,7 +939,7 @@
     height: 400px;
     background-color: #fefbfb;
     position: absolute;
-    bottom: 320px;
+    bottom: -130%;
     z-index: 300;
     border: 2px solid #b3d6d2;
     border-radius: 10px; }
@@ -1016,7 +1017,7 @@
 
 #lnb {
   width: 202px;
-  height: 1375px;
+  height: inherit;
   background-color: #fff;
   /* rgba(235,235,235,0.45) */
   float: left;
@@ -1606,12 +1607,12 @@
 .toggleClass {
   margin-left: 754px; }
 
-body {
+html, body {
   height: auto; }
 
 #wrap {
   width: 960px;
-  height: 1445px;
+  height: 100%;
   margin: 0 auto;
   opacity: 0.8; }
 
@@ -1628,7 +1629,7 @@ body {
 
 #content {
   width: 670px;
-  height: 1375px;
+  height: auto;
   background-color: #fff;
   float: left;
   padding-top: 70px;
@@ -1658,13 +1659,130 @@ body {
   float: right;
   padding-top: 12px; }
 
+.guideBox {
+  width: 100%;
+  height: auto;
+  background-color: #fff; }
+
 .guideBox_info {
   width: 670px;
   height: 100px;
   margin-top: 66px;
-  background-color: #fefbfb; }
+  background-color: #efefef;
+  border-top: 1px solid #ccc; }
 
-.guideBox_info
+.guideBox_info {
+  padding: 20px 8px 20px; }
+
+.guideBox_info > li, .guideBox_info img, .guideBox_info p {
+  float: left; }
+
+.guideBox_info p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-indent: 10px; }
+
+.guideBox_info p:nth-of-type(2) {
+  line-height: 2; }
+
+.guideBox_info > li:nth-of-type(1) {
+  width: 70%;
+  height: 100%;
+  padding-left: 36px; }
+
+.guideBox_info > li:nth-of-type(2) {
+  width: 30%;
+  height: 100%; }
+
+.guideBox_info > li:nth-of-type(2)::after {
+  content: "";
+  display: block;
+  z-index: 100;
+  position: absolute;
+  border: 1px solid #ddd; }
+
+.guideBox_info > li:nth-of-type(2) > p:nth-of-type(2) {
+  width: 100px;
+  height: 300px; }
+
+#daumRoughmapContainer1480311077118 {
+  margin-top: 40px; }
+
+.third_tab {
+  width: 368px;
+  height: 40px;
+  margin-top: 66px; }
+
+.third_tab li {
+  width: 120px;
+  height: 40px;
+  border: 2px solid #096c6e;
+  float: left;
+  margin-left: 4px;
+  text-align: center;
+  line-height: 1.8;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  cursor: pointer; }
+
+.third_tab li:nth-of-type(1) {
+  margin-left: 0;
+  border-bottom: 0; }
+
+.third_tab li:nth-of-type(2) {
+  border: 2px solid #b3d6d2; }
+
+.third_tab li:nth-of-type(3) {
+  border: 2px solid #b3d6d2; }
+
+.third_tab li:nth-of-type(1):after {
+  content: "";
+  display: block;
+  z-index: 100;
+  position: absolute;
+  width: 23%;
+  height: 2px;
+  background-color: #096c6e;
+  left: 44.2%; }
+
+.tabBox {
+  width: 670px;
+  height: 100%; }
+
+.tabBox > div.tab_01 {
+  width: 670px;
+  height: 930px; }
+
+.tabBox > div.tab_02 {
+  width: 670px;
+  height: 804px;
+  display: none; }
+
+.tabBox > div.tab_03 {
+  width: 670px;
+  height: 1511px;
+  display: none; }
+
+.tab_01 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/src/third/traffic_tab.png"); }
+
+.tab_02 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/src/third/subway_tab.png"); }
+
+.tab_02 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/src/third/car_tab.png"); }
+
 #three_buttons {
   width: 40px;
   height: 420px;
