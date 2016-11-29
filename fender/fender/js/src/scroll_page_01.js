@@ -66,7 +66,7 @@ $(function() {
 
 	    // scroll 위치에 따른 배경색상 변경
 
-// snb 클릭시 해당 페이지 색 변경 및 article box open
+// + snb 클릭시 해당 페이지 색 변경 및 article box open
 	
 	
 	var snb_index = $('#snb').find('li').index();
@@ -74,38 +74,97 @@ $(function() {
 	var article_index = $('#articleBox').find('article').index();
 	var article = $('#articleBox').find('article');
 
-	console.log(snb_index);
-	console.log(article_index);
-
 	$('#snb').find('li').on('click', function() {
-
+		
 		snb.css({backgroundColor:'#fff'});
 		$(this).css({backgroundColor:'#c20c0c'});
 
+		// if($('.bg_box').css({display:'none'})){
+		// 	$('.bg_box').fadeIn(1000);
+		// } >> guiar 수정해야함 
 
-		if($(this).index() == 0){
-			$('#articleBox').animate({backgroundColor:'#171B1E'},1000);
+			if($(this).index() == 0){
+			if(	article.eq(4).css({display:'block'})){
+				article.eq(4).stop().animate({marginTop:100+'vh'},500)
+			}
+
+		$('#articleBox').stop().animate({backgroundColor:'#171B1E'},1000);
 			article.fadeOut(500);		
-			article.eq(0).delay(500).fadeIn(500);		
+			article.eq(0).fadeIn(500);		
+		
 		}else if($(this).index() == 1){
-			$('#articleBox').animate({backgroundColor:'#360E1A'},1000);
+			if(article.eq(4).css({display:'block'})){
+				article.eq(4).stop().animate({marginTop:100+'vh'},500)
+			}
+			$('#articleBox').stop().animate({backgroundColor:'#360E1A'},1000);
 			article.fadeOut(500);		
-			article.eq(1).delay(500).fadeIn(500);	
+			article.eq(1).fadeIn(500,test());	
+			/*test();*/
 			
 		}else if($(this).index() == 2){
-			$('#articleBox').animate({backgroundColor:'#0915EB'},1000);
+			if(article.eq(4).css({display:'block'})){
+				article.eq(4).stop().animate({marginTop:100+'vh'},500)
+			}
+			article.eq(4).animate({marginTop:100+'vh'},500);
+			$('#articleBox').stop().animate({backgroundColor:'#09152B'},1000);	
 			article.fadeOut(500);
-			article.eq(2).delay(500).fadeIn(500);
+			article.eq(2).fadeIn(500);
 
 		}else if($(this).index() == 3){
-			article.css({'display':'none'});
-			article.eq(3).css({'display':'block'});
+			if(article.eq(4).css({display:'block'})){
+				article.eq(4).stop().animate({marginTop:100+'vh'},500)
+			}
+			$('#articleBox').stop().animate({backgroundColor:'#46262E'},1000);
+			article.fadeOut(500);
+			article.eq(3).fadeIn(500);
 		
 		}else if($(this).index() == 4){
-			article.css({'display':'none'});
-			article.eq(4).css({'display':'block'});
+			if(article.eq(4).css({display:'block'})){
+				article.eq(4).stop().animate({marginTop:100+'vh'},500)
+			}
+			$('.bg_box').fadeOut(300);
+			article.stop().animate({'display':'none'},200);
+			article.eq(4).css({'display':'block','marginTop:':100+'vh'});
+			article.eq(4).animate({marginTop:0},500);
 		}
 
 	});
 
+	//  test 
+	function test() {
+	
+	var bodyLi_00 = $('#bodyBox').find('li').find('span'),
+		bodyLi_01 = $('#bodyBox').find('li').eq(0).find('span'),
+	    bodyLi_02 = $('#bodyBox').find('li').eq(1).find('span'),
+	    bodyLi_03 = $('#bodyBox').find('li').eq(2).find('span'),
+	    bodyName = $('.bodyName');
+	    span = $('#bodyBox').find('span');
+
+			var bodyBox = $('#bodyBox').css('display');
+			
+			if(bodyBox == 'block'){
+				// if(article.eq(1).css({display:'block'})){
+				function bodyLi(li_list) {
+					var timed = 100;
+					li_list.animate({marginLeft:'50%'},timed*3,function(){
+						li_list.animate({marginLeft:'35%'},timed,function(){
+							li_list.animate({marginLeft:'50%'},timed*3,function(){
+								li_list.animate({marginLeft:'35%'},timed,function(){
+									li_list.animate({marginLeft:'50%'},timed*3,function(){
+										li_list.animate({marginLeft:'30%'},timed,function(){
+											li_list.animate({marginLeft:'50%'},timed*3);
+											span.css({color:'#111'});
+
+										});
+									});
+								});
+							});
+						});
+					});
+				};
+				bodyLi(bodyLi_00); 
+				// bodyLi(bodyLi_02);
+				// bodyLi(bodyLi_03);
+			}//if	
+	};
 });

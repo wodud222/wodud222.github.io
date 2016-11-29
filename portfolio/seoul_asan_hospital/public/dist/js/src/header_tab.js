@@ -89,11 +89,6 @@ acco.find('dt').on('click',function(){
     $(this).next('dd').slideToggle();
 
   });
-  
-  var banheight = $('#mainBanner').offset().top;
-  
-  console.log(banheight);
-
 
 }); //function
 

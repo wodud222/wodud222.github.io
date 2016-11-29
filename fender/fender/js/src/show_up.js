@@ -28,10 +28,14 @@ var neck_tit = $('#neckBox').find('#neckTitleBox').fadeIn()
 
 
 // about
-var about_tit = $('#aboutBox').find('#aboutTitleBox').delay(1500).fadeIn(500);
+// 
+var about_tit = $('#aboutBox').find('#aboutTitleBox').fadeIn(500,function(){
+	animate({marginTop:200+'px'},500);
+});
 var about_txt = $('#aboutBox').find('#aboutTextBox').delay(2000).fadeIn(1500);
 var about_btn = $('#aboutBox').find('button').delay(2500).fadeIn(1500);
 
+//video
 
 
 
@@ -41,6 +45,49 @@ var about_btn = $('#aboutBox').find('button').delay(2500).fadeIn(1500);
  		$('content').fadeOut(1000);
  		});
  	});
+
+
+
+
+ //wave effect
+
+ //body
+ 	var article_index = $('#articleBox').find('article').index(),
+		article = $('#articleBox').find('article');
+
+	(function() {
+	var bodyLi_01 = $('#bodyBox').find('li').eq(0).find('span'),
+	    bodyLi_02 = $('#bodyBox').find('li').eq(1).find('span'),
+	    bodyLi_03 = $('#bodyBox').find('li').eq(2).find('span'),
+	    bodyName = $('.bodyName');
+	    span = $('#bodyBox').find('span');
+
+			var bodyBox = $('#bodyBox').css('display');
+			if(bodyBox == 'block'){
+				// if(article.eq(1).css({display:'block'})){
+				function bodyLi(li_list) {
+					var timed = 100;
+					li_list.animate({marginLeft:'50%'},timed*3,function(){
+						li_list.animate({marginLeft:'35%'},timed,function(){
+							li_list.animate({marginLeft:'50%'},timed*3,function(){
+								li_list.animate({marginLeft:'35%'},timed,function(){
+									li_list.animate({marginLeft:'50%'},timed*3,function(){
+										li_list.animate({marginLeft:'30%'},timed,function(){
+											li_list.animate({marginLeft:'50%'},timed*3);
+											span.css({color:'#111'})
+
+										});
+									});
+								});
+							});
+						});
+					});
+				};
+				bodyLi(bodyLi_01);
+				bodyLi(bodyLi_02);
+				bodyLi(bodyLi_03);
+				}//if	
+		})();
 
 });
 

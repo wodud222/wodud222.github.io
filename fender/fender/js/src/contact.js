@@ -98,7 +98,20 @@ var map = $('#contact .map');
 			map.find(y).show();});
         map.find(x).mouseleave(function(){
 			map.find(y).hide();});
-    };
+    }
 
+ /*contact 버튼*/
+  
+    map.find('dd').find('button').on('click',function(){
+        map.find('dd').hide();
+        map.find('.popupBox').fadeIn();
+        
+    });
+    
+	$('#inquiryReset').on('click', function(){
+		$('.popupBox').fadeOut(500);
+	
+    });
+    
  
   });

@@ -1,23 +1,24 @@
 (function(){
     
-    var text = $('#elecBox .elecText');
+    var electext = $('#elecBox .elecText');
     
     
     
     for(i=0;i<4;i++){
         
-    var span_w = text.find('div').eq(i).prev().width() + 26;
+    var elecspan_w = $('#elecBox').find('li').eq(i).width();
+        console.log(elecspan_w);
        
-        text.find('div').eq(i).css({width:span_w});
+        electext.find('div').eq(i).css({width:elecspan_w});
     }
     
-    text.find('div').mouseover(function(){
+    electext.find('div').mouseover(function(){
         
     
         $(this).prev().stop().animate({marginLeft:'0%'},400,function(){
             $(this).animate({marginLeft:'50%',backgroundColor:'#c20c0c',color:"#fff"},200);
             
-            var li_num = text.find('span').index(this);
+            var li_num = electext.find('span').index(this);
             console.log(li_num);
             if(li_num == 0){
                $(this).text('Standard Single-Coil Tele');
@@ -34,13 +35,13 @@
         
     });
     
-    text.find('div').mouseout(function(){
+    electext.find('div').mouseout(function(){
         
         $(this).prev().stop().animate({marginLeft:'0%',backgroundColor:'#fff',color:'#111'},400,function(){
             $(this).animate({marginLeft:'50%'},300);
            
             
-            var li_num = text.find('span').index(this);
+            var li_num = electext.find('span').index(this);
             if(li_num == 0){
                 
                 $(this).text('Neck Pickup');

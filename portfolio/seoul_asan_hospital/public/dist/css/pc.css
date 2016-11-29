@@ -674,8 +674,7 @@
     margin: 0 auto;
     width: 960px;
     height: 310px;
-    background-color: #fff;
-    bottom: 0; }
+    /* 		background-color:#fff; */ }
     #footBox .snb {
       border-top: 1px solid #b3d6d2;
       border-bottom: 1px solid #b3d6d2;
@@ -854,7 +853,7 @@
     height: 400px;
     background-color: #fefbfb;
     position: absolute;
-    bottom: -140%;
+    bottom: 110%;
     z-index: 300;
     border: 2px solid #b3d6d2;
     border-radius: 10px; }
@@ -939,7 +938,7 @@
     height: 400px;
     background-color: #fefbfb;
     position: absolute;
-    bottom: -140%;
+    bottom: 110%;
     z-index: 300;
     border: 2px solid #b3d6d2;
     border-radius: 10px; }

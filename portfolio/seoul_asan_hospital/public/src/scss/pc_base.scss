@@ -18,8 +18,8 @@
 				background-color:#fff;
 				left:50%;
 				margin-left:-50vw;} 
-			>#menu{display:none;}
-			>#home{display:none;}
+				>#menu{display:none;}
+				>#home{display:none;}
 				
 		h1{min-width:120px; 
 		   min-width:230px;
@@ -540,8 +540,7 @@
 		margin:0 auto;
 		width:960px;
 		height:310px;
-		background-color:#fff;
-		bottom:0;
+/* 		background-color:#fff; */
 
 		.snb{@include b-set(1px);
 			margin:0 auto;
@@ -654,7 +653,7 @@
 			  	   height:400px;
 			  	   background-color:#fefbfb;
 			  	   position:absolute;
-			  	   bottom:-140%;
+			  	   bottom:110%;
 			  	   z-index:300;
 			  	   border: 2px solid $bc;
 			  	   border-radius:10px; 
@@ -737,7 +736,7 @@
 			  height:400px;
 			  background-color:#fefbfb;
 			  position:absolute;
-			  bottom:-140%;
+			  bottom:110%;
 			  z-index:300;
 			  border: 2px solid $bc;
 			  border-radius:10px; 

@@ -1,11 +1,11 @@
 /* base.css */
 
 
-@media screen and (min-width: 960px) and (max-width: 2560px) {
 /* header ----------------------------------------*/
 
 
 body{overflow-x: hidden;overflow-y:hidden;}
+
 .content{width: 100%; height: auto; position:relative;}
 	
 	#headBox{width: 100%; height: 4.16666666667vw; box-sizing:border-box; position:absolute;z-index:500;top:0; left: 0;}
@@ -25,17 +25,6 @@ body{overflow-x: hidden;overflow-y:hidden;}
 	#menu>.menuSmall_03>li:nth-of-type(2){width:2.0833333vw;}
 	#menu>.menuSmall_04>li:nth-of-type(2){width:2.3958333vw;}
 
-/*menu > hover--------------------------*/
-/*
-	#menu>.menuSmall_01>li:nth-of-type(1):hover + li{width:2.3958333vw;}
-	#menu>.menuSmall_02>li:nth-of-type(1):hover + li{width:1.875vw;}
-	#menu>.menuSmall_03>li:nth-of-type(1):hover + li{width:1.66667vw;}
-	#menu>.menuSmall_04>li:nth-of-type(1):hover + li{width:1.5625vw;}
-
-	#menu>.menuSmall_01>li:nth-of-type(2):hover{width:46px;}
-	#menu>.menuSmall_02>li:nth-of-type(2):hover{width:36px;}
-	#menu>.menuSmall_03>li:nth-of-type(2):hover{width:32px;}
-	#menu>.menuSmall_04>li:nth-of-type(2):hover{width:30px;}*/
 /*#mnb    ----------------------------------------*/
 	#mnb{width:100%;height:100%;background-color:rgba(0,0,0,0.9);z-index:10000;position:fixed;display:none;}
 	#mnb>.mnbBox{width:26.5625vw;height:31.25vw;margin-top:-15.625vw;position:absolute;top:50%;left:50%;margin-left:-13.28125vw;}
